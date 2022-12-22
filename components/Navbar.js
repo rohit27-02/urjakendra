@@ -13,7 +13,7 @@ const Navbar = () => {
 
       {/* logo */}
 
-      <div className='w-[15vw] '>
+      <div className='w-[7vw] '>
         <img src='/logo.png' alt='logo' />
       </div>
 

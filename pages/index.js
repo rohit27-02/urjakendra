@@ -27,7 +27,7 @@ export default function Home() {
         autoPlay={true}
       >
         <div>
-          <img src="https://www.okayapower.com/assets/img/tubular.webp" alt="carosuel-banner" />
+          <img src="banner.png" alt="carosuel-banner" />
 
         </div>
         <div>
