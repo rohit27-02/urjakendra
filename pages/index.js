@@ -17,7 +17,7 @@ const batteries = [{ title: "battery 1", description: "superior quality distingu
 
 export default function Home() {
   return (
-    <div className="text-[1.25vw]">
+    <div className="text-[1.25vw] mt-[9vw]">
 
       <Carousel
         renderIndicator={false}
@@ -52,7 +52,10 @@ export default function Home() {
           {Object.keys(batteries).map((item) => {
             return <div key={batteries[item].title} className="h-[29.5vw] my-[1vw] w-[28vw] items-center flex gap-[0.5vw] flex-col">
               <img src={batteries[item].image} className="w-[19vw] bg-gray-200" alt="product" />
+              <div className="flex self-start gap-[0.5vw] mx-[4.5vw] mt-[1vw] ">
+                <img className="" src="https://www.okayapower.com/assets/img/main/smf-heading-arrow.png" alt="png"/>
               <h1 className="text-orange-400 text-[1.1vw]">{batteries[item].title}</h1>
+              </div>
               <p className="px-[4.5vw] text-[0.975vw]">{batteries[item].description}</p>
             </div>
           })}
