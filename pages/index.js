@@ -18,7 +18,7 @@ const batteries = [{ title: "battery 1", description: "superior quality distingu
 
 export default function Home() {
   return (
-    <div className="text-[1.25vw] mt-[9vw]">
+    <div className="text-[1.25vw] mt-[7vw]">
 
       <Carousel
         renderIndicator={false}

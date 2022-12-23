@@ -1,32 +1,26 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
-import { FcAndroidOs } from 'react-icons/fc'
+import {BsChevronDown} from "react-icons/bs"
 
 const Navbar = () => {
   return (
-    <div className='bg-white flex h-[9vw] text-[1.1vw] items-center px-[2vw] drop-shadow-xl fixed top-0 z-50 text-[#333333] w-full'>
-
-      <div className='flex absolute gap-[1vw] text-[1vw] top-[0.5vw] items-center right-[1vw]'>
-        <span className='text-white bg-orange-400 p-[0.5vw] rounded-md font-medium'>Why Should You Download Urja Care App</span>
-        Download the App <FcAndroidOs className='text-[3vw]' />
-      </div>
+    <div style={{ fontFamily: "'Raleway', sans-serif" }} className='bg-white flex h-[7vw] text-[1.1vw] items-center px-[2vw] drop-shadow-xl fixed top-0 z-50 text-[#333333] w-full'>
 
       {/* logo */}
 
-      <div className='w-[7vw] '>
+      <div className='w-[15vh] md:w-[15vw] '>
         <img src='/logo.png' alt='logo' />
       </div>
 
       {/* navbar */}
 
-      <div className='flex w-5/6 pt-8 justify-center gap-[5vw] px-[2vw]'>
-        <div className='hover:text-orange-400 transition-all duration-300 cursor-pointer'>About</div>
-        <div className='hover:text-orange-400 transition-all duration-300 cursor-pointer'>Products & Solutions</div>
-        <div className='hover:text-orange-400 transition-all duration-300 cursor-pointer'>Urja Care</div>
-        <div className='hover:text-orange-400 transition-all duration-300 cursor-pointer'>Expertise</div>
-        <div className='hover:text-orange-400 transition-all duration-300 cursor-pointer'>Export</div>
-        <div className='hover:text-orange-400 transition-all duration-300 cursor-pointer'>Media</div>
-        <div className='hover:text-orange-400 transition-all duration-300 cursor-pointer'>Contact</div>
+      <div className='flex w-5/6  justify-end gap-[5vw] '>
+        <div className='hover:text-orange-400 transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center'>About <BsChevronDown/></div>
+        <div className='hover:text-orange-400 transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center'>Products & Solutions <BsChevronDown/></div>
+        <div className='hover:text-orange-400 transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center'>Expertise <BsChevronDown/></div>
+        <div className='hover:text-orange-400 transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center'>Export <BsChevronDown/></div>
+        <div className='hover:text-orange-400 transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center'>Media <BsChevronDown/></div>
+        <div className='hover:text-orange-400 transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center'>Contact <BsChevronDown/></div>
       </div>
     </div>
   )
