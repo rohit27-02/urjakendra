@@ -3,6 +3,8 @@ import React from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import { AiOutlineRight } from 'react-icons/ai'
+import 'animate.css';
+import { Zoom } from "react-reveal";
 
 const batteries = [{ title: "battery 1", description: "superior quality distinguishes an extraordinary product from an ordinary one.", image: "https://galo.co.in/wp-content/uploads/2022/10/Artboard-1-1-650x650.png" },
 { title: "battery 1", description: "superior quality distinguishes an extraordinary product from an ordinary one.", image: "https://galo.co.in/wp-content/uploads/2022/10/Artboard-1-1-650x650.png" },
@@ -53,14 +55,14 @@ export default function Home() {
         </div>
         <div className="flex flex-wrap mx-[5vw] justify-center ">
           {Object.keys(batteries).map((item) => {
-            return <div key={batteries[item].title} className="h-[29.5vw] my-[1vw] w-[28vw] items-center flex gap-[0.5vw] flex-col">
+            return <Zoom key={batteries[item].title}><div className="h-[29.5vw] my-[1vw] w-[28vw] items-center flex gap-[0.5vw] flex-col">
               <img src={batteries[item].image} className="w-[19vw] bg-gray-200" alt="product" />
               <div className="flex self-start gap-[0.5vw] mx-[4.5vw] mt-[1vw] ">
                 <img className="" src="https://www.okayapower.com/assets/img/main/smf-heading-arrow.png" alt="png" />
                 <h1 className="text-orange-400 text-[1.1vw]">{batteries[item].title}</h1>
               </div>
               <p className="px-[4.5vw] text-[0.975vw]">{batteries[item].description}</p>
-            </div>
+            </div></Zoom>
           })}
         </div>
       </div>
@@ -123,10 +125,10 @@ export default function Home() {
         </div>
         <p className="w-full text-center my-[2.5vw]">A nation-wide network of around 2000 service professionals with tremendous experience.</p>
         <div className="flex  justify-center gap-[2vw]">
-          <div className="w-[20.5vw] h-[14.5vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-400 text-[3.9vw]">38,624</span><span>Dealer Network</span></div>
-          <div className="w-[20.5vw] h-[14.5vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-400 text-[3.9vw]">592</span><span>Sales & Service Team</span></div>
-          <div className="w-[20.5vw] h-[14.5vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-400 text-[3.9vw]">2,240</span><span>Distributor Network</span></div>
-          <div className="w-[20.5vw] h-[14.5vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-400 text-[3.9vw]">110 Mn</span><span>Happy Customers</span></div>
+          <Zoom><div className="w-[20.5vw] h-[14.5vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-400 text-[3.9vw]">38,624</span><span>Dealer Network</span></div></Zoom>
+          <Zoom><div className="w-[20.5vw] h-[14.5vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-400 text-[3.9vw]">592</span><span>Sales & Service Team</span></div></Zoom>
+          <Zoom><div className="w-[20.5vw] h-[14.5vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-400 text-[3.9vw]">2,240</span><span>Distributor Network</span></div></Zoom>
+          <Zoom><div className="w-[20.5vw] h-[14.5vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-400 text-[3.9vw]">110 Mn</span><span>Happy Customers</span></div></Zoom>
         </div>
       </div>
 
