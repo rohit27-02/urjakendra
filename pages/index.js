@@ -28,17 +28,18 @@ export default function Home() {
         showThumbs={false}
         showStatus={false}
         autoPlay={true}
+        className="md:h-[80vh] overflow-hidden"
       >
         <div>
-          <img src="banner.png" alt="carosuel-banner" />
+          <img className="" src="banner.png" alt="carosuel-banner" />
 
         </div>
         <div>
-          <img src="/banner2.png" alt="carosuel-banner" />
+          <img className="" src="/banner2.png" alt="carosuel-banner" />
 
         </div>
         <div>
-          <img src="/banner3.png" alt="carosuel-banner" />
+          <img className="" src="/banner3.png" alt="carosuel-banner" />
 
         </div>
       </Carousel>
