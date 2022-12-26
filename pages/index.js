@@ -90,9 +90,9 @@ export default function Home() {
       </div>
 
       {/* banner */}
-<div className="relative">
-      <div style={{ backgroundImage: `url("/wallpaper.jpg")`}} className=" bg-fixed top-0 w-full hide -z-10 text-white h-[34vw]  bg-center overflow-auto">
-        <div className="w-full h-[50vw] ">
+      <div className="relative">
+        <div style={{ backgroundImage: `url("/wallpaper.jpg")` }} className=" bg-fixed sticky top-[10vw] w-full hide -z-10 text-white h-[34vw]  bg-center overflow-auto">
+
           <div className="underline underline-offset-[1vw] text-[2.35vw] font-bold text-center  pt-[8vw]">WHY URJA?</div>
           <div className="flex font-bold justify-center mt-[4vw]">
             <div className="flex h-[20vw] flex-col gap-[1vw] mx-[4vw] text-center w-[10vw]">
@@ -113,24 +113,22 @@ export default function Home() {
             </div>
           </div>
           <div className="cursor-pointer flex items-center gap-[1vw] font-bold justify-center">Explore <AiOutlineRight /></div>
-         
         </div>
-      </div>
 
-      {/* services */}
+        {/* services */}
 
-      <div className="w-full h-[36.2vw] sticky bottom-0 left-0 z-20 bg-[#f2f3f4]">
-        <div className="flex flex-col w-full justify-center pt-[5vw] items-center text-[2.35vw] font-bold">
-          <span className="text-orange-400 border-b-[0.3vw] border-gray-500 pb-[0.5vw]">Service Network</span>
+        <div className="w-full h-[36.2vw] sticky -bottom-[34vw]  left-0 z-20 bg-[#f2f3f4]">
+          <div className="flex flex-col w-full justify-center pt-[5vw] items-center text-[2.35vw] font-bold">
+            <span className="text-orange-400 border-b-[0.3vw] border-gray-500 pb-[0.5vw]">Service Network</span>
+          </div>
+          <p className="w-full text-center my-[2.5vw]">A nation-wide network of around 2000 service professionals with tremendous experience.</p>
+          <div className="flex  justify-center gap-[2vw]">
+            <Zoom><div className="w-[20.5vw] h-[14.5vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-400 text-[3.9vw]">38,624</span><span>Dealer Network</span></div></Zoom>
+            <Zoom><div className="w-[20.5vw] h-[14.5vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-400 text-[3.9vw]">592</span><span>Sales & Service Team</span></div></Zoom>
+            <Zoom><div className="w-[20.5vw] h-[14.5vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-400 text-[3.9vw]">2,240</span><span>Distributor Network</span></div></Zoom>
+            <Zoom><div className="w-[20.5vw] h-[14.5vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-400 text-[3.9vw]">110 Mn</span><span>Happy Customers</span></div></Zoom>
+          </div>
         </div>
-        <p className="w-full text-center my-[2.5vw]">A nation-wide network of around 2000 service professionals with tremendous experience.</p>
-        <div className="flex  justify-center gap-[2vw]">
-          <Zoom><div className="w-[20.5vw] h-[14.5vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-400 text-[3.9vw]">38,624</span><span>Dealer Network</span></div></Zoom>
-          <Zoom><div className="w-[20.5vw] h-[14.5vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-400 text-[3.9vw]">592</span><span>Sales & Service Team</span></div></Zoom>
-          <Zoom><div className="w-[20.5vw] h-[14.5vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-400 text-[3.9vw]">2,240</span><span>Distributor Network</span></div></Zoom>
-          <Zoom><div className="w-[20.5vw] h-[14.5vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-400 text-[3.9vw]">110 Mn</span><span>Happy Customers</span></div></Zoom>
-        </div>
-      </div>
       </div>
     </div>
   )

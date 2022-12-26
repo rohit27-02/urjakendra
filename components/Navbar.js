@@ -85,14 +85,14 @@ const Navbar = () => {
             <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]'>Dealer Zone</li>
           </ul>}
         </div>
-        <div id='n5' onMouseEnter={(e) => nav(e)}><span className='hover:text-orange-400 transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center  '>Freshers <BsChevronDown /></span>
+        <div id='n5' onMouseEnter={(e) => nav(e)}><span className='hover:text-orange-400 transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center  '>Carrers <BsChevronDown /></span>
           {n5 && <ul onMouseLeave={() => setn3(false)} className='absolute drop-shadow-xl border-t-[0.2vw] border-orange-400 top-[7vw] bg-white w-[15vw]'>
             <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]'>Freshers</li>
             <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]'>Experienced Professional</li>
           </ul>}
         </div>
 
-        <div><span className='hover:text-orange-400 transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center  '>Contact </span></div>
+        <div><span className='hover:text-orange-400 transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center  '>Contact Us</span></div>
 
       </div>
 
