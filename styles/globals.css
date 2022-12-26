@@ -33,3 +33,6 @@ a {
     background: white;
   }
 }
+.hide::-webkit-scrollbar {
+  display: none;
+}
