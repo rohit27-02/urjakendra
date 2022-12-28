@@ -91,7 +91,7 @@ export default function Home() {
 
       {/* banner */}
       <div className="relative">
-        <div style={{ backgroundImage: `url("/wallpaper.jpg")` }} className=" bg-fixed sticky top-[10vw] w-full hide -z-10 text-white h-[34vw]  bg-center overflow-auto">
+        <div style={{ backgroundImage: `url("/wallpaper.jpg")` }} className=" bg-fixed  w-full hide -z-10 text-white h-[34vw]  bg-center overflow-auto">
 
           <div className="underline underline-offset-[1vw] text-[2.35vw] font-bold text-center  pt-[8vw]">WHY URJA?</div>
           <div className="flex font-bold justify-center mt-[4vw]">
