@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import { AiOutlineRight } from 'react-icons/ai'
 import 'animate.css';
-import { Zoom } from "react-reveal";
+import { Zoom, Fade } from "react-reveal";
 
 const batteries = [{ title: "battery 1", description: "superior quality distinguishes an extraordinary product from an ordinary one.", image: "https://galo.co.in/wp-content/uploads/2022/10/Artboard-1-1-650x650.png" },
 { title: "battery 1", description: "superior quality distinguishes an extraordinary product from an ordinary one.", image: "https://galo.co.in/wp-content/uploads/2022/10/Artboard-1-1-650x650.png" },
@@ -50,15 +50,16 @@ export default function Home() {
       </Carousel>
 
       {/* welcome message */}
+      <div className="relative">
+        <img src="/background.jpg" alt="background image" className="absolute top-0 opacity-10" />
+        <Fade bottom cascade><div className="flex justify-center text-center max-w-[70vw] gap-[4vw] mx-auto flex-col pt-[6vw] mb-[6vw]">
+          <h1 className="text-orange-400 font-bold text-4xl border-b-4 w-fit pb-[2vw] self-center border-[#444444] ">WELCOME TO<br></br> URJA GLOBAL LIMITED</h1>
+          <p>We at Urja are committed to providing world-class services to rapidly develop rural India focusing on rural electrification especially in hilly areas, forest regions, deserts, islands, far flung villages, unmanned locations and other areas which require reliable and uninterrupted power supply.
 
-      <div className="flex justify-center text-center max-w-[70vw] gap-[4vw] mx-auto flex-col my-[6vw]">
-        <h1 className="text-orange-400 font-bold text-4xl border-b-4 w-fit pb-[2vw] self-center border-[#444444] ">WELCOME TO<br></br> URJA GLOBAL LIMITED</h1>
-        <p>We at Urja are committed to providing world-class services to rapidly develop rural India focusing on rural electrification especially in hilly areas, forest regions, deserts, islands, far flung villages, unmanned locations and other areas which require reliable and uninterrupted power supply.
-
-          With a strong design and manufacturing back ground UGL has developed themselves as a leading manufacturer of Solar Energy Systems to cater to almost the complete range of customer requirements</p>
-        <button className="bg-orange-400 rounded-full border-black border drop-shadow-sm self-center w-fit px-[1vw] py-[0.5vw] text-white">Know More</button>
+            With a strong design and manufacturing back ground UGL has developed themselves as a leading manufacturer of Solar Energy Systems to cater to almost the complete range of customer requirements</p>
+          <button className="bg-orange-400 rounded-full border-black border drop-shadow-sm self-center w-fit px-[1vw] py-[0.5vw] text-white">Know More</button>
+        </div></Fade>
       </div>
-
       {/* main banner */}
 
       <div className="flex w-full animate__animated drop-shadow-xl bg-cover overflow-hidden relative h-[83vh]">
