@@ -34,7 +34,7 @@ const Navbar = () => {
 
   const ref = useRef();
   return (
-    <div id='main' onMouseLeave={(e) => nav(e)} style={{ fontFamily: "'Raleway', sans-serif" }} className='bg-orange-400 text-white flex h-[7vw] text-[1.1vw] items-center px-[2vw] drop-shadow-xl fixed top-0 z-50  w-full'>
+    <div id='main' onMouseLeave={(e) => nav(e)} style={{ fontFamily: "'Raleway', sans-serif" }} className='bg-orange-500 text-white flex h-[7vw] text-[1.1vw] items-center px-[2vw] drop-shadow-xl fixed top-0 z-50  w-full'>
 
       {/* logo */}
 
