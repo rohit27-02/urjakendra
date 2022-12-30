@@ -39,16 +39,12 @@ export default function Home() {
         autoPlay={true}
         className="md:h-[80vh] overflow-hidden"
       >
-        <div>
-          <img className="" src="banner.png" alt="carosuel-banner" />
+        <div className="">
+          <img className="" src="/1.png" alt="carosuel-banner" />
 
         </div>
         <div>
-          <img className="" src="/banner2.png" alt="carosuel-banner" />
-
-        </div>
-        <div>
-          <img className="" src="/banner3.png" alt="carosuel-banner" />
+          <img className="" src="/banner.png" alt="carosuel-banner" />
 
         </div>
       </Carousel>
@@ -66,10 +62,10 @@ export default function Home() {
       {/* main banner */}
 
       <div className="flex w-full animate__animated drop-shadow-xl bg-cover overflow-hidden relative h-[83vh]">
-        <img src={image} id="main-banner" alt="main banner" className="object-cover w-full animate__animated  absolute" />
+        <img src={image} id="main-banner" alt="main banner" className="object-cover -z-20 w-full animate__animated  absolute" />
         <div id="scooter.png" className="w-1/4 relative border-r-2 cursor-pointer [&>*]:hover:flex group [&>*]:hover:text-[#333333] " onMouseEnter={(e) => changeimage(e)}>
           <div className="bg-white absolute top-0 w-full h-0 group-hover:h-[10vw] transition-all duration-500 ease-in-out"></div>
-          <div className="bg-black opacity-40 hidden h-full w-full absolute top-0 -z-10"></div>
+          <div className="bg-black opacity-40 -z-10 hidden h-full w-full absolute top-0 "></div>
           <div className="hover:text-[#333333] transition-all flex-col duration-500 ease-in-out text-white pl-[2vw]  ">
             <h1 className="z-10 drop-shadow-xl">URJA</h1>
             <p className="font-bold drop-shadow-xl text-[1.5vw]">ELECTRIC VEHICLE</p>
@@ -77,7 +73,7 @@ export default function Home() {
         </div>
         <div id="solar.png" className="w-1/4 relative border-r-2 cursor-pointer [&>*]:hover:flex group [&>*]:hover:text-[#333333]" onMouseEnter={(e) => changeimage(e)}>
           <div className="bg-white absolute top-0 w-full h-0 transition-all duration-500 ease-in-out group-hover:h-[10vw]"></div>
-          <div className="bg-black opacity-40 w-full h-full hidden absolute top-0 -z-10"></div>
+          <div className="bg-black opacity-40 -z-10 w-full h-full hidden absolute top-0 "></div>
           <div className="hover:text-[#333333] transition-all flex-col duration-500 ease-in-out text-white pl-[2vw]">
             <h1 className="z-10 drop-shadow-xl">URJA</h1>
             <p className="font-bold drop-shadow-xl text-[1.5vw]">SOLAR PROJECTS</p>
@@ -85,7 +81,7 @@ export default function Home() {
         </div>
         <div id="battery.png" className="w-1/4 relative border-r-2 cursor-pointer [&>*]:hover:flex group [&>*]:hover:text-[#333333] " onMouseEnter={(e) => changeimage(e)}>
           <div className="bg-white absolute top-0 w-full h-0 transition-all duration-500 ease-in-out group-hover:h-[10vw]"></div>
-          <div className="bg-black opacity-40 w-full h-full hidden absolute top-0 -z-10"></div>
+          <div className="bg-black opacity-40 -z-10 w-full h-full hidden absolute top-0 "></div>
           <div className="hover:text-[#333333] transition-all flex-col duration-500 ease-in-out text-white pl-[2vw]  ">
             <h1 className="z-10 drop-shadow-xl">URJA</h1>
             <p className="font-bold drop-shadow-xl text-[1.5vw]">BATTERIES</p>
@@ -93,10 +89,10 @@ export default function Home() {
         </div>
         <div id="roadlights.png" className="w-1/4 relative cursor-pointer [&>*]:hover:flex group [&>*]:hover:text-[#333333]" onMouseEnter={(e) => changeimage(e)}>
           <div className="bg-white absolute top-0 w-full h-0 transition-all duration-500 ease-in-out group-hover:h-[10vw]"></div>
-          <div className="bg-black opacity-40 w-full h-full hidden absolute top-0 -z-10"></div>
+          <div className="bg-black opacity-40 -z-10 w-full h-full hidden absolute top-0 "></div>
           <div className="hover:text-[#333333] transition-all flex-col duration-500 ease-in-out text-white pl-[2vw]">
             <h1 className="z-10 drop-shadow-xl">URJA</h1>
-            <p className="font-bold drop-shadow-xl text-[1.5vw]">CHARGING STATIONS</p>
+            <p className="font-bold drop-shadow-xl text-[1.5vw]">CHARGING STATION</p>
           </div>
         </div>
       </div>
@@ -194,6 +190,22 @@ export default function Home() {
             <Zoom><div className="w-[20.5vw] h-[14.5vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-400 font-normal text-[3.9vw]">592</span><span>Sales & Service Team</span></div></Zoom>
             <Zoom><div className="w-[20.5vw] h-[14.5vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-400 font-normal text-[3.9vw]">2,240</span><span>Distributor Network</span></div></Zoom>
             <Zoom><div className="w-[20.5vw] h-[14.5vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-400 font-normal text-[3.9vw]">110 Mn</span><span>Happy Customers</span></div></Zoom>
+          </div>
+        </div>
+      </div>
+
+      {/* urja care and find a delear */}
+
+      <div className="flex relative mb-[4vw]">
+        <div className="w-full absolute top-0 bg-black opacity-40 h-full"></div>
+        <div className="w-1/2 relative font-bold text-[2vw]"><img src="/b1.png" alt="another banner" />
+          <div className="border-b-4 border-orange-400 text-white absolute bottom-[2vw] left-[2vw]">
+            URJA CARE
+          </div>
+        </div>
+        <div className="w-1/2 relative font-bold text-[2vw]"><img src="/b2.png" alt="another banner" />
+          <div className="border-b-4 border-orange-400 text-white absolute bottom-[2vw] left-[2vw]">
+            FIND A DEALER
           </div>
         </div>
       </div>

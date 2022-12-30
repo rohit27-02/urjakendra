@@ -11,53 +11,42 @@ const Footer = () => {
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
           <h1 className='text-orange-400 text-[1.1vw] font-bold'>About</h1>
           <span>Company Profile</span>
-          <span>Manufacturing Facilities</span>
-          <span>Group Companies</span>
+          <span>Our Leadership</span>
+          <span>Coporate Governance</span>
+          <span>Code of Ethics</span>
+          <span>Awards and Accolades</span>
         </div>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
-          <h1 className='text-orange-400 text-[1.1vw] font-bold'>Products</h1>
-          <span>Inverter Batteries</span>
-          <span>Solar Batteries</span>
-          <span>EV Lithium Ion Batteries</span>
-          <span>E-Rickshaw Batteries</span>
-          <span>Nasaka</span>
-          <span>Lithium</span>
+          <h1 className='text-orange-400 text-[1.1vw] font-bold'>Products & Solutions</h1>
+          <span>Batteries</span>
+          <span>Electric vehicles</span>
+          <span>Charging Station</span>
+          <span>Solar Projects</span>
         </div>
       </div>
       <div className='flex flex-col w-1/4 px-[1.2vw]'>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
           <h1 className='text-orange-400 text-[1.1vw] font-bold'>Urja Care</h1>
           <span>Book a complaint</span>
-          <span>Escalate Your Request</span>
-          <span>Product Registration</span>
-          <span>Service Request Status</span>
-          <span>Battery AMC</span>
-          <span>Warranty Status</span>
+          <span>Raise a Query</span>
+          <span>Warranty</span>
         </div>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
-          <h1 className='text-orange-400 text-[1.1vw] font-bold'>Expertise</h1>
+          <h1 className='text-orange-400 text-[1.1vw] font-bold'>Ivestors</h1>
           <span>Technology</span>
           <span>Testing</span>
-          <span>R & D</span>
-          <span>Quality Control</span>
-          <span>Applications</span>
         </div>
       </div>
       <div className='flex flex-col w-1/4 px-[1.2vw]'>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
-          <h1 className='text-orange-400 text-[1.1vw] font-bold'>Media</h1>
-          <span>Press Releases</span>
-          <span>Events & Exhibitions</span>
-          <span>Awards & recognition</span>
-          <span>Media Coverage</span>
-          <span>TV Commercials</span>
+          <h1 className='text-orange-400 text-[1.1vw] font-bold'>Presence</h1>
+          <span>Our Network</span>
+          <span>Dealer Zone</span>
         </div>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
-          <h1 className='text-orange-400 text-[1.1vw] font-bold'>Blog</h1>
-          <span>Contact Us</span>
-          <span>Store Locator</span>
-          <span>Post a Query</span>
-          <span>Okaya Intra Site</span>
+          <h1 className='text-orange-400 text-[1.1vw] font-bold'>Carrers</h1>
+          <span>Freshers</span>
+          <span>Experienced Professional</span>
         </div>
       </div>
       <div className='flex flex-col w-1/4 gap-[1vw] text-[1.1vw] px-[1.2vw]'>
