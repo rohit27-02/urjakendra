@@ -38,9 +38,8 @@ const Navbar = () => {
 
       {/* logo */}
 
-      <div className=' flex gap-[1vw] '>
-        <img src='/46.png' className='w-[4vw]' alt='logo' />
-        <img src='/47.png' className='w-[12vw]' alt='logo2'/>
+      <div className=' w-[22vw]'>
+        <img src='/logo.png' className='' alt='logo' />
       </div>
 
       {/* navbar */}

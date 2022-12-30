@@ -72,7 +72,7 @@ export default function Home() {
           <div className="bg-black opacity-40 hidden h-full w-full absolute top-0 -z-10"></div>
           <div className="hover:text-[#333333] transition-all flex-col duration-500 ease-in-out text-white pl-[2vw]  ">
             <h1 className="z-10 drop-shadow-xl">URJA</h1>
-            <p className="font-bold drop-shadow-xl text-[1.5vw]">EV VEHICLE</p>
+            <p className="font-bold drop-shadow-xl text-[1.5vw]">ELECTRIC VEHICLE</p>
           </div>
         </div>
         <div id="solar.png" className="w-1/4 relative border-r-2 cursor-pointer [&>*]:hover:flex group [&>*]:hover:text-[#333333]" onMouseEnter={(e) => changeimage(e)}>
@@ -88,7 +88,7 @@ export default function Home() {
           <div className="bg-black opacity-40 w-full h-full hidden absolute top-0 -z-10"></div>
           <div className="hover:text-[#333333] transition-all flex-col duration-500 ease-in-out text-white pl-[2vw]  ">
             <h1 className="z-10 drop-shadow-xl">URJA</h1>
-            <p className="font-bold drop-shadow-xl text-[1.5vw]">E-RICKSHAW BATTERY</p>
+            <p className="font-bold drop-shadow-xl text-[1.5vw]">BATTERIES</p>
           </div>
         </div>
         <div id="roadlights.png" className="w-1/4 relative cursor-pointer [&>*]:hover:flex group [&>*]:hover:text-[#333333]" onMouseEnter={(e) => changeimage(e)}>
@@ -96,7 +96,7 @@ export default function Home() {
           <div className="bg-black opacity-40 w-full h-full hidden absolute top-0 -z-10"></div>
           <div className="hover:text-[#333333] transition-all flex-col duration-500 ease-in-out text-white pl-[2vw]">
             <h1 className="z-10 drop-shadow-xl">URJA</h1>
-            <p className="font-bold drop-shadow-xl text-[1.5vw]">STREET LIGHT</p>
+            <p className="font-bold drop-shadow-xl text-[1.5vw]">CHARGING STATIONS</p>
           </div>
         </div>
       </div>
