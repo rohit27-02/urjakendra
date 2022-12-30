@@ -5,6 +5,7 @@ import { FaShareAlt } from "react-icons/fa"
 import "animate.css";
 import { TfiYoutube } from 'react-icons/tfi'
 import { AiOutlineTwitter } from 'react-icons/ai'
+import { HiMail } from 'react-icons/hi'
 import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa'
 
 const Navbar = () => {
@@ -106,16 +107,18 @@ const Navbar = () => {
 
       {/* sidebar */}
 
-      <div onMouseEnter={() => { ref.current.classList.remove("translate-x-[100%]") }} className='fixed bg-[#444444] text-[1.5vw] text-orange-400 h-[10vw] w-[3vw] top-[40vh] right-0 transition-all z-20 duration-300 overflow-hidden '>
-        <div className='border-b h-1/3 border-gray-500 flex items-center justify-center cursor-pointer'><BsFillPersonFill /></div>
-        <div className='border-b h-1/3 border-gray-500 flex items-center justify-center cursor-pointer'><BsFillTelephoneFill /></div>
-        <div className=' h-1/3 border-gray-500 flex items-center justify-center cursor-pointer'><FaShareAlt /></div>
+      <div onMouseEnter={() => { ref.current.classList.remove("translate-x-[100%]") }} className='fixed bg-[#444444] text-[1.5vw] text-orange-400 h-[14vw] w-[3vw] top-[40vh] right-0 transition-all z-20 duration-300 overflow-hidden '>
+        <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer'><BsFillPersonFill /></div>
+        <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer'><BsFillTelephoneFill /></div>
+        <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer'><HiMail /></div>
+        <div className=' h-1/4 border-gray-500 flex items-center justify-center cursor-pointer'><FaShareAlt /></div>
       </div>
 
-      <div ref={ref} onMouseLeave={() => ref.current.classList.add("translate-x-[100%]")} className='fixed translate-x-[100%] bg-[#444444] text-orange-400 h-[10vw] w-[15vw]  top-[40vh] right-0 transition-all duration-500 ease-out overflow-hidden drop-shadow-md'>
-        <div className='hover:text-white border-b h-1/3 border-gray-500 flex items-center justify-between px-[1vw] cursor-pointer'><span>Post a Query</span></div>
-        <div className='hover:text-white border-b h-1/3 border-gray-500 flex items-center justify-between px-[1vw] cursor-pointer'><span>8000500789</span></div>
-        <div className=' h-1/3 border-gray-500 flex items-center justify-between px-[1vw] text-[1.5vw] cursor-pointer'>
+      <div ref={ref} onMouseLeave={() => ref.current.classList.add("translate-x-[100%]")} className='fixed translate-x-[100%] bg-[#444444] text-orange-400 h-[14vw] w-[17vw]  top-[40vh] right-0 transition-all duration-500 ease-out overflow-hidden drop-shadow-md'>
+        <div className='hover:text-white border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vw] cursor-pointer'><span>Post a Query</span></div>
+        <div className='hover:text-white border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vw] cursor-pointer'><span>8000500789</span></div>
+        <div className='hover:text-white border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vw] cursor-pointer'><span>Urjacare@urjaglobal.in</span></div>
+        <div className=' h-1/4 border-gray-500 flex items-center justify-between px-[1vw] text-[1.5vw] cursor-pointer'>
           <span className='flex gap-[0.8vw]'>
             <AiOutlineTwitter className='hover:text-white' />
             <FaLinkedinIn className='hover:text-white' />
