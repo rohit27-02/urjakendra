@@ -99,15 +99,16 @@ export default function Home() {
       </div>
 
       {/* video */}
-
-      <div className=" py-[4vw] h-[70vh] relative overflow-hidden px-[2vw]">
-        <video src="/home.mp4" muted loop autoPlay={true} />
-        <div className="bg-black bg-opacity-70 w-[60vw] self-center font-bold px-[2vw] grid py-[2vw] h-[40vh] text-center absolute left-[20vw] top-[10vw]">
-          <h1 className="text-orange-400 text-[2vw]">URJA GLOBAL LIMITED</h1>
-          <p className="text-white">Urja Global Limited is in one of India’s leading Renewable Energy developers and operators. Urja is engaged in design, consultancy, integration, supply, installation, commissioning & maintenance of off-grid and grid connected Solar Power Plants. We are approved Channel Partners of Ministry of New and Renewable Energy (MNRE), Govt. of India.</p>
+      <div className="relative overflow-hidden">
+        <img src="/background.jpg" alt="background image" className="absolute top-0 opacity-10" />
+        <div className=" py-[4vw] h-[70vh] relative overflow-hidden px-[2vw]">
+          <video src="/home.mp4" muted loop autoPlay={true} />
+          <div className="bg-black bg-opacity-70 w-[60vw] self-center font-bold px-[2vw] grid py-[2vw] h-[40vh] text-center absolute left-[20vw] top-[10vw]">
+            <h1 className="text-orange-400 text-[2vw]">URJA GLOBAL LIMITED</h1>
+            <p className="text-white">Urja Global Limited is in one of India’s leading Renewable Energy developers and operators. Urja is engaged in design, consultancy, integration, supply, installation, commissioning & maintenance of off-grid and grid connected Solar Power Plants. We are approved Channel Partners of Ministry of New and Renewable Energy (MNRE), Govt. of India.</p>
+          </div>
         </div>
       </div>
-
       {/* products */}
 
       {/* <div className="w-full relative h-[114vw]">
@@ -154,7 +155,7 @@ export default function Home() {
       </div> */}
 
       {/* banner */}
-      <div className="relative">
+      <div className="relative overflow-hidden">
         {/* <div style={{ backgroundImage: `url("/wallpaper.jpg")` }} className=" bg-fixed  w-full hide -z-10 text-white h-[34vw]  bg-center overflow-auto">
 
           <div className="underline underline-offset-[1vw] text-[2.35vw] font-bold text-center  pt-[8vw]">WHY URJA?</div>
@@ -180,8 +181,8 @@ export default function Home() {
         </div> */}
 
         {/* services */}
-
-        <div className="w-full h-[36.2vw] sticky -bottom-[34vw]  left-0 z-20 bg-[#f2f3f4]">
+        <img src="/background.jpg" alt="background image" className="absolute top-0 opacity-10" />
+        <div className="w-full h-[36.2vw] sticky -bottom-[34vw]  left-0">
           <div className="flex flex-col w-full justify-center pt-[5vw] items-center text-[2.35vw] font-bold">
             <span className="text-orange-400 border-b-[0.3vw] border-gray-500 pb-[0.5vw]">Service Network</span>
           </div>
@@ -196,17 +197,19 @@ export default function Home() {
       </div>
 
       {/* urja care and find a delear */}
-
-      <div className="flex relative mb-[4vw]">
-        <div className="w-full absolute top-0 bg-black opacity-40 h-full"></div>
-        <div className="w-1/2 relative font-bold text-[2vw]"><img src="/b1.png" alt="another banner" />
-          <div className="border-b-4 border-orange-400 text-white absolute bottom-[2vw] left-[2vw]">
-            URJA CARE
+      <div className="relative overflow-hidden">
+        <img src="/background.jpg" alt="background image" className="absolute top-0 opacity-10" />
+        <div className="flex  relative mb-[4vw]">
+          <div className="w-full absolute top-0 bg-black opacity-40 h-full"></div>
+          <div className="w-1/2 relative font-bold text-[2vw]"><img src="/b1.png" alt="another banner" />
+            <div className="border-b-4 border-orange-400 text-white absolute bottom-[2vw] left-[2vw]">
+              URJA CARE
+            </div>
           </div>
-        </div>
-        <div className="w-1/2 relative font-bold text-[2vw]"><img src="/b2.png" alt="another banner" />
-          <div className="border-b-4 border-orange-400 text-white absolute bottom-[2vw] left-[2vw]">
-            FIND A DEALER
+          <div className="w-1/2 relative font-bold text-[2vw]"><img src="/b2.png" alt="another banner" />
+            <div className="border-b-4 border-orange-400 text-white absolute bottom-[2vw] left-[2vw]">
+              FIND A DEALER
+            </div>
           </div>
         </div>
       </div>
