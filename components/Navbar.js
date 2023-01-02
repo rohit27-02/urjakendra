@@ -7,6 +7,7 @@ import { TfiYoutube } from 'react-icons/tfi'
 import { AiOutlineTwitter } from 'react-icons/ai'
 import { HiMail } from 'react-icons/hi'
 import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa'
+import Router from 'next/router';
 
 const Navbar = () => {
   const [n1, setn1] = useState(false);
@@ -77,8 +78,15 @@ const Navbar = () => {
         </div>
         <div id='n6' onMouseEnter={(e) => nav(e)} className=''><span className=' transition-all duration-300 cursor-pointer  flex gap-[0.5vw] items-center '>Investors <BsChevronDown /></span>
           {n6 && <ul onMouseLeave={() => setn1(false)} className='absolute drop-shadow-xl border-t-[0.2vw] border-orange-400 text-[#333333] w-[15vw] top-[7vw] bg-white'>
-            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]'>Company Overview</li>
-            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]'>Our Leadership</li>
+            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/Announcement")}>Announcements</li>
+            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/Announcements")}>Company Policy</li>
+            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/Announcements")}>Right Issue</li>
+            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/Announcements")}>Notices of Records Date & BM</li>
+            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/Announcements")}>Financials</li>
+            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/Announcements")}>Share Holding Pattern</li>
+            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/Announcements")}>Corporate Governance</li>
+            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/Announcements")}>Annual Report</li>
+            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/Announcements")}>Contact Information</li>
           </ul>}
         </div>
         <div id='n3' onMouseEnter={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center  '>Urja Care <BsChevronDown /></span>
