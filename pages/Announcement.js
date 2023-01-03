@@ -1,23 +1,13 @@
 import React, { useState, useEffect } from 'react'
+import Investor from '../components/investor';
 
 const Announcement = () => {
-    const [pdfs, setpdfs] = useState();
-    const [name, setname] = useState();
-    const [tag, settag] = useState();
+    const [name, setname] = useState("");
+    const [tag, settag] = useState("");
     const [file, setfile] = useState();
-    const fetchpdf = async () => {
-        let res = await fetch(`/api/getpdf`, {
-            method: "POST",
-            headers: {
-                "content-Type": "application/json"
-            }, body: "announcement"
-        })
-        setpdfs(res.pdf)
-    }
-    useEffect(() => {
-        fetchpdf();
-    }, []);
 
+    const pdfs = ["Outcome of BM 15.10.pdf", "Scrutinizer Report with Voting Result.pdf", "Proceedings of 30th AGM.pdf",
+        "ATTENDANCE SLIP FOR ATTENDING 30TH  AGM.pdf", "Reg 47 Newspaper publication","Outcome of the BM 12.08.2022.pdf"]
     const submit = async (e) => {
         e.preventDefault()
         console.log(file)
@@ -30,22 +20,9 @@ const Announcement = () => {
         })
         console.log(res)
     }
-    const upload = async (e) => {
-        let formData = new FormData();
-        formData.append("fileupload", fileupload.files[0]);
-        await fetch('/api/upload', {
-            method: "POST",
-            body: formData
-        });
-    }
     return (
-        <div className='mt-40'>
-            <form onSubmit={(e) => submit(e)}>
-                <input onChange={(e) => setname(e.target.value)} placeholder='name'></input>
-                <input onChange={(e) => settag(e.target.value)} placeholder='tag'></input>
-                <input id='fileupload' onChange={(e) => upload(e)} type={'file'} ></input>
-                <input type={'submit'}></input>
-            </form>
+        <div className='mt-[7vw]'>
+            <Investor pdfs={pdfs} />
         </div>
     )
 }
