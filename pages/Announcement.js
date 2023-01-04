@@ -1,30 +1,25 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from 'react'
 import Investor from '../components/investor';
-
-const Announcement = () => {
-    const [name, setname] = useState("");
-    const [tag, settag] = useState("");
-    const [file, setfile] = useState();
-
-    const pdfs = ["Outcome of BM 15.10.pdf", "Scrutinizer Report with Voting Result.pdf", "Proceedings of 30th AGM.pdf",
-        "ATTENDANCE SLIP FOR ATTENDING 30TH  AGM.pdf", "Reg 47 Newspaper publication","Outcome of the BM 12.08.2022.pdf"]
-    const submit = async (e) => {
-        e.preventDefault()
-        console.log(file)
-        let data = { name, tag, file };
-        let res = await fetch(`/api/addpdf`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            }, body: JSON.stringify(data)
-        })
-        console.log(res)
-    }
+import fs from 'fs'
+const Announcement = ({pdfs}) => {
     return (
         <div className='mt-[7vw]'>
-            <Investor pdfs={pdfs} />
+            <div className='h-[8vw] overflow-hidden'><img src='/1.png' alt='top-banner'/></div>
+            <Investor  pdfs={pdfs} folder={"announcements"} />
         </div>
     )
 }
 
 export default Announcement
+
+export async function getServerSideProps() {
+    // Fetch data from external API
+    let res=[] ;
+    for (const file of fs.readdirSync("/Users/Rohit Rawat/urjakendra/public/announcements")) {
+        res=[...res,file];
+  
+    }
+  
+    return { props: {pdfs:res} }
+  }
