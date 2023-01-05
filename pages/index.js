@@ -207,7 +207,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-1/2 relative font-bold text-[2vw]"><img src="/b2.png" alt="another banner" />
-            <div onClick={()=>Router.push("/dealer-zone")} className="border-b-4 cursor-pointer hover:text-[2.1vw] transition-all duration-300 ease-in-out border-orange-400 text-white absolute bottom-[2vw] left-[2vw]">
+            <div onClick={()=>Router.push("/our-network")} className="border-b-4 cursor-pointer hover:text-[2.1vw] transition-all duration-300 ease-in-out border-orange-400 text-white absolute bottom-[2vw] left-[2vw]">
               FIND A DEALER
             </div>
           </div>
