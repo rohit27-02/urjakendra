@@ -10,48 +10,55 @@ const Footer = () => {
       <div className='flex flex-col w-1/4 px-[1.2vw]'>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
           <h1 className='text-orange-400 text-[1.1vw] font-bold'>About</h1>
-          <span>Company Profile</span>
-          <span>Our Leadership</span>
-          <span>Coporate Governance</span>
-          <span>Code of Ethics</span>
-          <span>Awards and Accolades</span>
+          <span className='cursor-pointer '>Company Profile</span>
+          <span className='cursor-pointer '>Our Leadership</span>
+          <span className='cursor-pointer '>Coporate Governance</span>
+          <span className='cursor-pointer '>Code of Ethics</span>
+          <span className='cursor-pointer '>Awards and Accolades</span>
         </div>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
           <h1 className='text-orange-400 text-[1.1vw] font-bold'>Products & Solutions</h1>
-          <span>Batteries</span>
-          <span>Electric vehicles</span>
-          <span>Charging Station</span>
-          <span>Solar Projects</span>
+          <span className='cursor-pointer '>Batteries</span>
+          <span className='cursor-pointer '>Electric vehicles</span>
+          <span className='cursor-pointer '>Charging Station</span>
+          <span className='cursor-pointer '>Solar Projects</span>
         </div>
       </div>
       <div className='flex flex-col w-1/4 px-[1.2vw]'>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
           <h1 className='text-orange-400 text-[1.1vw] font-bold'>Urja Care</h1>
-          <span>Book a complaint</span>
-          <span>Raise a Query</span>
-          <span>Warranty</span>
+          <span className='cursor-pointer '>Book a complaint</span>
+          <span className='cursor-pointer '>Raise a Query</span>
+          <span className='cursor-pointer '>Warranty</span>
         </div>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
           <h1 className='text-orange-400 text-[1.1vw] font-bold'>Ivestors</h1>
-          <span>Technology</span>
-          <span>Testing</span>
+          <span className='cursor-pointer '>Announcements</span>
+          <span className='cursor-pointer '>Company Policy</span>
+          <span className='cursor-pointer '>Right Issue</span>
+          <span className='cursor-pointer '>Notice of Records Date & BM</span>
+          <span className='cursor-pointer '>Financials</span>
+          <span className='cursor-pointer '>Share Holding Pattern</span>
+          <span className='cursor-pointer '>Corporate Governance</span>
+          <span className='cursor-pointer '>Annual Report</span>
+          <span className='cursor-pointer '>Contact Information</span>
         </div>
       </div>
       <div className='flex flex-col w-1/4 px-[1.2vw]'>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
           <h1 className='text-orange-400 text-[1.1vw] font-bold'>Presence</h1>
-          <span>Our Network</span>
-          <span>Dealer Zone</span>
+          <span className='cursor-pointer '>Our Network</span>
+          <span className='cursor-pointer '>Dealer Zone</span>
         </div>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
           <h1 className='text-orange-400 text-[1.1vw] font-bold'>Carrers</h1>
-          <span>Freshers</span>
-          <span>Experienced Professional</span>
+          <span className='cursor-pointer '>Freshers</span>
+          <span className='cursor-pointer '>Experienced Professional</span>
         </div>
       </div>
       <div className='flex flex-col w-1/4 gap-[1vw] text-[1.1vw] px-[1.2vw]'>
         <div className='text-orange-400 font-bold'>
-          <span className=''>Follow Us</span>
+          <span className='cursor-pointer '>Follow Us</span>
           <div className='flex mt-[1vw] gap-[2vw]'>
           <AiOutlineTwitter/>
           <FaLinkedinIn/>
@@ -60,7 +67,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <span className='text-orange-400 font-bold '>Subscribe to our Newsletter</span>
+          <span  className='cursor-pointer text-orange-400 font-bold '>Subscribe to our Newsletter</span>
           <div className='mt-[1vw]'>
             <input placeholder='enter your email' className='bg-white p-[0.4vw]'/>
             <button className='bg-orange-400 text-white ml-[0.8vw] drop-shadow-md px-[1vw] py-[0.5vw]'>Submit</button>

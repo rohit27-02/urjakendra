@@ -2,9 +2,9 @@
 import React, { useState } from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import { AiOutlineRight } from 'react-icons/ai'
 import 'animate.css';
 import { Zoom, Fade } from "react-reveal";
+import Router from "next/router";
 
 const batteries = [{ title: "battery 1", description: "superior quality distinguishes an extraordinary product from an ordinary one.", image: "https://galo.co.in/wp-content/uploads/2022/10/Artboard-1-1-650x650.png" },
 { title: "battery 1", description: "superior quality distinguishes an extraordinary product from an ordinary one.", image: "https://galo.co.in/wp-content/uploads/2022/10/Artboard-1-1-650x650.png" },
@@ -202,12 +202,12 @@ export default function Home() {
         <div className="flex  relative mb-[4vw]">
           <div className="w-full absolute top-0 bg-black opacity-40 h-full"></div>
           <div className="w-1/2 relative font-bold text-[2vw]"><img src="/b1.png" alt="another banner" />
-            <div className="border-b-4 border-orange-400 text-white absolute bottom-[2vw] left-[2vw]">
+            <div onClick={()=>Router.push("/book-a-complaint")} className="border-b-4 cursor-pointer hover:text-[2.1vw] transition-all duration-300 ease-in-out border-orange-400 text-white absolute bottom-[2vw] left-[2vw]">
               URJA CARE
             </div>
           </div>
           <div className="w-1/2 relative font-bold text-[2vw]"><img src="/b2.png" alt="another banner" />
-            <div className="border-b-4 border-orange-400 text-white absolute bottom-[2vw] left-[2vw]">
+            <div onClick={()=>Router.push("/dealer-zone")} className="border-b-4 cursor-pointer hover:text-[2.1vw] transition-all duration-300 ease-in-out border-orange-400 text-white absolute bottom-[2vw] left-[2vw]">
               FIND A DEALER
             </div>
           </div>

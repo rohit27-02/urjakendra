@@ -41,7 +41,7 @@ const Navbar = () => {
       {/* logo */}
 
       <div className=' w-[22vw]'>
-        <img src='/logo.png' className='' alt='logo' />
+        <img onClick={()=>Router.push("/")} src='/logo.png' className='cursor-pointer' alt='logo' />
       </div>
 
       {/* navbar */}
@@ -98,8 +98,8 @@ const Navbar = () => {
         </div>
         <div id='n4' onMouseEnter={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center  '>Presence <BsChevronDown /></span>
           {n4 && <ul onMouseLeave={() => setn3(false)} className='absolute drop-shadow-xl border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] bg-white w-[15vw]'>
-            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]'>Our Network</li>
-            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]'>Dealer Zone</li>
+            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={()=>Router.push("/our-network")}>Our Network</li>
+            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={()=>Router.push("/dealer-zone")}>Dealer Zone</li>
           </ul>}
         </div>
         <div id='n5' onMouseEnter={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center  '>Carrers <BsChevronDown /></span>
