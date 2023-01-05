@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import Investor from '../components/investor';
 import fs from 'fs'
+import path from 'path';
 const Share = ({pdfs}) => {
     return (
         <div className='mt-[7vw]'>
@@ -16,7 +17,7 @@ export default Share
 export async function getServerSideProps() {
     // Fetch data from external API
     let res=[] ;
-    for (const file of fs.readdirSync("/Users/Rohit Rawat/urjakendra/public/share holding pattern")) {
+    for (const file of fs.readdirSync(path.resolve(__dirname,"../../../public/share holding pattern"))) {
         res=[...res,file];
   
     }

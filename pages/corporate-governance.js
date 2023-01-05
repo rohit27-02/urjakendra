@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import Investor from '../components/investor';
 import fs from 'fs'
+import path from 'path';
 const Corporate = ({pdfs,pdfs1,pdfs2,pdfs3,pdfs4,pdfs5}) => {
     return (
         <div className='mt-[7vw]'>
@@ -26,28 +27,28 @@ export async function getServerSideProps() {
     let res3=[] ;
     let res4=[] ;
     let res5=[] ;
-    for (const file of fs.readdirSync("/Users/Rohit Rawat/urjakendra/public/corporate governance report")) {
+    for (const file of fs.readdirSync(path.resolve(__dirname,"../../../public/corporate governance report"))) {
         res=[...res,file];
   
     }
-    for (const file of fs.readdirSync("/Users/Rohit Rawat/urjakendra/public/board committee")) {
+    for (const file of fs.readdirSync(path.resolve(__dirname,"../../../public/board committee"))) {
         res1=[...res1,file];
   
     }
-    for (const file of fs.readdirSync("/Users/Rohit Rawat/urjakendra/public/familarization program")) {
+    for (const file of fs.readdirSync(path.resolve(__dirname,"../../../public/familarization program"))) {
         res2=[...res2,file];
   
     }
   
-    for (const file of fs.readdirSync("/Users/Rohit Rawat/urjakendra/public/letter of appointments")) {
+    for (const file of fs.readdirSync(path.resolve(__dirname,"../../../public/letter of appointments"))) {
         res3=[...res3,file];
   
     }
-    for (const file of fs.readdirSync("/Users/Rohit Rawat/urjakendra/public/memorandum & article of association")) {
+    for (const file of fs.readdirSync(path.resolve(__dirname,"../../../memorandum & article of association"))) {
         res4=[...res4,file];
   
     }
-    for (const file of fs.readdirSync("/Users/Rohit Rawat/urjakendra/public/other disclosure")) {
+    for (const file of fs.readdirSync(path.resolve(__dirname,"../../../other disclosure"))) {
         res5=[...res5,file];
   
     }

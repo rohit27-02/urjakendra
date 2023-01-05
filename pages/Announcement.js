@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import Investor from '../components/investor';
 import fs from 'fs'
+import path from 'path';
 const Announcement = ({pdfs}) => {
     return (
         <div className='mt-[7vw]'>
@@ -16,7 +17,7 @@ export default Announcement
 export async function getServerSideProps() {
     // Fetch data from external API
     let res=[] ;
-    for (const file of fs.readdirSync("/Users/Rohit Rawat/urjakendra/public/announcements")) {
+    for (const file of fs.readdirSync(path.resolve(__dirname,"../../../public/announcements"))) {
         res=[...res,file];
   
     }
