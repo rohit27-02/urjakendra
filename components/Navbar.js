@@ -58,7 +58,7 @@ const Navbar = () => {
         </div>
         <div id='n2' onMouseEnter={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center  '>Products & Solutions <BsChevronDown /></span>
           {n2 && <ul onMouseLeave={() => setn2(false)} className='absolute drop-shadow-xl border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] bg-white w-[15vw]'>
-            <li id='s1' onMouseLeave={() => sets1(false)} onMouseEnter={(e) => sub(e)} className='p-[1vw] hover:text-orange-400 hover: cursor-pointer relative transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={()=>Router.push("/batteries")}>Batteries
+            <li id='s1' onMouseLeave={() => sets1(false)} onMouseEnter={(e) => sub(e)} className=' hover:text-orange-400 hover: cursor-pointer relative transition-all duration-300 border-b hover:bg-[#f9f9f9] p-[1vw] hover:pl-[1.5vw]' ><span onClick={()=>Router.push("/batteries")} className=" ">Batteries</span>
               {s1 && <span onMouseLeave={() => sets1(false)} className='flex flex-col absolute top-0 drop-shadow-xl w-[12vw] left-[15.03vw] text-[#333333] bg-white  '>
                 <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={()=>Router.push("/E-rickshaw-battery")}>E-Rickshaw</span>
                 <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={()=>Router.push("/Inverter-battery")}>Inverter Batteries</span>
