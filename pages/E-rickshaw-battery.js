@@ -8,7 +8,8 @@ const Erickshawbattery = () => {
       <div className='h-[50vh] overflow-hidden'>
         <img src='/battery.png' alt='banner-image' />
       </div>
-      <div className='bg-gray-100'>
+      <div className='bg-gray-100 overflow-hidden relative'>
+        <img src='/background.jpg' className='absolute opacity-10' alt='background'/>
         <h1 className='text-[2.5vw] font-bold text-center text-orange-500 py-[3vw]'>E-Rickshaw Battery</h1>
         <div>
           <h1 className='text-[2.5vw] font-bold mx-[2vw]'>Battery Specification</h1>
