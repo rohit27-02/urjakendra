@@ -13,9 +13,10 @@ const Product = ({title}) => {
         <h1 className='text-[2.5vw] font-bold text-center text-orange-500 py-[3vw]'>{title}</h1>
         <div className='relative'>
           <Slide bottom><img className='absolute left-[4vw] top-[6vw]' src='/battery image.png' alt='left-pic'/></Slide>
-          <h1 className='text-[2.5vw] font-bold mx-[2vw]'>Battery Specification</h1>
-          <div className='w-[9vw] mt-[1vw] h-[0.5vw] bg-orange-500 rounded-full mx-[2vw]'></div>
+          
           <Slide bottom cascade><div className='flex flex-col mt-[2vw] pb-[6vw] items-end'>
+          <h1 className='text-[2.5vw] w-1/3 font-bold '>Battery Specification</h1>
+          <div className='w-[9vw] mt-[1vw] h-[0.5vw]  bg-orange-500 rounded-full mx-[24vw]'></div>
             <div className='flex w-1/3 my-[0.5vw] items-center'>
               <div>
                 <h1 className='text-[2vw] font-bold'>Warranty</h1>
