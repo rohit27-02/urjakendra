@@ -7,7 +7,7 @@ const Batteries = () => {
     return (
         <div className='mt-[6.9vw] pb-[4vw] bg-gray-100'>
             <div className='h-[50vh] overflow-hidden'>
-                <img src='/battery.png' alt='banner-image' />
+                <img className='w-full' src='/image for e-rickshaw battery web page.png' alt='banner-image' />
             </div>
 
             <div className='text-center px-[8vw] font-semibold my-[4vw] space-y-[1.5vw]'>

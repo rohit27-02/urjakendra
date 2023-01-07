@@ -6,7 +6,7 @@ const Product = ({title}) => {
   return (
     <div className='mt-[6.9vw]'>
       <div className='h-[50vh] overflow-hidden'>
-        <img src='/battery.png' alt='banner-image' />
+        <img src='/battery banner.png' alt='banner-image' />
       </div>
       <div className='bg-gray-100 overflow-hidden relative'>
         <img src='/background.jpg' className='absolute opacity-10' alt='background'/>
