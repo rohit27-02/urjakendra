@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import Letushelpyou from '../components/Letushelpyou'
+import {Slide} from "react-reveal"
 const Solarbattery = () => {
   return (
     <div className='mt-[6.9vw]'>
@@ -13,7 +14,7 @@ const Solarbattery = () => {
         <div>
           <h1 className='text-[2.5vw] font-bold mx-[2vw]'>Battery Specification</h1>
           <div className='w-[9vw] mt-[1vw] h-[0.5vw] bg-orange-500 rounded-full mx-[2vw]'></div>
-          <div className='flex flex-col mt-[2vw] pb-[6vw] items-end'>
+          <Slide bottom cascade><div className='flex flex-col mt-[2vw] pb-[6vw] items-end'>
             <div className='flex w-1/3 my-[0.5vw] items-center'>
               <img src='https://www.livguard.com/img/new-warrenty-icon.png' alt='logo' />
               <div>
@@ -42,7 +43,7 @@ const Solarbattery = () => {
                 <p className='text-[1.5vw] '>L</p>
               </div>
             </div>
-          </div>
+          </div></Slide>
         </div>
       </div>
       <div>
