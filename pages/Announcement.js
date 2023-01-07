@@ -20,7 +20,7 @@ export default Announcement
 export async function getServerSideProps() {
     // Fetch data from external API
     let res=[] ;
-    for (const file of fs.readdirSync(path.resolve("\public/announcements"))) {
+    for (const file of fs.readdirSync(path.resolve("/public/announcements"))) {
         res=[...res,file];
   
     }
