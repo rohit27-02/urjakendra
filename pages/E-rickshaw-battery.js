@@ -11,33 +11,30 @@ const Erickshawbattery = () => {
       <div className='bg-gray-100 overflow-hidden relative'>
         <img src='/background.jpg' className='absolute opacity-10' alt='background'/>
         <h1 className='text-[2.5vw] font-bold text-center text-orange-500 py-[3vw]'>E-Rickshaw Battery</h1>
-        <div>
+        <div className='relative'>
+          <Slide bottom><img className='absolute left-[4vw] top-[6vw]' src='/battery image.png' alt='left-pic'/></Slide>
           <h1 className='text-[2.5vw] font-bold mx-[2vw]'>Battery Specification</h1>
           <div className='w-[9vw] mt-[1vw] h-[0.5vw] bg-orange-500 rounded-full mx-[2vw]'></div>
           <Slide bottom cascade><div className='flex flex-col mt-[2vw] pb-[6vw] items-end'>
             <div className='flex w-1/3 my-[0.5vw] items-center'>
-              <img src='https://www.livguard.com/img/new-warrenty-icon.png' alt='logo' />
               <div>
                 <h1 className='text-[2vw] font-bold'>Warranty</h1>
                 <p className='text-[1.5vw] '>Warranty - 6 Months</p>
               </div>
             </div>
             <div className='flex w-1/3 my-[0.5vw] items-center'>
-              <img src='https://www.livguard.com/img/new-capicty-icon.png' alt='logo' />
               <div>
                 <h1 className='text-[2vw] font-bold'>Capacity</h1>
                 <p className='text-[1.5vw] '>Capacity – 100 Ah @ C</p>
               </div>
             </div>
             <div className='flex w-1/3 my-[0.5vw] items-center'>
-              <img src='https://www.livguard.com/img/new-technology-icon.png' alt='logo' />
               <div>
                 <h1 className='text-[2vw] font-bold'>Dimensions</h1>
                 <p className='text-[1.5vw] '>410 x 175 x 229</p>
               </div>
             </div>
             <div className='flex w-1/3 my-[0.5vw] items-center'>
-              <img src='https://www.livguard.com/img/new-dimension-icon.png' alt='logo' />
               <div>
                 <h1 className='text-[2vw] font-bold'>Polarity</h1>
                 <p className='text-[1.5vw] '>L</p>
