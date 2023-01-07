@@ -12,7 +12,7 @@ const Product = ({title}) => {
         <img src='/background.jpg' className='absolute opacity-10' alt='background'/>
         <h1 className='text-[2.5vw] font-bold text-center text-orange-500 py-[3vw]'>{title}</h1>
         <div className='relative'>
-          <Slide bottom><img className='absolute left-[4vw] ' src='/battery image.png' alt='left-pic'/></Slide>
+          <Slide bottom><img className='absolute left-[12vw] ' src='/battery image.png' alt='left-pic'/></Slide>
           
           <Slide bottom cascade><div className='flex flex-col mt-[2vw] pb-[6vw] items-end'>
           <h1 className='text-[2.5vw] w-1/3 font-bold '>Battery Specification</h1>
