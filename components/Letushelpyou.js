@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
-
+import { Slide } from 'react-reveal'
 const Letushelpyou = () => {
   return (
     <div className='bg-gray-100 pb-[4vw]'>
         <h1 className='pt-[6vw] pb-[3vw] text-center text-[2.5vw] font-bold'>Let Us Help You</h1>
+        <Slide bottom cascade>
         <div className='flex'>
             <div className='flex w-1/3 flex-col justify-center items-center px-[2vw] text-center gap-[1vw]'>
                 <img src='https://www.livguard.com/img/warrenty-n.png' alt='logo'/>
@@ -22,6 +23,7 @@ const Letushelpyou = () => {
                 <p className='font-semibold text-gray-600 tracking-wider'>Find your nearest Urja Global dealer.</p>
             </div>
         </div>
+        </Slide>
     </div>
   )
 }

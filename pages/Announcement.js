@@ -3,6 +3,7 @@ import React, { Suspense } from 'react'
 const Investor = React.lazy(()=>import('../components/investor'));
 import fs from 'fs'
 import path from 'path';
+
 const Announcement = ({pdfs}) => {
     return (
         <div className='mt-[7vw]'>
