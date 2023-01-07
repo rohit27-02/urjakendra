@@ -21,6 +21,18 @@ export async function getServerSideProps() {
         res=[...res,file];
   
     }
+    for (const file of fs.readdirSync(path.resolve("\public/announcements1"))) {
+        res=[...res,file];
+  
+    }
+    for (const file of fs.readdirSync(path.resolve("\public/announcements2"))) {
+        res=[...res,file];
+  
+    }
+    for (const file of fs.readdirSync(path.resolve("\public/announcements3"))) {
+        res=[...res,file];
+  
+    }
   
     return { props: {pdfs:res} }
   }
