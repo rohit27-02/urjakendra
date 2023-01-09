@@ -31,7 +31,7 @@ export async function getServerSideProps(context) {
   console.log(process.cwd())
   console.log(url)
   let res = [];
-  for (const file of fs.readdirSync(`${url}`)) {
+  for (const file of fs.readdirSync(path.resolve(process.cwd(),`${url}`))) {
     res = [...res, file];
 
   }
