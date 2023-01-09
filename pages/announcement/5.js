@@ -8,6 +8,7 @@ import Router from 'next/router';
 const Announcement = ({ pdfs }) => {
 useEffect(() => {
    console.log(Router.asPath.split("/")[2])
+   console.log(process.cwd())
 }, []);
   return (
     <div className='mt-[7vw]'>
@@ -27,9 +28,10 @@ export default Announcement
 
 export async function getServerSideProps(context) {
   const url=context.resolvedUrl;
+  console.log(process.cwd())
   console.log(url)
   let res = [];
-  for (const file of fs.readdirSync(path.resolve(`\public${url}`))) {
+  for (const file of fs.readdirSync(path.resolve(process.cwd(),`\public${url}`))) {
     res = [...res, file];
 
   }
