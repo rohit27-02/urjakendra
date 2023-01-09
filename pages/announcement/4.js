@@ -7,14 +7,14 @@ import Router from 'next/router';
 
 const Announcement = ({ pdfs }) => {
 useEffect(() => {
-   console.log(Router.asPath.split("/")[2]-1)
+   console.log(Router.asPath.split("/")[2])
 }, []);
   return (
     <div className='mt-[7vw]'>
       <div className='h-[8vw] overflow-hidden'><img src='/1.png' alt='top-banner' /></div>
       <div className='flex gap-[2vw] mt-[2vw] ml-[6vw] font-semibold'>
-        <div id='previous' className='cursor-pointer underline underline-offset-[0.7vw] transition-all duration-200 ease-in-out hover:text-orange-500 text-[1.4vw]' onClick={(e)=>{Router.asPath.split("/")[2]>1?Router.push(`/announcement/${parseInt(Router.asPath.split("/")[2]) - 1}`):""}}>Previous</div>
-        <div id='next' className='cursor-pointer underline underline-offset-[0.7vw] transition-all duration-200 ease-in-out hover:text-orange-500 text-[1.4vw]' onClick={(e)=>{Router.asPath.split("/")[2]<5?Router.push(`/announcement/${parseInt(Router.asPath.split("/")[2]) + 1}`):""}}>Next</div>
+        <div id='previous' className='cursor-pointer underline underline-offset-[0.7vw] transition-all duration-200 ease-in-out hover:text-orange-500 text-[1.4vw]' onClick={(e)=>{Router.asPath.split("/")[2]>1?Router.push(`/announcement/${Router.asPath.split("/")[2] - 1}`):""}}>Previous</div>
+        <div id='next' className='cursor-pointer underline underline-offset-[0.7vw] transition-all duration-200 ease-in-out hover:text-orange-500 text-[1.4vw]' onClick={(e)=>{Router.asPath.split("/")[2]<5?Router.push(`/announcement/${Router.asPath.split("/")[2] + 1}`):""}}>Next</div>
       </div>
       <Suspense fallback={<div>Loading...</div>}>
         <Investor pdfs={pdfs} folder={"announcements"} />
