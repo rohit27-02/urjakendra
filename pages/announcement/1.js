@@ -27,11 +27,9 @@ useEffect(() => {
 export default Announcement
 
 export async function getServerSideProps(context) {
-  const url=context.resolvedUrl.split("/")[2];
-  console.log(process.cwd())
-  console.log(url)
+
   let res = [];
-  for (const file of fs.readdirSync(path.resolve(`\public/Announcement/${url}`))) {
+  for (const file of fs.readdirSync(path.resolve(`\public/Announcement/1`))) {
     res = [...res, file];
 
   }
