@@ -24,10 +24,10 @@ const Announcement = ({ pdfs }) => {
 export default Announcement
 
 export async function getServerSideProps(context) {
-  const url=context.req.url;
+  const url=context.query.Announcement;
   console.log(url)
   let res = [];
-  for (const file of fs.readdirSync(path.resolve(`\public${url}`))) {
+  for (const file of fs.readdirSync(path.resolve(`\public/Announcement/${url}`))) {
     res = [...res, file];
 
   }
