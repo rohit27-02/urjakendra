@@ -6,18 +6,15 @@ import {MdArrowForwardIos,MdArrowBackIos} from "react-icons/md"
 
 
 
-const Investor = ({ pdfs, folder, setstart, setend ,start,end}) => {
+const Investor = ({ pdfs, folder}) => {
   return (
     <div style={{ fontFamily: "'Raleway', sans-serif" }} className=''>
 
-      <div className='py-[3vw] '>
+      <div className='py-[2vw] '>
         <div className='h-[4vw] w-[88vw] text-[2vw] font-semibold pl-[4vw] py-[0.5vw] mx-auto bg-orange-500 text-white'>{folder}</div>
         
         <div className='flex flex-wrap  w-[88vw] gap-[1vw] py-[2vw] shadow-lg mx-auto pl-[5vw] pt-[2vw] relative'>
-          <div className='absolute flex'>
-          <div className='z-50 cursor-pointer text-3xl  text-black' onClick={() => { setend(end - 25); setstart(start - 25) }}><MdArrowBackIos/></div>
-        <div className='z-50 cursor-pointer text-3xl  text-black' onClick={() => { setend(end + 25); setstart(start + 25) }}><MdArrowForwardIos/></div>
-          </div>
+          
           {pdfs.map((pdf) => {
             return <div key={pdf} className='flex relative items-center justify-between p-[1vw] w-[30%]  bg-gray-100'>
               <img className='h-[4vw]' src='/pdf_icon.png' alt='icon' />
