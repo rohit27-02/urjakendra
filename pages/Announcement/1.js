@@ -27,7 +27,7 @@ useEffect(() => {
 export default Announcement
 
 export async function getServerSideProps(context) {
-  const url=context.resolvedUrl.split("/")[2];
+  const url=context.resolvedUrl;
   console.log(process.cwd())
   console.log(url)
   let res = [];
