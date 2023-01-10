@@ -5,9 +5,9 @@ import { Slide } from 'react-reveal'
 const Product = ({title}) => {
   return (
     <div className='mt-[6.9vw] text-base'>
-      <div className='h-[50vh] overflow-hidden'>
-        <img src='/battery banner.png' alt='banner-image' />
-      </div>
+     <div className='h-[50vh] overflow-hidden'>
+                <img className='w-full' src='/battery banner.png' alt='banner-image' />
+            </div>
       <div className='bg-gray-100 overflow-hidden relative'>
         <img src='/background.jpg' className='absolute grayscale opacity-10' alt='background'/>
         <h1 className='text-4xl font-bold text-center uppercase border-b-4 pb-3 border-orange-500 w-fit mx-auto text-orange-500 py-[3vw]'>{title}</h1>
