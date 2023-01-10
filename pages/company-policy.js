@@ -17,7 +17,7 @@ export default Policy
 export async function getServerSideProps() {
     // Fetch data from external API
     let res=[] ;
-    for (const file of fs.readdirSync(path.resolve(__dirname,"../../../public/company policy"))) {
+    for (const file of fs.readdirSync(path.resolve("\public/company policy"))) {
         res=[...res,file];
   
     }

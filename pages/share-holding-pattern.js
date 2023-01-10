@@ -17,7 +17,7 @@ export default Share
 export async function getServerSideProps() {
     // Fetch data from external API
     let res=[] ;
-    for (const file of fs.readdirSync(path.resolve(__dirname,"../../../public/share holding pattern"))) {
+    for (const file of fs.readdirSync(path.resolve("\public/share holding pattern"))) {
         res=[...res,file];
   
     }

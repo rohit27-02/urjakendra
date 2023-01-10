@@ -84,8 +84,8 @@ const Navbar = () => {
             <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/notice-of-record-date-&-BM")}>Notices of Records Date & BM</li>
             <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/financials")}>Financials</li>
             <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/share-holding-pattern")}>Share Holding Pattern</li>
-            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/corporate-governance")}>Corporate Governance</li>
-            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/annual-report")}>Annual Report</li>
+            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/corporate-governance-report/1")}>Corporate Governance</li>
+            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/Annual-report/1")}>Annual Report</li>
             <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/contact-information")}>Contact Information</li>
           </ul>}
         </div>

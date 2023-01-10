@@ -17,7 +17,7 @@ export default Notice
 export async function getServerSideProps() {
     // Fetch data from external API
     let res=[] ;
-    for (const file of fs.readdirSync(path.resolve(__dirname,"../../../public/notice of record date & BM"))) {
+    for (const file of fs.readdirSync(path.resolve("\public/notice of record date & BM"))) {
         res=[...res,file];
   
     }
