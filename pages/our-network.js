@@ -16,7 +16,7 @@ const Network = () => {
             </div>
             <div>
                 <div>
-                    <h1 className='text-[3vw] mb-[4vw] mt-[6vw] underline underline-offset-[1vw] text-orange-500 decoration-gray-600 text-center font-semibold'>STORE LOCATION</h1>
+                    <h1 className='text-4xl mb-[4vw] mt-[6vw] border-b-4 border-orange-500 pb-3 w-fit mx-auto text-orange-500 decoration-gray-600 text-center font-bold '>STORE LOCATION</h1>
                 </div>
                 <section className="text-gray-800 font-semibold body-font">
                     <div className="container px-5 mx-auto">
@@ -43,7 +43,7 @@ const Network = () => {
                         {
                             stores.map((store)=>{
                                 return <div className='font-semibold bg-gray-100 m-[1vw] p-[1vw] ' key={store.title}>
-                                     <h1 className=' text-[1.5vw] text-orange-500'>{store.title}</h1>
+                                     <h1 className=' text-xl text-orange-500'>{store.title}</h1>
                                      <p className='mt-[0.5vw] mb-[1vw]'>{store.address}</p>
                                      <button>Directions</button>
                                 </div>

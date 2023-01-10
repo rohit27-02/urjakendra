@@ -6,7 +6,7 @@ const complaint = () => {
     <div>
       <Banner title={"BOOK A COMPLAINT"} pic={"https://www.okayapower.com/img/inner-banner/website-banners-21.jpg"} />
       <div className='pb-[10vw] '>
-        <h1 className='text-[3vw] mb-[8vw] mt-[6vw] underline underline-offset-[1vw] text-orange-500 decoration-gray-600 text-center font-bold'>URJA CARE</h1>
+        <h1 className='text-4xl mb-[8vw] mt-[6vw] border-b-4 pb-3 mx-auto w-fit text-orange-500 border-orange-500 text-center font-bold'>URJA CARE</h1>
 
         <section className="text-gray-800 font-semibold body-font w-full  relative ">
           <div className=" container w-full mx-auto drop-shadow-sm">
@@ -96,7 +96,7 @@ const complaint = () => {
                   </div>
                 </div>
                 <div className="p-2 w-full">
-                  <button className="flex mx-auto text-white bg-orange-500 border-0 py-2 px-8 focus:outline-none hover:bg-orange-600 rounded text-lg">Submit</button>
+                  <button className="flex mx-auto text-white bg-orange-500 border-0 py-2 px-8 focus:outline-none hover:bg-orange-600 rounded text-base">Submit</button>
                 </div>
 
               </div>

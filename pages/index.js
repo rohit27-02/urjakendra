@@ -6,18 +6,6 @@ import 'animate.css';
 import { Zoom, Fade } from "react-reveal";
 import Router from "next/router";
 
-const batteries = [{ title: "battery 1", description: "superior quality distinguishes an extraordinary product from an ordinary one.", image: "https://galo.co.in/wp-content/uploads/2022/10/Artboard-1-1-650x650.png" },
-{ title: "battery 1", description: "superior quality distinguishes an extraordinary product from an ordinary one.", image: "https://galo.co.in/wp-content/uploads/2022/10/Artboard-1-1-650x650.png" },
-{ title: "battery 1", description: "superior quality distinguishes an extraordinary product from an ordinary one.", image: "https://galo.co.in/wp-content/uploads/2022/10/Artboard-1-1-650x650.png" },
-{ title: "battery 1", description: "superior quality distinguishes an extraordinary product from an ordinary one.", image: "https://galo.co.in/wp-content/uploads/2022/10/Artboard-1-1-650x650.png" },
-{ title: "battery 1", description: "superior quality distinguishes an extraordinary product from an ordinary one.", image: "https://galo.co.in/wp-content/uploads/2022/10/Artboard-1-1-650x650.png" },
-{ title: "battery 1", description: "superior quality distinguishes an extraordinary product from an ordinary one.", image: "https://galo.co.in/wp-content/uploads/2022/10/Artboard-1-1-650x650.png" },
-{ title: "battery 1", description: "superior quality distinguishes an extraordinary product from an ordinary one.", image: "https://galo.co.in/wp-content/uploads/2022/10/Artboard-1-1-650x650.png" },
-{ title: "battery 1", description: "superior quality distinguishes an extraordinary product from an ordinary one.", image: "https://galo.co.in/wp-content/uploads/2022/10/Artboard-1-1-650x650.png" },
-{ title: "battery 1", description: "superior quality distinguishes an extraordinary product from an ordinary one.", image: "https://galo.co.in/wp-content/uploads/2022/10/Artboard-1-1-650x650.png" },
-
-]
-
 export default function Home() {
   const [image, setimage] = useState("/scooter.png");
 
@@ -29,7 +17,7 @@ export default function Home() {
   }
 
   return (
-    <div style={{ fontFamily: "'Raleway', sans-serif" }} className="text-base mt-[7vw]">
+    <div style={{ fontFamily: "'Raleway', sans-serif" }} className="text-base mt-[7vw] font-semibold text-gray-600 tracking-wider">
 
       <Carousel
         renderIndicator={false}
@@ -52,12 +40,12 @@ export default function Home() {
       {/* welcome message */}
       <div className="relative">
         <img src="/background.jpg" alt="background image" className="absolute grayscale top-0 opacity-10" />
-        <Fade bottom cascade><div className="flex justify-center text-center max-w-[70vw] gap-[4vw] mx-auto flex-col pt-[6vw] mb-[6vw]">
-          <h1 className="text-orange-500 font-bold text-4xl border-b-4 w-fit pb-[2vw] self-center border-[#444444] ">WELCOME TO<br></br> URJA GLOBAL LIMITED</h1>
+        <Fade bottom cascade><div className="flex justify-center text-center max-w-[70vw] gap-8 mx-auto flex-col pt-[6vw] mb-[6vw]">
+          <h1 className="text-orange-500 font-bold text-4xl border-b-4 w-fit pb-3 self-center border-orange-500 ">WELCOME TO<br></br> URJA GLOBAL LIMITED</h1>
           <p>We at Urja are committed to providing world-class services to rapidly develop rural India focusing on rural electrification especially in hilly areas, forest regions, deserts, islands, far flung villages, unmanned locations and other areas which require reliable and uninterrupted power supply.
 
             With a strong design and manufacturing back ground UGL has developed themselves as a leading manufacturer of Solar Energy Systems to cater to almost the complete range of customer requirements</p>
-          <button className="bg-orange-500 rounded-full border-black border drop-shadow-sm self-center w-fit px-[1vw] py-[0.5vw] text-white">Know More</button>
+          <button onClick={()=>Router.push("/company-overview")} className="bg-orange-500 rounded-full border-black border drop-shadow-sm self-center w-fit px-[1vw] py-[0.5vw] text-white">Know More</button>
         </div></Fade>
       </div>
       {/* main banner */}
@@ -90,7 +78,7 @@ export default function Home() {
         <div className=" py-[4vw] h-[70vh] relative overflow-hidden px-[2vw]">
           <video src="/home.mp4" muted loop autoPlay={true} />
           <div className="bg-black bg-opacity-70 w-[60vw] self-center items-center font-bold px-[2vw] grid py-[2vw] h-[40vh] text-center absolute left-[20vw] top-[10vw]">
-            <h1 className="text-orange-500 text-4xl border-b-4 border-orange-500 w-fit mx-auto mb-6">URJA GLOBAL LIMITED</h1>
+            <h1 className="text-orange-500 text-4xl border-b-4 pb-3 border-gray-200 w-fit mx-auto mb-6">URJA GLOBAL LIMITED</h1>
             <p className="text-white font-medium">Urja Global Limited is in one of India’s leading Renewable Energy developers and operators. Urja is engaged in design, consultancy, integration, supply, installation, commissioning & maintenance of off-grid and grid connected Solar Power Plants. We are approved Channel Partners of Ministry of New and Renewable Energy (MNRE), Govt. of India.</p>
           </div>
         </div>
@@ -104,7 +92,7 @@ export default function Home() {
         <img src="/background.jpg" alt="background image" className="absolute top-0 grayscale opacity-10" />
         <div className="w-full h-[36.2vw] sticky -bottom-[34vw]  left-0">
           <div className="flex flex-col w-full justify-center pt-[5vw] items-center text-[2.35vw] font-bold">
-            <span className="text-orange-500 text-4xl border-b-[0.3vw] border-gray-500 pb-[0.5vw]">SERVICE NETWORK</span>
+            <span className="text-orange-500 text-4xl border-b-[0.3vw] border-orange-500 pb-3">SERVICE NETWORK</span>
           </div>
           <p className="w-full text-center font-medium my-[2.5vw]">A nation-wide network of around 2000 service professionals with tremendous experience.</p>
           <div className="flex  justify-center gap-[2vw]">
