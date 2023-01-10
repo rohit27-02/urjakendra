@@ -6,7 +6,7 @@ const company = () => {
   return (
     <div className='overflow-hidden'>
         <Banner pic={"/Group 108.png"} title={"COMPANY OVERVIEW"} />
-        <img src='/background.jpg' className='absolute grayscale  opacity-10 h-[148vh] -z-30' alt='background'/>
+        <img src='/background.jpg' className='absolute grayscale  opacity-10 h-[71vw] -z-30' alt='background'/>
         <div className='py-[4vw] text-center '>
             <h1 className='text-orange-500 font-bold mx-auto text-[2vw] border-b-4 border-gray-700 pb-[1vw] mb-[1vw] w-fit'>URJA GLOBAL LIMITED</h1>
             <p className='text-[1.5vw] font-semibold'>URJA GLOBAL LIMITED IS IN ONE OF INDIA&apos;S LEADING RENEWABLE ENERGY DEVELOPERS</p>
