@@ -5,11 +5,11 @@ import {FaFacebookF,FaLinkedinIn} from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <div style={{ fontFamily: "'Raleway', sans-serif" }} className=' h-[36vw] bg-[#efefef] text-[1.25vw] pt-[3.2vw] w-full flex flex-col justify-between'>
+    <div style={{ fontFamily: "'Raleway', sans-serif" }} className=' h-[36vw] bg-[#efefef] text-sm pt-[3.2vw] w-full flex flex-col justify-between'>
     <div className='flex px-[5vw]'>
       <div className='flex flex-col w-1/4 px-[1.2vw]'>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
-          <h1 className='text-orange-500 text-[1.1vw] font-bold'>About</h1>
+          <h1 className='text-orange-500 text-base font-bold'>About</h1>
           <span className='cursor-pointer '>Company Profile</span>
           <span className='cursor-pointer '>Our Leadership</span>
           <span className='cursor-pointer '>Coporate Governance</span>
@@ -17,20 +17,20 @@ const Footer = () => {
           <span className='cursor-pointer '>Awards and Accolades</span>
         </div>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
-          <h1 className='text-orange-500 text-[1.1vw] font-bold'>Products & Solutions</h1>
+          <h1 className='text-orange-500 text-base font-bold'>Products & Solutions</h1>
           <span className='cursor-pointer '>Batteries</span>
           <span className='cursor-pointer '>Electric vehicles</span>
         </div>
       </div>
       <div className='flex flex-col w-1/4 px-[1.2vw]'>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
-          <h1 className='text-orange-500 text-[1.1vw] font-bold'>Urja Care</h1>
+          <h1 className='text-orange-500 text-base font-bold'>Urja Care</h1>
           <span className='cursor-pointer '>Book a complaint</span>
           <span className='cursor-pointer '>Raise a Query</span>
           <span className='cursor-pointer '>Warranty</span>
         </div>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
-          <h1 className='text-orange-500 text-[1.1vw] font-bold'>Investors</h1>
+          <h1 className='text-orange-500 text-base font-bold'>Investors</h1>
           <span className='cursor-pointer '>Announcements</span>
           <span className='cursor-pointer '>Company Policy</span>
           <span className='cursor-pointer '>Right Issue</span>
@@ -44,19 +44,19 @@ const Footer = () => {
       </div>
       <div className='flex flex-col w-1/4 px-[1.2vw]'>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
-          <h1 className='text-orange-500 text-[1.1vw] font-bold'>Presence</h1>
+          <h1 className='text-orange-500 text-base font-bold'>Presence</h1>
           <span className='cursor-pointer '>Our Network</span>
           <span className='cursor-pointer '>Dealer Zone</span>
         </div>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
-          <h1 className='text-orange-500 text-[1.1vw] font-bold'>Carrers</h1>
+          <h1 className='text-orange-500 text-base font-bold'>Carrers</h1>
           <span className='cursor-pointer '>Freshers</span>
           <span className='cursor-pointer '>Experienced Professional</span>
         </div>
       </div>
-      <div className='flex flex-col w-1/4 gap-[1vw] text-[1.1vw] px-[1.2vw]'>
+      <div className='flex flex-col w-1/4 gap-[1vw] text-base px-[1.2vw]'>
         <div className='text-orange-500 font-bold'>
-          <span className='cursor-pointer '>Follow Us</span>
+          <div className='cursor-pointer mt-3'>Follow Us</div>
           <div className='flex mt-[1vw] gap-[2vw]'>
           <AiOutlineTwitter/>
           <FaLinkedinIn/>
@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
         <div>
           <span  className='cursor-pointer text-orange-500 font-bold '>Subscribe to our Newsletter</span>
-          <div className='mt-[1vw]'>
+          <div className='mt-[1vw] flex'>
             <input placeholder='enter your email' className='bg-white p-[0.4vw]'/>
             <button className='bg-orange-500 text-white ml-[0.8vw] drop-shadow-md px-[1vw] py-[0.5vw]'>Submit</button>
           </div>
