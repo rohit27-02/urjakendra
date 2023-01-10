@@ -9,7 +9,7 @@ const Footer = () => {
     <div className='flex px-[5vw]'>
       <div className='flex flex-col w-1/4 px-[1.2vw]'>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
-          <h1 className='text-orange-400 text-[1.1vw] font-bold'>About</h1>
+          <h1 className='text-orange-500 text-[1.1vw] font-bold'>About</h1>
           <span className='cursor-pointer '>Company Profile</span>
           <span className='cursor-pointer '>Our Leadership</span>
           <span className='cursor-pointer '>Coporate Governance</span>
@@ -17,22 +17,20 @@ const Footer = () => {
           <span className='cursor-pointer '>Awards and Accolades</span>
         </div>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
-          <h1 className='text-orange-400 text-[1.1vw] font-bold'>Products & Solutions</h1>
+          <h1 className='text-orange-500 text-[1.1vw] font-bold'>Products & Solutions</h1>
           <span className='cursor-pointer '>Batteries</span>
           <span className='cursor-pointer '>Electric vehicles</span>
-          <span className='cursor-pointer '>Charging Station</span>
-          <span className='cursor-pointer '>Solar Projects</span>
         </div>
       </div>
       <div className='flex flex-col w-1/4 px-[1.2vw]'>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
-          <h1 className='text-orange-400 text-[1.1vw] font-bold'>Urja Care</h1>
+          <h1 className='text-orange-500 text-[1.1vw] font-bold'>Urja Care</h1>
           <span className='cursor-pointer '>Book a complaint</span>
           <span className='cursor-pointer '>Raise a Query</span>
           <span className='cursor-pointer '>Warranty</span>
         </div>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
-          <h1 className='text-orange-400 text-[1.1vw] font-bold'>Ivestors</h1>
+          <h1 className='text-orange-500 text-[1.1vw] font-bold'>Investors</h1>
           <span className='cursor-pointer '>Announcements</span>
           <span className='cursor-pointer '>Company Policy</span>
           <span className='cursor-pointer '>Right Issue</span>
@@ -46,18 +44,18 @@ const Footer = () => {
       </div>
       <div className='flex flex-col w-1/4 px-[1.2vw]'>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
-          <h1 className='text-orange-400 text-[1.1vw] font-bold'>Presence</h1>
+          <h1 className='text-orange-500 text-[1.1vw] font-bold'>Presence</h1>
           <span className='cursor-pointer '>Our Network</span>
           <span className='cursor-pointer '>Dealer Zone</span>
         </div>
         <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
-          <h1 className='text-orange-400 text-[1.1vw] font-bold'>Carrers</h1>
+          <h1 className='text-orange-500 text-[1.1vw] font-bold'>Carrers</h1>
           <span className='cursor-pointer '>Freshers</span>
           <span className='cursor-pointer '>Experienced Professional</span>
         </div>
       </div>
       <div className='flex flex-col w-1/4 gap-[1vw] text-[1.1vw] px-[1.2vw]'>
-        <div className='text-orange-400 font-bold'>
+        <div className='text-orange-500 font-bold'>
           <span className='cursor-pointer '>Follow Us</span>
           <div className='flex mt-[1vw] gap-[2vw]'>
           <AiOutlineTwitter/>
@@ -67,20 +65,20 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <span  className='cursor-pointer text-orange-400 font-bold '>Subscribe to our Newsletter</span>
+          <span  className='cursor-pointer text-orange-500 font-bold '>Subscribe to our Newsletter</span>
           <div className='mt-[1vw]'>
             <input placeholder='enter your email' className='bg-white p-[0.4vw]'/>
-            <button className='bg-orange-400 text-white ml-[0.8vw] drop-shadow-md px-[1vw] py-[0.5vw]'>Submit</button>
+            <button className='bg-orange-500 text-white ml-[0.8vw] drop-shadow-md px-[1vw] py-[0.5vw]'>Submit</button>
           </div>
         </div>
         <div>
-          <div className='text-orange-400 font-bold'>Looking to buy a battery ?</div>
+          <div className='text-orange-500 font-bold'>Looking to buy a battery ?</div>
           <button>Quick Buy</button>
         </div>
       </div>
     </div>
 
-    <div className='flex justify-center bg-gray-300 text-[#404041] py-[0.4vw] items-center'>
+    <div className='flex justify-center bg-orange-500 text-white font-medium py-[0.4vw] items-center'>
       All right reserved @ Urja Kendra pvt. ltd. 2022
     </div>
     </div>
