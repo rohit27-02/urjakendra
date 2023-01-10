@@ -18,7 +18,7 @@ useEffect(() => {
         <div id='next' className='cursor-pointer underline underline-offset-[0.7vw] transition-all duration-200 ease-in-out hover:text-orange-500 text-[1.4vw]' onClick={(e)=>{parseInt(Router.asPath.split("/")[2])<5?Router.push(`/announcement/${parseInt(Router.asPath.split("/")[2]) + 1}`):""}}>Next</div>
       </div>
       <Suspense fallback={<div>Loading...</div>}>
-        <Investor pdfs={pdfs} folder={"announcements"} />
+        <Investor pdfs={pdfs} folder={"Announcement/2"} />
       </Suspense>
     </div>
   )
@@ -27,11 +27,9 @@ useEffect(() => {
 export default Announcement
 
 export async function getServerSideProps(context) {
-  const url=context.resolvedUrl;
-  console.log(process.cwd())
-  console.log(url)
+
   let res = [];
-  for (const file of fs.readdirSync(path.resolve(process.cwd(),`\public${url}`))) {
+  for (const file of fs.readdirSync(path.resolve(`\public/Announcement/2`))) {
     res = [...res, file];
 
   }

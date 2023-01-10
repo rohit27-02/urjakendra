@@ -18,7 +18,7 @@ useEffect(() => {
         <div id='next' className='cursor-pointer underline underline-offset-[0.7vw] transition-all duration-200 ease-in-out hover:text-orange-500 text-[1.4vw]' onClick={(e)=>{parseInt(Router.asPath.split("/")[2])<5?Router.push(`/announcement/${parseInt(Router.asPath.split("/")[2]) + 1}`):""}}>Next</div>
       </div>
       <Suspense fallback={<div>Loading...</div>}>
-        <Investor pdfs={pdfs} folder={"announcements"} />
+        <Investor pdfs={pdfs} folder={"Announcement/1"} />
       </Suspense>
     </div>
   )
