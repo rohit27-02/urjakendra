@@ -119,7 +119,7 @@ const Navbar = () => {
         <div className=' h-1/4 border-gray-500 flex items-center justify-center cursor-pointer'><img className='w-[2.4vw]' src="https://img.icons8.com/nolan/64/share-2.png"/></div>
       </div>
 
-      <div ref={ref} onMouseLeave={() => ref.current.classList.add("translate-x-[100%]")} className='fixed translate-x-[100%] bg-[#444444] text-orange-400 h-[14vw] w-[17vw]  top-[40vh] right-0 transition-all duration-500 ease-out overflow-hidden drop-shadow-md'>
+      <div ref={ref} onMouseLeave={() => ref.current.classList.add("translate-x-[100%]")} className='fixed translate-x-[100%] bg-gray-200 text-gray-800 font-semibold h-[14vw] w-[17vw]  top-[40vh] right-0 transition-all duration-500 ease-out overflow-hidden drop-shadow-md'>
         <div className='hover:text-white border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vw] cursor-pointer'><span>Post a Query</span></div>
         <div className='hover:text-white border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vw] font-sans tracking-widest cursor-pointer'><span>8000500789</span></div>
         <div className='hover:text-white border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vw] cursor-pointer'><span>Urjacare@urjaglobal.in</span></div>
