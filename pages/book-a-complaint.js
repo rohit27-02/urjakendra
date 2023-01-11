@@ -4,7 +4,7 @@ import Banner from '../components/Banner'
 const complaint = () => {
   return (
     <div>
-      <Banner title={"BOOK A COMPLAINT"} pic={"https://www.okayapower.com/img/inner-banner/website-banners-21.jpg"} />
+      <Banner title={"BOOK A COMPLAINT"} pic={"/complaints_banner.jpg"} />
       <div className='pb-[10vw] '>
         <h1 className='text-4xl mb-[8vw] mt-[6vw] border-b-4 pb-3 mx-auto w-fit text-orange-500 border-orange-500 text-center font-bold'>URJA CARE</h1>
 

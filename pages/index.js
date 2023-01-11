@@ -39,6 +39,8 @@ export default function Home() {
 
       {/* welcome message */}
       <div className="relative">
+        <div className="absolute text-2xl -rotate-90 top-[15vw]  -left-[3vw]">#CONSERVE ENERGY</div>
+        <div className="absolute text-2xl -rotate-90 top-[15vw]  -right-[3vw]">#CREATE ERNERGY</div>
         <img src="/background.jpg" alt="background image" className="absolute grayscale top-0 opacity-10" />
         <Fade bottom cascade><div className="flex justify-center text-center max-w-[70vw] gap-8 mx-auto flex-col pt-[6vw] mb-[6vw]">
           <h1 className="text-orange-500 font-bold text-4xl border-b-4 w-fit pb-3 self-center border-orange-500 ">WELCOME TO<br></br> URJA GLOBAL LIMITED</h1>
@@ -46,6 +48,7 @@ export default function Home() {
 
             With a strong design and manufacturing back ground UGL has developed themselves as a leading manufacturer of Solar Energy Systems to cater to almost the complete range of customer requirements</p>
           <button onClick={()=>Router.push("/company-overview")} className="bg-orange-500 rounded-full border-black border drop-shadow-sm self-center w-fit px-[1vw] py-[0.5vw] text-white">Know More</button>
+          
         </div></Fade>
       </div>
       {/* main banner */}

@@ -4,7 +4,7 @@ import Banner from '../components/Banner'
 const Product = () => {
   return (
     <div>
-      <Banner title={"PRODUCT REGISTRATION"} pic={"https://www.okayapower.com/img/inner-banner/website-banners-17.jpg"} />
+      <Banner  pic={"/pr.jpg"} />
       <div className='pb-[10vw] '>
         <h1 className='text-[3vw] mb-[8vw] mt-[6vw] border-b-4 pb-3 mx-auto w-fit text-orange-500 border-orange-500 text-center font-bold'>URJA CARE</h1>
 

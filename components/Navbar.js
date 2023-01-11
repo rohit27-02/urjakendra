@@ -1,11 +1,10 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect, useRef } from 'react'
-import { BsChevronDown, BsFillPersonFill, BsFillTelephoneFill } from "react-icons/bs"
-import { FaShareAlt } from "react-icons/fa"
+import { BsChevronDown } from "react-icons/bs"
 import "animate.css";
 import { TfiYoutube } from 'react-icons/tfi'
 import { AiOutlineTwitter } from 'react-icons/ai'
-import { HiMail } from 'react-icons/hi'
 import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa'
 import Router from 'next/router';
 
@@ -102,8 +101,8 @@ const Navbar = () => {
         </div>
         <div id='n5' onMouseEnter={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center  '>Carrers <BsChevronDown /></span>
           {n5 && <ul onMouseLeave={() => setn3(false)} className='absolute drop-shadow-xl border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] bg-white w-[15vw]'>
-            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]'>Freshers</li>
-            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]'>Experienced Professional</li>
+            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={()=>Router.push("/freshers")}>Freshers</li>
+            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={()=>Router.push("/experienced-professional")}>Experienced Professional</li>
           </ul>}
         </div>
 
@@ -113,11 +112,11 @@ const Navbar = () => {
 
       {/* sidebar */}
 
-      <div onMouseEnter={() => { ref.current.classList.remove("translate-x-[100%]") }} className='fixed bg-[#444444] text-[1.5vw] text-orange-400 h-[14vw] w-[3vw] top-[40vh] right-0 transition-all z-20 duration-300 overflow-hidden '>
-        <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer'><BsFillPersonFill /></div>
-        <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer'><BsFillTelephoneFill /></div>
-        <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer'><HiMail /></div>
-        <div className=' h-1/4 border-gray-500 flex items-center justify-center cursor-pointer'><FaShareAlt /></div>
+      <div onMouseEnter={() => { ref.current.classList.remove("translate-x-[100%]") }} className='fixed bg-gray-200 text-[1.5vw] text-orange-400 h-[14vw] w-[3vw] top-[40vh] right-0 transition-all z-20 duration-300 overflow-hidden '>
+        <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer '><img className='w-[2.4vw]' src="https://img.icons8.com/office/60/null/gender-neutral-user.png"/></div>
+        <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer '><img className='w-[2.4vw]' src="https://img.icons8.com/plasticine/100/null/ringer-volume.png"/></div>
+        <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer '><img className='w-[2.4vw]' src="https://img.icons8.com/fluency/96/null/database-mail.png"/></div>
+        <div className=' h-1/4 border-gray-500 flex items-center justify-center cursor-pointer'><img className='w-[2.4vw]' src="https://img.icons8.com/nolan/64/share-2.png"/></div>
       </div>
 
       <div ref={ref} onMouseLeave={() => ref.current.classList.add("translate-x-[100%]")} className='fixed translate-x-[100%] bg-[#444444] text-orange-400 h-[14vw] w-[17vw]  top-[40vh] right-0 transition-all duration-500 ease-out overflow-hidden drop-shadow-md'>

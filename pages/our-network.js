@@ -12,7 +12,7 @@ const Network = () => {
     return (
         <div className='mt-[6.9vw]'>
             <div className='w-full overflow-hidden'>
-                <img className='w-full' src='https://www.okayapower.com/img/inner-banner/dl.jpeg' alt='banner-image' />
+                <img className='w-full' src='r.jfif' alt='banner-image' />
             </div>
             <div>
                 <div>
