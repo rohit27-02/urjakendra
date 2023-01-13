@@ -39,16 +39,17 @@ export default function Home() {
 
       {/* welcome message */}
       <div className="relative">
-        <div className="absolute text-2xl -rotate-90 top-[15vw]  -left-[3vw]">#CONSERVE ENERGY</div>
-        <div className="absolute text-2xl -rotate-90 top-[15vw]  -right-[3vw]">#CREATE ERNERGY</div>
         <img src="/background.jpg" alt="background image" className="absolute grayscale top-0 opacity-10" />
         <Fade bottom cascade><div className="flex justify-center text-center max-w-[70vw] gap-8 mx-auto flex-col pt-[6vw] mb-[6vw]">
           <h1 className="text-orange-500 font-bold text-4xl border-b-4 w-fit pb-3 self-center border-orange-500 ">WELCOME TO<br></br> URJA GLOBAL LIMITED</h1>
           <p>We at Urja are committed to providing world-class services to rapidly develop rural India focusing on rural electrification especially in hilly areas, forest regions, deserts, islands, far flung villages, unmanned locations and other areas which require reliable and uninterrupted power supply.
 
             With a strong design and manufacturing back ground UGL has developed themselves as a leading manufacturer of Solar Energy Systems to cater to almost the complete range of customer requirements</p>
-          <button onClick={()=>Router.push("/company-overview")} className="bg-orange-500 rounded-full border-black border drop-shadow-sm self-center w-fit px-[1vw] py-[0.5vw] text-white">Know More</button>
-          
+          <button onClick={() => Router.push("/company-overview")} className="bg-orange-500 rounded-full border-black border drop-shadow-sm self-center w-fit px-[1vw] py-[0.5vw] text-white">Know More</button>
+          <div style={{fontFamily:"sans-serif"}} className="flex justify-center gap-6">
+            <span className=" text-2xl  ">#CONSERVE ENERGY</span>
+            <span className=" text-2xl ">#CREATE ERNERGY</span>
+          </div>
         </div></Fade>
       </div>
       {/* main banner */}
@@ -63,7 +64,7 @@ export default function Home() {
             <p className="font-bold drop-shadow-xl text-3xl">ELECTRIC VEHICLE</p>
           </div>
         </div>
-       
+
         <div id="battery.png" className="w-1/2 relative border-r-2 cursor-pointer [&>*]:hover:flex group [&>*]:hover:text-[#333333] " onMouseEnter={(e) => changeimage(e)}>
           <div className="bg-white absolute top-0 w-full h-0 transition-all duration-500 ease-in-out group-hover:h-[10vw]"></div>
           <div className="bg-black opacity-40 -z-10 w-full h-full hidden absolute top-0 "></div>
@@ -72,7 +73,7 @@ export default function Home() {
             <p className="font-bold drop-shadow-xl text-3xl">BATTERIES</p>
           </div>
         </div>
-        
+
       </div>
 
       {/* video */}
@@ -86,7 +87,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-    
+
 
       {/* banner */}
       <div className="relative overflow-hidden">
@@ -113,12 +114,12 @@ export default function Home() {
         <div className="flex  relative mb-[4vw]">
           <div className="w-full absolute top-0 bg-black opacity-40 h-full"></div>
           <div className="w-1/2 relative font-bold text-3xl"><img src="/b1.png" alt="another banner" />
-            <div onClick={()=>Router.push("/book-a-complaint")} className="border-b-4 cursor-pointer hover:text-4xl transition-all duration-300 ease-in-out border-orange-500 text-white absolute bottom-[2vw] left-[2vw]">
+            <div onClick={() => Router.push("/book-a-complaint")} className="border-b-4 cursor-pointer hover:text-4xl transition-all duration-300 ease-in-out border-orange-500 text-white absolute bottom-[2vw] left-[2vw]">
               URJA CARE
             </div>
           </div>
           <div className="w-1/2 relative font-bold text-3xl"><img src="/b2.png" alt="another banner" />
-            <div onClick={()=>Router.push("/our-network")} className="border-b-4 cursor-pointer hover:text-4xl transition-all duration-300 ease-in-out border-orange-500 text-white absolute bottom-[2vw] left-[2vw]">
+            <div onClick={() => Router.push("/our-network")} className="border-b-4 cursor-pointer hover:text-4xl transition-all duration-300 ease-in-out border-orange-500 text-white absolute bottom-[2vw] left-[2vw]">
               FIND A DEALER
             </div>
           </div>

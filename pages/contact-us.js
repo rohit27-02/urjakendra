@@ -6,13 +6,16 @@ import { MdWifiCalling3 } from "react-icons/md"
 import { IoMdMail } from "react-icons/io"
 const contact = () => {
     return (
-        <div className='mt-[6.9vw] bg-gray-100 text-gray-700'>
+        <div className='mt-[6.9vw]  bg-gray-100 text-gray-700'>
+
             <Banner pic="/businessman-touching-virtual-screen.jpg" title="CONTACT US" />
-            <div className='mt-20 w-fit mx-auto text-center'>
+            <div className='relative'>
+            <img className='absolute opacity-10 grayscale h-full object-cover' src='/background.jpg' alt='background'/>
+            <div className='pt-20 w-fit mx-auto text-center'>
                 <h1 className='text-4xl mb-10 text-orange-500 font-bold '>URJA <span className='border-b-4 pb-2 border-gray-600 '>GLOBAL</span> LIMITED</h1>
                 <p className='text-xl font-semibold tracking-wider leading-relaxed'>URJA GLOBAL LIMITED IS IN ONE OF INDIA&apos;S LEADING RENEWABLE ENERGY DEVELOPERS</p>
             </div>
-            <div className='flex gap-10 flex-col w-[60rem] mt-14  mx-auto'>
+            <div className='flex gap-10 flex-col w-[70rem] mt-14  mx-auto'>
                 <div className='flex gap-10'>
                     <div className='p-10 bg-white font-medium drop-shadow w-[45%]'>
                         <h1 className='font-bold text-xl'>Registered Office</h1>
@@ -85,7 +88,7 @@ const contact = () => {
                             </div>
 
                         </form>
-                        <button className='self-start mt-6 text-white font-medium  bg-orange-500 rounded-full border border-black px-4 py-1'>Know More</button>
+                        <button className='self-start mt-6 text-white font-medium  bg-orange-500 rounded-full border border-black px-4 py-1'>Submit</button>
                     </div>
                 </div>
                 <div className='p-12 drop-shadow font-medium   bg-white'>
@@ -111,6 +114,7 @@ const contact = () => {
             </div>
             <div className='w-full mt-14 object-cover'>
                 <img className='w-full' src='https://img.staticmb.com/mbphoto/locality/original_images/2021/Dec/24/53197_MAP.png' alt='map' />
+            </div>
             </div>
         </div>
     )
