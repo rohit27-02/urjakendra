@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
+import Banner from '../components/Banner'
 
 const Network = () => {
     const stores = [{title:"GUPTA ENTERPRISES",address:"A-3/260 SEC-36 ROHINI DELHI"},
@@ -11,9 +12,7 @@ const Network = () => {
 ]
     return (
         <div className='mt-[6.9vw]'>
-            <div className='w-full overflow-hidden'>
-                <img className='w-full' src='r.jfif' alt='banner-image' />
-            </div>
+            <Banner pic={"https://www.evereadyindia.com/wp-content/uploads/2022/01/29145401/locations-tab.jpg"} title="OUR NETWORK"/>
             <div>
                 <div>
                     <h1 className='text-4xl mb-[4vw] mt-[6vw] border-b-4 border-orange-500 pb-3 w-fit mx-auto text-orange-500 decoration-gray-600 text-center font-bold '>STORE LOCATION</h1>
