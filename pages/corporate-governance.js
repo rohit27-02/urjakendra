@@ -20,7 +20,7 @@ const corporategovernance = () => {
                         <img className='w-full' src='https://www.tatapower.com/images/inv-download_img16.jpg' alt='sub-category'/>
                         <h1 className='text-lg font-semibold px-10 text-center'>Report on Corporate Governance</h1>
                         <p className='text-center px-10 text-sm tracking-wide'>The Company has adopted Governance Guidelines to cover aspects related to composition and role of the Board, Chairman and Directors, Board diversity, Director’s term, retirement age and committees of the Board.</p>
-                        <a href="/corporate-governance-report/1#corporate governance" className='cursor-pointer bg-orange-500 px-6 rounded-full absolute left-[75px] bottom-8 py-3 text-white'>Know more</a>
+                        <button onClick={()=>Router.push("/corporate-governance-report/1#corporate governance",undefined,{scroll:true})} className='cursor-pointer bg-orange-500 px-6 rounded-full absolute left-[75px] bottom-8 py-3 text-white'>Know more</button>
                     </div>
                     <div className='drop-shadow-xl rounded-3xl text-gray-600 space-y-8 pb-28 overflow-hidden relative bg-white w-1/4 '>
                         <img className='w-full' src='https://www.tatapower.com/images/inv-download_img18.jpg' alt='sub-category'/>
