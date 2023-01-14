@@ -13,7 +13,7 @@ const Corporate = ({ pdfs, pdfs1, pdfs2, pdfs3, pdfs4 }) => {
                 <div id='next' className='cursor-pointer underline underline-offset-[0.7vw] transition-all duration-200 ease-in-out hover:text-orange-500 text-[1.4vw]' onClick={(e) => { parseInt(Router.asPath.split("/")[2]) < 3 ? Router.push(`/corporate-governance-report/${parseInt(Router.asPath.split("/")[2]) + 1}`) : "" }}>Next</div>
             </div>
             <Investor id="1" pdfs={pdfs} folder={"board committee"} />
-            <Investor id="corporate governance" pdfs={pdfs1} folder={"corporate governance report"} />
+            <Investor id="corporate" pdfs={pdfs1} folder={"corporate governance report"} />
             <Investor id="3" pdfs={pdfs2} folder={"familarization program"} />
             <Investor id="4" pdfs={pdfs3} folder={"letter of appointments"} />
             <Investor id="5" pdfs={pdfs4} folder={"memorandum & article of association"} />

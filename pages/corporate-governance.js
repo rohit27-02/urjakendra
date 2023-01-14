@@ -20,7 +20,7 @@ const corporategovernance = () => {
                         <img className='w-full' src='https://www.tatapower.com/images/inv-download_img16.jpg' alt='sub-category'/>
                         <h1 className='text-lg font-semibold px-10 text-center'>Report on Corporate Governance</h1>
                         <p className='text-center px-10 text-sm tracking-wide'>The Company has adopted Governance Guidelines to cover aspects related to composition and role of the Board, Chairman and Directors, Board diversity, Director’s term, retirement age and committees of the Board.</p>
-                        <button onClick={()=>Router.push("/corporate-governance-report/1#corporate governance",undefined,{scroll:true})} className='cursor-pointer bg-orange-500 px-6 rounded-full absolute left-[75px] bottom-8 py-3 text-white'>Know more</button>
+                        <a onClick={()=>Router.push("/corporate-governance-report/1#corporate",undefined,{scroll:true})} className='cursor-pointer bg-orange-500 px-6 rounded-full absolute left-[75px] bottom-8 py-3 text-white'>Know more</a>
                     </div>
                     <div className='drop-shadow-xl rounded-3xl text-gray-600 space-y-8 pb-28 overflow-hidden relative bg-white w-1/4 '>
                         <img className='w-full' src='https://www.tatapower.com/images/inv-download_img18.jpg' alt='sub-category'/>
@@ -32,7 +32,7 @@ const corporategovernance = () => {
                         <img className='w-full' src='https://www.tatapower.com/images/inv-download_img19.jpg' alt='sub-category'/>
                         <h1 className='text-lg font-semibold px-10 text-center'>T&C for appointment of ID</h1>
                         <p className='text-center px-10 text-sm tracking-wide'>In accordance with the requirements of the Securities and Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015 (&#34;SEBI LODR&#34;), here are the terms and conditions of appointment for the Company&apos;s Independent Directors.</p>
-                        <button onClick={()=>Router.push("/corporate-governance-report")} className='cursor-pointer bg-orange-500 px-6 rounded-full absolute left-[75px] bottom-8 py-3 text-white'>Know more</button>
+                        <button onClick={()=>Router.push("/corporate-governance-report/1/#5")} className='cursor-pointer bg-orange-500 px-6 rounded-full absolute left-[75px] bottom-8 py-3 text-white'>Know more</button>
                     </div>
                 </div>
             </div>

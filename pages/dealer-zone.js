@@ -17,7 +17,7 @@ const Dealerzone = () => {
       </div>
       <div className='my-[4vw] uppercase font-medium text-center'>
         <h1>Want to Become an Everyday Dealer ?</h1>
-        <div className='w-[20vw] mt-[3vw] flex items-center rounded-md border overflow-hidden cursor-pointer group mx-auto' onClick={()=>Router.push("/Contact")}>
+        <div className='w-[20vw] mt-[3vw] flex items-center rounded-md border overflow-hidden cursor-pointer group mx-auto' onClick={()=>Router.push("/contact-us")}>
           <div className='text-base w-4/6 bg-orange-500 h-full p-[3vw] relative  rounded-l-md text-white font-bold'>
             <span className='z-10 absolute top-[38%] left-[20%]'>GET IN TOUCH</span>
             <span className='absolute w-0 h-full rounded-l-md bg-black group-hover:w-full left-0 top-0  transition-all duration-300 ease-linear'></span></div>

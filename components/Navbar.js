@@ -52,7 +52,6 @@ const Navbar = () => {
             <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/our-leadership")}>Our Leadership</li>
             <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/corporate-governance")}>Corporate Governance</li>
             <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/company-overview")}>Code of Ethics</li>
-            <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={()=>Router.push("/awards-&-accolades")}>Awards and Accolades</li>
           </ul>}
         </div>
         <div id='n2' onMouseEnter={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center  '>Products & Solutions <BsChevronDown /></span>
@@ -66,9 +65,9 @@ const Navbar = () => {
             </li>
             <li id='s2' onMouseLeave={() => sets2(false)} onMouseEnter={(e) => sub(e)} className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]'>Electric Vehicles
               {s2 && <span onMouseLeave={() => sets2(false)} className='flex flex-col absolute top-0 drop-shadow-xl  w-[12vw] left-[15.03vw] text-[#333333] bg-white  '>
-                <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]'>Scooty</span>
-                <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]'>E-Rickshaw</span>
-                <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]'>Loader</span>
+                <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={()=>Router.push("/scooty")}>Scooty</span>
+                <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={()=>Router.push("/e-rickshaw")}>E-Rickshaw</span>
+                <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={()=>Router.push("/loader")}>Loader</span>
               </span>}
             </li>
           </ul>}
