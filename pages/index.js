@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import 'animate.css';
@@ -8,8 +8,12 @@ import Router from "next/router";
 
 export default function Home() {
   const [image, setimage] = useState("/scooter.png");
-
-
+  const [sw, setsw] = useState(false);
+  useEffect(() => {
+    if (screen.width < 768) {
+      setsw(true)
+    }
+  }, []);
   const changeimage = (e) => {
     setimage(e.currentTarget.id)
     document.getElementById("main-banner").classList.remove("animate__fadeIn")
@@ -17,7 +21,7 @@ export default function Home() {
   }
 
   return (
-    <div style={{ fontFamily: "'Raleway', sans-serif" }} className="text-base mt-[7vw] font-semibold text-gray-600 tracking-wider">
+    <div style={{ fontFamily: "'Raleway', sans-serif" }} className="text-xs md:text-base md:mt-[7vw] mt-[7vh] font-semibold text-gray-600 tracking-wider">
 
       <Carousel
         renderIndicator={false}
@@ -39,14 +43,14 @@ export default function Home() {
 
       {/* welcome message */}
       <div className="relative">
-        <img src="/background.jpg" alt="background image" className="absolute grayscale top-0 opacity-10" />
-        <Fade bottom cascade><div className="flex justify-center text-center max-w-[70vw] gap-8 mx-auto flex-col pt-[6vw] mb-[6vw]">
-          <h1 className="text-orange-500 font-bold text-4xl border-b-4 w-fit pb-3 self-center border-orange-500 ">WELCOME TO<br></br> URJA GLOBAL LIMITED</h1>
+        {sw && <img src="/background.jpg" alt="background image" className="absolute grayscale top-0 opacity-10" />}
+        <Fade bottom cascade><div className="flex justify-center md:text-center max-w-[70vw] gap-8 mx-auto flex-col pt-[6vh] md:pt-[6vw] mb-6vh md:mb-[6vw]">
+          <h1 className="text-orange-500 font-bold text-2xl md:text-4xl w-fit pb-3 self-center ">WELCOME TO<br></br> URJA GLOBAL<span className="border-orange-500 border-b-4"> LIMITED</span></h1>
           <p>We at Urja are committed to providing world-class services to rapidly develop rural India focusing on rural electrification especially in hilly areas, forest regions, deserts, islands, far flung villages, unmanned locations and other areas which require reliable and uninterrupted power supply.
 
             With a strong design and manufacturing back ground UGL has developed themselves as a leading manufacturer of Solar Energy Systems to cater to almost the complete range of customer requirements</p>
           <button onClick={() => Router.push("/company-overview")} className="bg-orange-500 rounded-full border-black border drop-shadow-sm self-center w-fit px-[1vw] py-[0.5vw] text-white">Know More</button>
-          <div style={{fontFamily:"sans-serif"}} className="flex justify-center gap-6">
+          <div style={{ fontFamily: "sans-serif" }} className="flex justify-center gap-6">
             <span className=" text-2xl  ">#CONSERVE ENERGY</span>
             <span className=" text-2xl ">#CREATE ERNERGY</span>
           </div>

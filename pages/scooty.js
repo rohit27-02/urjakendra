@@ -4,7 +4,7 @@ import EV from '../components/EV'
 const scooty = () => {
   return (
     <div>
-        <EV pic={"/1.png"} />
+        <EV pic={"/electric scooter 4.png"} />
     </div>
   )
 }
