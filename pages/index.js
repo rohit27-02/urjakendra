@@ -21,7 +21,7 @@ export default function Home() {
   }
 
   return (
-    <div style={{ fontFamily: "'Raleway', sans-serif" }} className="text-sm md:text-base md:mt-[7vw] mt-[7vh] font-semibold text-gray-600 tracking-wider">
+    <div style={{ fontFamily: "'Raleway', sans-serif" }} className="text-sm md:text-base md:mt-[7vw] mt-[8vh] font-semibold text-gray-600 tracking-wider">
 
       <Carousel
         renderIndicator={false}
@@ -50,7 +50,7 @@ export default function Home() {
 
             With a strong design and manufacturing back ground UGL has developed themselves as a leading manufacturer of Solar Energy Systems to cater to almost the complete range of customer requirements</p>
           <button onClick={() => Router.push("/company-overview")} className="bg-orange-500 rounded-full border-black border drop-shadow-sm md:self-center w-fit px-6 py-3 text-white">Know More</button>
-          <div style={{ fontFamily: "sans-serif" }} className="flex justify-center gap-6">
+          <div style={{ fontFamily: "sans-serif" }} className="md:flex justify-center text-xs space-x-4 md:space-x-0 gap-6">
             <span className=" md:text-2xl  ">#CONSERVE ENERGY</span>
             <span className=" md:text-2xl ">#CREATE ERNERGY</span>
           </div>
@@ -58,7 +58,7 @@ export default function Home() {
       </div>
       {/* main banner */}
 
-      <div className="flex mt-10 md:mt-0 flex-row w-full animate__animated drop-shadow-xl bg-cover overflow-hidden relative h-[84vw] md:h-[83vh]">
+      <div className="flex mt-10 md:mt-0 flex-row w-full animate__animated drop-shadow-xl bg-cover overflow-hidden relative h-[77vw] md:h-[83vh]">
         <img src={image} id="main-banner" alt="main banner" className="object-contain md:object-cover -z-20 w-full h-full animate__animated  absolute" />
         <div id="scooter.png" className=" w-1/2 relative md:border-r-2 cursor-pointer [&>*]:hover:flex group [&>*]:hover:text-[#333333] " onMouseEnter={(e) => changeimage(e)}>
           <div className="bg-white absolute top-0 w-full h-0 md:group-hover:h-[10vw] group-hover:h-[10vh] transition-all duration-500 ease-in-out"></div>

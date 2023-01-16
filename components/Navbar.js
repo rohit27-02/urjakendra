@@ -55,11 +55,52 @@ const Navbar = () => {
       {/* navbar */}
 
       {sw ? <div className='flex justify-between w-full '>
+      <div  onTouchStart={() => { ref.current.classList.toggle("translate-x-[100%]") }} className='fixed bg-gray-200 text-lg md:text-[1.5vw] text-orange-400 h-[24vh] md:h-[14vw] w-[7vh] md:w-[3vw] top-[60vw] md:top-[40vh] right-0 transition-all z-20 duration-300 overflow-hidden '>
+        <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer '><img className='w-[4vh] md:w-[2.4vw]' src="https://img.icons8.com/office/60/null/gender-neutral-user.png" /></div>
+        <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer '><img className='w-[4vh] md:w-[2.4vw]' src="https://img.icons8.com/plasticine/100/null/ringer-volume.png" /></div>
+        <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer '><img className='w-[4vh] md:w-[2.4vw]' src="https://img.icons8.com/fluency/96/null/database-mail.png" /></div>
+        <div className=' h-1/4 border-gray-500 flex items-center justify-center cursor-pointer'><img className='w-[4vh] md:w-[2.4vw]' src="https://img.icons8.com/nolan/64/share-2.png" /></div>
+      </div>
+
+      <div ref={ref}  className='fixed translate-x-[100%] bg-gray-200 text-gray-800 font-semibold h-[24vh] md:h-[14vw] w-[30vh] md:w-[17vw] top-[60vw] md:top-[40vh] right-0 transition-all duration-500 ease-out overflow-hidden drop-shadow-md'>
+        <div className='hover:text-black hover:font-semibold border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] cursor-pointer'><span>Post a Query</span></div>
+        <div className='hover:text-black hover:font-semibold border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] font-sans tracking-widest cursor-pointer'><span>8000500789</span></div>
+        <div className='hover:text-black hover:font-semibold border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] cursor-pointer'><span>Urjacare@urjaglobal.in</span></div>
+        <div className=' h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] text-lg md:text-[1.5vw] cursor-pointer'>
+          <span className='flex gap-[0.8vh] md:gap-[0.8vw]'>
+            <AiOutlineTwitter className='hover:text-black hover:font-semibold' />
+            <FaLinkedinIn className='hover:text-black hover:font-semibold' />
+            <FaFacebookF className='hover:text-black hover:font-semibold' />
+            <TfiYoutube className='hover:text-black hover:font-semibold' />
+          </span>
+        </div>
+      </div>
 
         <div><img onClick={()=>Router.push("/")} alt='logo' className='h-[6vh] ' src='/logo.png' /> </div>
         <Hamburger toggled={isOpen} toggle={setisOpen} />
 
       </div> : <div className='flex w-5/6  justify-end gap-[3vw] '>
+      <div  onPointerEnter={() => { ref.current.classList.remove("translate-x-[100%]") }} className='fixed bg-gray-200 text-lg md:text-[1.5vw] text-orange-400 h-[24vh] md:h-[14vw] w-[7vh] md:w-[3vw] top-[60vw] md:top-[40vh] right-0 transition-all z-20 duration-300 overflow-hidden '>
+        <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer '><img className='w-[4vh] md:w-[2.4vw]' src="https://img.icons8.com/office/60/null/gender-neutral-user.png" /></div>
+        <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer '><img className='w-[4vh] md:w-[2.4vw]' src="https://img.icons8.com/plasticine/100/null/ringer-volume.png" /></div>
+        <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer '><img className='w-[4vh] md:w-[2.4vw]' src="https://img.icons8.com/fluency/96/null/database-mail.png" /></div>
+        <div className=' h-1/4 border-gray-500 flex items-center justify-center cursor-pointer'><img className='w-[4vh] md:w-[2.4vw]' src="https://img.icons8.com/nolan/64/share-2.png" /></div>
+      </div>
+
+      <div ref={ref} onPointerLeave={() => ref.current.classList.add("translate-x-[100%]")} className='fixed translate-x-[100%] bg-gray-200 text-gray-800 font-semibold h-[24vh] md:h-[14vw] w-[30vh] md:w-[17vw] top-[60vw] md:top-[40vh] right-0 transition-all duration-500 ease-out overflow-hidden drop-shadow-md'>
+        <div className='hover:text-black hover:font-bold border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] cursor-pointer'><span>Post a Query</span></div>
+        <div className='hover:text-black hover:font-bold border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] font-sans tracking-widest cursor-pointer'><span>8000500789</span></div>
+        <div className='hover:text-black hover:font-bold border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] cursor-pointer'><span>Urjacare@urjaglobal.in</span></div>
+        <div className=' h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] text-lg md:text-[1.5vw] cursor-pointer'>
+          <span className='flex gap-[0.8vh] md:gap-[0.8vw]'>
+            <AiOutlineTwitter className='hover:text-black hover:font-bold' />
+            <FaLinkedinIn className='hover:text-black hover:font-bold' />
+            <FaFacebookF className='hover:text-black hover:font-bold' />
+            <TfiYoutube className='hover:text-black hover:font-bold' />
+          </span>
+        </div>
+      </div>
+
         <div id='n1' onMouseEnter={(e) => nav(e)} className=''><span className=' transition-all duration-300 cursor-pointer  flex gap-[0.5vw] items-center '>About <BsChevronDown /></span>
           {n1 && <ul onMouseLeave={() => setn1(false)} className='absolute drop-shadow-xl border-t-[0.2vw] border-orange-400 text-[#333333] w-[15vw] top-[7vw] bg-white'>
             <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/company-overview")}>Company Overview</li>
@@ -128,30 +169,11 @@ const Navbar = () => {
 
       {/* sidebar */}
 
-      <div  onPointerEnter={() => { ref.current.classList.remove("translate-x-[100%]") }} className='fixed bg-gray-200 text-lg md:text-[1.5vw] text-orange-400 h-[18vh] md:h-[14vw] w-[5vh] md:w-[3vw] top-[60vw] md:top-[40vh] right-0 transition-all z-20 duration-300 overflow-hidden '>
-        <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer '><img className='w-[2.4vh] md:w-[2.4vw]' src="https://img.icons8.com/office/60/null/gender-neutral-user.png" /></div>
-        <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer '><img className='w-[2.4vh] md:w-[2.4vw]' src="https://img.icons8.com/plasticine/100/null/ringer-volume.png" /></div>
-        <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer '><img className='w-[2.4vh] md:w-[2.4vw]' src="https://img.icons8.com/fluency/96/null/database-mail.png" /></div>
-        <div className=' h-1/4 border-gray-500 flex items-center justify-center cursor-pointer'><img className='w-[2.4vh] md:w-[2.4vw]' src="https://img.icons8.com/nolan/64/share-2.png" /></div>
-      </div>
-
-      <div ref={ref} onPointerLeave={() => ref.current.classList.add("translate-x-[100%]")} className='fixed translate-x-[100%] bg-gray-200 text-gray-800 font-semibold h-[18vh] md:h-[14vw] w-[20vh] md:w-[17vw] top-[60vw] md:top-[40vh] right-0 transition-all duration-500 ease-out overflow-hidden drop-shadow-md'>
-        <div className='hover:text-black hover:font-bold border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] cursor-pointer'><span>Post a Query</span></div>
-        <div className='hover:text-black hover:font-bold border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] font-sans tracking-widest cursor-pointer'><span>8000500789</span></div>
-        <div className='hover:text-black hover:font-bold border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] cursor-pointer'><span>Urjacare@urjaglobal.in</span></div>
-        <div className=' h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] text-lg md:text-[1.5vw] cursor-pointer'>
-          <span className='flex gap-[0.8vh] md:gap-[0.8vw]'>
-            <AiOutlineTwitter className='hover:text-black hover:font-bold' />
-            <FaLinkedinIn className='hover:text-black hover:font-bold' />
-            <FaFacebookF className='hover:text-black hover:font-bold' />
-            <TfiYoutube className='hover:text-black hover:font-bold' />
-          </span>
-        </div>
-      </div>
-
+      
     </div>
      {
       isOpen && <div className='flex w-2/3 flex-col top-[8vh] h-full pt-[3vh] drop-shadow z-50 fixed bg-white px-6 [&>*]:pb-2 [&>*]:border-b-2 gap-[3vh] md:gap-[3vw] '>
+        
       <div id='n1' onMouseEnter={(e) => nav(e)} className=''><span className=' transition-all duration-300 cursor-pointer  flex gap-4 font-semibold  md:gap-[0.5vw] items-center '>About <BsChevronDown /></span>
         {n1 && <ul onMouseLeave={() => setn1(false)} className='  border-t-[0.2vw] border-orange-400 text-[#333333]  top-[7vh] bg [&>*]:pl-2-white'>
           <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/company-overview")}>Company Overview</li>
