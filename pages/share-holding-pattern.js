@@ -5,8 +5,8 @@ import fs from 'fs'
 import path from 'path';
 const Share = ({pdfs}) => {
     return (
-        <div className='mt-[7vw]'>
-            <div className='h-[8vw] overflow-hidden'><img src='/1.png' alt='top-banner'/></div>
+        <div className='mt-[8vh] md:mt-[7vw]'>
+            <div className='h-[8vh] md:h-[8vw] overflow-hidden'><img src='/1.png' alt='top-banner'/></div>
             <Investor  pdfs={pdfs} folder={"share holding pattern"} />
         </div>
     )

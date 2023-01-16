@@ -4,8 +4,8 @@ import Investor from '../components/investor';
 import fs from 'fs'
 const Contact = ({pdfs}) => {
     return (
-        <div className='mt-[7vw]'>
-            <div className='h-[8vw] overflow-hidden'><img src='/1.png' alt='top-banner'/></div>
+        <div className='mt-[8vh] md:mt-[7vw]'>
+            <div className='h-[8vh] md:h-[8vw] overflow-hidden'><img src='/1.png' alt='top-banner'/></div>
             <Investor  pdfs={pdfs} folder={"contact information"} />
         </div>
     )

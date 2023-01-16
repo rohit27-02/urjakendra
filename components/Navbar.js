@@ -13,6 +13,7 @@ const Navbar = () => {
   const [isOpen, setisOpen] = useState(false);
   const [sw, setsw] = useState(false);
   useEffect(() => {
+    setisOpen(false)
     if (screen.width < 768) {
       setsw(true)
     }

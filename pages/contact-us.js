@@ -6,18 +6,18 @@ import { MdWifiCalling3 } from "react-icons/md"
 import { IoMdMail } from "react-icons/io"
 const contact = () => {
     return (
-        <div className='mt-[6.9vw]  bg-gray-100 text-gray-700'>
+        <div className='mt-[8vh] md:mt-[6.9vw]   bg-gray-100 text-gray-700'>
 
             <Banner pic="/businessman-touching-virtual-screen.jpg" title="CONTACT US" />
-            <div className='relative'>
-            <img className='absolute opacity-10 grayscale h-full object-cover' src='/background.jpg' alt='background'/>
+            <div className='relative mx-6 md:mx-0'>
+            <img className='absolute opacity-0 md:opacity-10 grayscale h-full object-cover' src='/background.jpg' alt='background'/>
             <div className='pt-20 w-fit mx-auto text-center'>
-                <h1 className='text-4xl mb-10 text-orange-500 font-bold '>URJA <span className='border-b-4 pb-2 border-gray-600 '>GLOBAL</span> LIMITED</h1>
-                <p className='text-xl font-semibold tracking-wider leading-relaxed'>URJA GLOBAL LIMITED IS IN ONE OF INDIA&apos;S LEADING RENEWABLE ENERGY DEVELOPERS</p>
+                <h1 className='text-3xl md:text-4xl mb-10 text-orange-500 font-bold '>URJA <span className='md:border-b-4 pb-2 border-gray-600 '>GLOBAL</span> LIMITED</h1>
+                <p className='text-lg md:text-xl font-semibold tracking-wider leading-relaxed'>URJA GLOBAL LIMITED IS IN ONE OF INDIA&apos;S LEADING RENEWABLE ENERGY DEVELOPERS</p>
             </div>
-            <div className='flex gap-10 flex-col w-[70rem] mt-14  mx-auto'>
-                <div className='flex gap-10'>
-                    <div className='p-10 bg-white font-medium drop-shadow w-[45%]'>
+            <div className='flex  gap-10 flex-col md:w-[70rem] mt-14  mx-auto'>
+                <div className='flex flex-col md:flex-row gap-10'>
+                    <div className='p-10 bg-white font-medium drop-shadow md:w-[45%]'>
                         <h1 className='font-bold text-xl'>Registered Office</h1>
                         <div className='flex items-center my-6'>
                             <IoLocationSharp className='w-12 mr-6 border rounded-full border-gray-500 p-1 text-orange-500 h-auto' />
@@ -63,7 +63,7 @@ const contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='p-12 w-[55%] bg-white font-medium drop-shadow'>
+                    <div className='p-12 md:w-[55%] bg-white font-medium drop-shadow'>
                         <h1 className=' font-bold text-xl'>Enquiry Now !</h1>
                         <form className='flex flex-col space-y-4 my-10'>
                             <div className='flex flex-col'>
@@ -94,7 +94,7 @@ const contact = () => {
                 <div className='p-12 drop-shadow font-medium   bg-white'>
                     <h1 className='text-xl w-fit mx-auto font-bold'>For Grievances/Investor Communications</h1>
                     <p className='mx-auto w-fit text-lg'>COMPANY SECRETARY</p>
-                    <div className='flex gap-20 mt-6'>
+                    <div className='flex flex-col md:flex-row gap-20 mt-6'>
                         <div className='flex items-center'>
                             <IoMdMail className='w-10 mr-6 border rounded-full border-gray-500 p-1 text-orange-500 h-auto' />
                             <div>
