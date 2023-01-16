@@ -5,10 +5,10 @@ import {FaFacebookF,FaLinkedinIn} from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <div style={{ fontFamily: "'Raleway', sans-serif" }} className=' h-[36vw] bg-[#efefef] text-sm pt-[3.2vw] w-full flex flex-col justify-between'>
-    <div className='flex px-[5vw]'>
-      <div className='flex flex-col w-1/4 px-[1.2vw]'>
-        <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
+    <div style={{ fontFamily: "'Raleway', sans-serif" }} className='h-[92vh] md:h-[36vw] bg-[#efefef] text-sm pt-[3.2vh] md:pt-[3.2vw] w-full flex flex-col md:justify-between'>
+    <div className='flex flex-col md:flex-row px-[2vh] md:px-[5vw]'>
+      <div className='flex md:flex-col md:w-1/4 md:px-[1.2vw]'>
+        <div className='flex flex-col my-[1vh] w-1/2 md:my-[1vw] gap-[0.2vh] md:gap-[0.2vw]'>
           <h1 className='text-orange-500 text-base font-bold'>About</h1>
           <span className='cursor-pointer '>Company Profile</span>
           <span className='cursor-pointer '>Our Leadership</span>
@@ -16,20 +16,20 @@ const Footer = () => {
           <span className='cursor-pointer '>Code of Ethics</span>
           <span className='cursor-pointer '>Awards and Accolades</span>
         </div>
-        <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
+        <div className='flex flex-col my-[1vh] w-1/2 md:my-[1vw] gap-[0.2vh] md:gap-[0.2vw]'>
           <h1 className='text-orange-500 text-base font-bold'>Products & Solutions</h1>
           <span className='cursor-pointer '>Batteries</span>
           <span className='cursor-pointer '>Electric vehicles</span>
         </div>
       </div>
-      <div className='flex flex-col w-1/4 px-[1.2vw]'>
-        <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
+      <div className='flex md:flex-col  md:w-1/4 px-[1.2vw]'>
+        <div className='flex flex-col my-[1vh] w-1/2 md:my-[1vw]  gap-[0.2vh] md:gap-[0.2vw]'>
           <h1 className='text-orange-500 text-base font-bold'>Urja Care</h1>
           <span className='cursor-pointer '>Book a complaint</span>
           <span className='cursor-pointer '>Raise a Query</span>
           <span className='cursor-pointer '>Warranty</span>
         </div>
-        <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
+        <div className='flex flex-col my-[1vh] w-1/2 md:my-[1vw]  gap-[0.2vh] md:gap-[0.2vw]'>
           <h1 className='text-orange-500 text-base font-bold'>Investors</h1>
           <span className='cursor-pointer '>Announcements</span>
           <span className='cursor-pointer '>Company Policy</span>
@@ -42,22 +42,22 @@ const Footer = () => {
           <span className='cursor-pointer '>Contact Information</span>
         </div>
       </div>
-      <div className='flex flex-col w-1/4 px-[1.2vw]'>
-        <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
+      <div className='flex md:flex-col md:w-1/4 px-[1.2vw]'>
+        <div className='flex flex-col w-1/2 my-[1vh] md:my-[1vw]  gap-[0.2vh] md:gap-[0.2vw]'>
           <h1 className='text-orange-500 text-base font-bold'>Presence</h1>
           <span className='cursor-pointer '>Our Network</span>
           <span className='cursor-pointer '>Dealer Zone</span>
         </div>
-        <div className='flex flex-col my-[1vw] gap-[0.2vw]'>
+        <div className='flex flex-col my-[1vh] w-1/2 md:my-[1vw]  gap-[0.2vh] md:gap-[0.2vw]'>
           <h1 className='text-orange-500 text-base font-bold'>Carrers</h1>
           <span className='cursor-pointer '>Freshers</span>
           <span className='cursor-pointer '>Experienced Professional</span>
         </div>
       </div>
-      <div className='flex flex-col w-1/4 gap-[1vw] text-base px-[1.2vw]'>
+      <div className='flex flex-col md:w-1/4 gap-4 md:gap-[1vw] text-base md:px-[1.2vw]'>
         <div className='text-orange-500 font-bold'>
           <div className='cursor-pointer mt-3'>Follow Us</div>
-          <div className='flex mt-[1vw] gap-[2vw]'>
+          <div className='flex mt-4 md:mt-[1vw] gap-6 md:gap-[2vw]'>
           <AiOutlineTwitter/>
           <FaLinkedinIn/>
           <FaFacebookF/>
@@ -66,9 +66,9 @@ const Footer = () => {
         </div>
         <div>
           <span  className='cursor-pointer text-orange-500 font-bold '>Subscribe to our Newsletter</span>
-          <div className='mt-[1vw] flex'>
-            <input placeholder='enter your email' className='bg-white p-[0.4vw]'/>
-            <button className='bg-orange-500 text-white ml-[0.8vw] drop-shadow-md px-[1vw] py-[0.5vw]'>Submit</button>
+          <div className='mt-[1vh] md:mt-[1vw] flex'>
+            <input placeholder='enter your email' className='bg-white p-2 md:p-[0.4vw]'/>
+            <button className='bg-orange-500 text-white ml-6 md:ml-[0.8vw] drop-shadow-md px-4 md:px-[1vw] py-2 md:py-[0.5vw]'>Submit</button>
           </div>
         </div>
         <div>
@@ -78,7 +78,7 @@ const Footer = () => {
       </div>
     </div>
 
-    <div className='flex justify-center bg-orange-500 text-white font-medium py-[0.4vw] items-center'>
+    <div className='flex justify-center bg-orange-500 mt-7 md:mt-0 text-white font-medium py-4 w-full md:py-[0.4vw] items-center'>
       All right reserved @ Urja Kendra pvt. ltd. 2022
     </div>
     </div>
