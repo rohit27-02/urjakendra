@@ -9,7 +9,7 @@ const corporategovernance = () => {
             <div className='md:mx-28 mx-6 font-medium'>
                 <h1 className='text-5xl md:text-6xl font-bold w-fit mx-auto mt-14 md:mt-24 mb-14'><span style={{ fontFamily: "'Montez',cursive" }}>Corporate</span> <span className='text-orange-500'>Governance</span></h1>
                 <p className='md:text-center text-gray-600'>The Companies philosophy on Corporate Governance aims to focus its energies and resources in creating and positively leveraging shareholders&apos; wealth, and at the same time, safeguarding the interests of all stakeholders. View our report on Corporate Governance, get acquainted with our familiarisation program for Independent Directors (ID) and our Terms and conditions for the appointment of Independent Directors (ID).</p>
-                <div className='flex flex-col md:flex-row my-20 gap-8'>
+                <div className='flex flex-col md:flex-row my-20 mx-4 md:mx-0 gap-8'>
                     <div className='drop-shadow-xl rounded-3xl text-gray-600 space-y-8 pb-28 overflow-hidden relative bg-white md:w-1/4 '>
                         <img className='w-full' src='https://www.tatapower.com/images/inv-download_img16.jpg' alt='sub-category'/>
                         <h1 className='text-lg font-semibold px-10 text-center'>Overview</h1>
