@@ -5,7 +5,7 @@ import {FaFacebookF,FaLinkedinIn} from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <div style={{ fontFamily: "'Raleway', sans-serif" }} className='h-[92vh] md:h-[36vw] bg-[#efefef] text-sm pt-[3.2vh] md:pt-[3.2vw] w-full flex flex-col md:justify-between'>
+    <div style={{ fontFamily: "'Raleway', sans-serif" }} className=' md:h-[36vw] bg-[#efefef] text-sm pt-[3.2vh] md:pt-[3.2vw] w-full flex flex-col md:justify-between'>
     <div className='flex flex-col md:flex-row px-[2vh] md:px-[5vw]'>
       <div className='flex md:flex-col md:w-1/4 md:px-[1.2vw]'>
         <div className='flex flex-col my-[1vh] w-1/2 md:my-[1vw] gap-[0.2vh] md:gap-[0.2vw]'>

@@ -49,7 +49,7 @@ export default function Home() {
           <p>We at Urja are committed to providing world-class services to rapidly develop rural India focusing on rural electrification especially in hilly areas, forest regions, deserts, islands, far flung villages, unmanned locations and other areas which require reliable and uninterrupted power supply.
 
             With a strong design and manufacturing back ground UGL has developed themselves as a leading manufacturer of Solar Energy Systems to cater to almost the complete range of customer requirements</p>
-          <button onClick={() => Router.push("/company-overview")} className="bg-orange-500 rounded-full border-black border drop-shadow-sm self-center w-fit px-6 py-3 text-white">Know More</button>
+          <button onClick={() => Router.push("/company-overview")} className="bg-orange-500 rounded-full border-black border drop-shadow-sm md:self-center w-fit px-6 py-3 text-white">Know More</button>
           <div style={{ fontFamily: "sans-serif" }} className="flex justify-center gap-6">
             <span className=" md:text-2xl  ">#CONSERVE ENERGY</span>
             <span className=" md:text-2xl ">#CREATE ERNERGY</span>
@@ -58,12 +58,12 @@ export default function Home() {
       </div>
       {/* main banner */}
 
-      <div className="flex mt-10 md:mt-0 flex-row w-full animate__animated drop-shadow-xl bg-cover overflow-hidden relative h-[40vw] md:h-[83vh]">
+      <div className="flex mt-10 md:mt-0 flex-row w-full animate__animated drop-shadow-xl bg-cover overflow-hidden relative h-[84vw] md:h-[83vh]">
         <img src={image} id="main-banner" alt="main banner" className="object-contain md:object-cover -z-20 w-full h-full animate__animated  absolute" />
         <div id="scooter.png" className=" w-1/2 relative md:border-r-2 cursor-pointer [&>*]:hover:flex group [&>*]:hover:text-[#333333] " onMouseEnter={(e) => changeimage(e)}>
           <div className="bg-white absolute top-0 w-full h-0 md:group-hover:h-[10vw] group-hover:h-[10vh] transition-all duration-500 ease-in-out"></div>
           <div className="bg-black opacity-40 -z-10 hidden md:h-full w-full absolute top-0 "></div>
-          <div className="hover:text-[#333333] mt-6 transition-all flex-col duration-500 ease-in-out text-white pl-[2vh] md:pl-[2vw]  ">
+          <div className=" hover:text-[#333333] mt-6 transition-all flex-col duration-500 ease-in-out md:text-white pl-[2vh] md:pl-[2vw]  ">
             <h1 className="z-10 drop-shadow-xl text-sm md:text-xl">URJA</h1>
             <p className="font-bold drop-shadow-xl text-base md:text-3xl">ELECTRIC VEHICLE</p>
           </div>
@@ -72,7 +72,7 @@ export default function Home() {
         <div id="battery.png" className=" w-1/2 relative  cursor-pointer [&>*]:hover:flex group [&>*]:hover:md:text-[#333333] " onMouseEnter={(e) => changeimage(e)}>
           <div className="bg-white absolute top-0 w-full h-0 transition-all duration-500 ease-in-out group-hover:h-[10vh] md:group-hover:h-[10vw]"></div>
           <div className="bg-black opacity-40 -z-10 w-full md:h-full hidden absolute top-0 "></div>
-          <div className="hover:text-[#333333] mt-6 transition-all flex-col duration-500 ease-in-out text-white pl-[2vh] md:pl-[2vw]  ">
+          <div className="hover:text-[#333333] mt-6 transition-all flex-col duration-500 ease-in-out md:text-white pl-[2vh] md:pl-[2vw]  ">
             <h1 className="z-10 drop-shadow-xl text-sm md:text-xl">URJA</h1>
             <p className="font-bold drop-shadow-xl text-base md:text-3xl">BATTERIES</p>
           </div>
@@ -83,9 +83,9 @@ export default function Home() {
       {/* video */}
       <div className="relative overflow-hidden">
         {!sw && <img src="/background.jpg" alt="background image" className="absolute  top-0 grayscale opacity-10" />}
-        <div className="py-[4vh] md:py-[4vw] h-[80vw] md:h-[70vh] relative overflow-hidden px-0 md:px-[2vw]">
+        <div className=" md:py-[4vw] h-[60vw] md:h-[70vh] relative overflow-hidden px-0 md:px-[2vw]">
           <video className="h-full md:h-auto" src="/home.mp4" muted loop autoPlay={true} />
-          <div className="bg-black bg-opacity-70 w-80 md:w-[60vw] self-center items-center font-bold px-[2vh] md:px-[2vw] grid py-[2vh] md:py-[2vw] h-[55vw] md:h-[40vh] text-center absolute left-7 md:left-[20vw] top-[5.78vh] md:top-[10vw]">
+          <div className="bg-black bg-opacity-70 w-80 md:w-[60vw] self-center items-center font-bold px-[2vh] md:px-[2vw] grid py-[2vh] md:py-[2vw] h-[55vw] md:h-[40vh] text-center absolute left-7 md:left-[20vw] top-3 md:top-[10vw]">
             <h1 className="text-orange-500 text-xl md:text-4xl md:border-b-4 md:pb-3 border-gray-200 w-fit mx-auto mb-6">URJA GLOBAL LIMITED</h1>
             <p className="text-white text-xs md:text-sm font-normal md:font-medium">Urja Global Limited is in one of India’s leading Renewable Energy developers and operators. Urja is engaged in design, consultancy, integration, supply, installation, commissioning & maintenance of off-grid and grid connected Solar Power Plants. We are approved Channel Partners of Ministry of New and Renewable Energy (MNRE), Govt. of India.</p>
           </div>
