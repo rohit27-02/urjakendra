@@ -22,7 +22,7 @@ const EV = ({ title, pic }) => {
                         </div>
                     </div></Slide>
                     <Slide right><div className="lg:max-w-lg lg:w-fit md:w-1/2 w-5/6">
-                        <img className="object-cover object-center rounded-3xl" alt="hero" src="https://www.vespaindia.com/images/justin-bieber.jpg" />
+                        <img className="object-cover object-center rounded-3xl" alt="hero" src="/EV photo.png" />
                     </div></Slide>
                 </div>
             </section>
@@ -30,7 +30,7 @@ const EV = ({ title, pic }) => {
             <section className="text-gray-600 body-font">
                 <div className="container mx-auto flex px-28 pb-24 mt-10 md:flex-row flex-col items-center">
                     <Slide left><div className="lg:max-w-lg lg:w-fit md:w-1/2 w-5/6 mb-10 md:mb-0">
-                        <img className="object-cover object-center rounded-3xl" alt="hero" src="https://www.vespaindia.com/images/justin-bieber.jpg" />
+                        <img className="object-cover object-center rounded-3xl" alt="hero" src="/EV photo.png" />
                     </div></Slide>
                     <Slide right cascade><div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
                         <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold text-gray-900">Before they sold out

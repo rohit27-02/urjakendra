@@ -2,14 +2,15 @@
 import React from 'react'
 import Letushelpyou from '../components/Letushelpyou'
 import Router from 'next/router'
+import Banner from '../components/Banner'
 import { Slide } from 'react-reveal'
 const Batteries = () => {
     return (
         <div className='mt-[6.9vw] pb-[4vw] text-base bg-gray-100'>
-            <div className='h-[50vh] overflow-hidden'>
+            {/* <div className='h-[50vh] overflow-hidden'>
                 <img className='w-full' src='/battery banner.png' alt='banner-image' />
-            </div>
-
+            </div> */}
+            <Banner pic={"/battery banner.png"}/>
             <div className='text-center px-[8vw] font-semibold my-[4vw] space-y-[1.5vw]'>
                 <h1 className='text-4xl text-orange-500 border-b-4 w-fit mx-auto border-orange-500 pb-2 font-bold'>URJA BATTERIES</h1>
                 <p className='text-gray-600 tracking-wider leading-relaxed'>Do you all remember the time when Tuk-Tuks or Tempos were the cheapest mode of commutation in some tier 1 and major tier 2 cities? People always prefer riding them for short distances in low price. Then came the population and pollution jump. Their place was taken by E-rickshaws which are environment friendly and serves the same purpose. These new age battery operated E-Rickshaws are the vehicle leaders for a better future. </p>
