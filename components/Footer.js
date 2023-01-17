@@ -2,6 +2,7 @@ import React from 'react'
 import {TfiYoutube} from 'react-icons/tfi'
 import {AiOutlineTwitter} from 'react-icons/ai'
 import {FaFacebookF,FaLinkedinIn} from 'react-icons/fa'
+import Router from 'next/router'
 
 const Footer = () => {
   return (
@@ -10,48 +11,47 @@ const Footer = () => {
       <div className='flex md:flex-col md:w-1/4 md:px-[1.2vw]'>
         <div className='flex flex-col my-[1vh] w-1/2 md:my-[1vw] gap-[0.2vh] md:gap-[0.2vw]'>
           <h1 className='text-orange-500 text-base font-bold'>About</h1>
-          <span className='cursor-pointer '>Company Profile</span>
-          <span className='cursor-pointer '>Our Leadership</span>
-          <span className='cursor-pointer '>Coporate Governance</span>
-          <span className='cursor-pointer '>Code of Ethics</span>
-          <span className='cursor-pointer '>Awards and Accolades</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/company-overview")}>Company Overview</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/our-leadership")}>Our Leadership</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/corporate-governance")}>Corporate Governance</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/code-of-etheics")}>Code of Ethics</span>
         </div>
         <div className='flex flex-col my-[1vh] w-1/2 md:my-[1vw] gap-[0.2vh] md:gap-[0.2vw]'>
           <h1 className='text-orange-500 text-base font-bold'>Products & Solutions</h1>
-          <span className='cursor-pointer '>Batteries</span>
-          <span className='cursor-pointer '>Electric vehicles</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/batteries")}>Batteries</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/scooty")}>Electric vehicles</span>
         </div>
       </div>
       <div className='flex md:flex-col  md:w-1/4 px-[1.2vw]'>
         <div className='flex flex-col my-[1vh] w-1/2 md:my-[1vw]  gap-[0.2vh] md:gap-[0.2vw]'>
           <h1 className='text-orange-500 text-base font-bold'>Urja Care</h1>
-          <span className='cursor-pointer '>Book a complaint</span>
-          <span className='cursor-pointer '>Raise a Query</span>
-          <span className='cursor-pointer '>Warranty</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/book-a-complaint")}>Book a complaint</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/product-registration")}>Product Registration</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/")}>Warranty</span>
         </div>
         <div className='flex flex-col my-[1vh] w-1/2 md:my-[1vw]  gap-[0.2vh] md:gap-[0.2vw]'>
           <h1 className='text-orange-500 text-base font-bold'>Investors</h1>
-          <span className='cursor-pointer '>Announcements</span>
-          <span className='cursor-pointer '>Company Policy</span>
-          <span className='cursor-pointer '>Right Issue</span>
-          <span className='cursor-pointer '>Notice of Records Date & BM</span>
-          <span className='cursor-pointer '>Financials</span>
-          <span className='cursor-pointer '>Share Holding Pattern</span>
-          <span className='cursor-pointer '>Corporate Governance</span>
-          <span className='cursor-pointer '>Annual Report</span>
-          <span className='cursor-pointer '>Contact Information</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/announcement/1")}>Announcements</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/company-policy")}>Company Policy</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/right-issue")}>Right Issue</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/notice-of-record-date-&-BM")}>Notice of Records Date & BM</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/financials")}>Financials</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/share-holding-pattern")}>Share Holding Pattern</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/corporate-governance-report/1")}>Corporate Governance</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/Annual-report/1")}>Annual Report</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/contact-information")}>Contact Information</span>
         </div>
       </div>
       <div className='flex md:flex-col md:w-1/4 px-[1.2vw]'>
         <div className='flex flex-col w-1/2 my-[1vh] md:my-[1vw]  gap-[0.2vh] md:gap-[0.2vw]'>
           <h1 className='text-orange-500 text-base font-bold'>Presence</h1>
-          <span className='cursor-pointer '>Our Network</span>
-          <span className='cursor-pointer '>Dealer Zone</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/our-network")}>Our Network</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/dealer-zone")}>Dealer Zone</span>
         </div>
         <div className='flex flex-col my-[1vh] w-1/2 md:my-[1vw]  gap-[0.2vh] md:gap-[0.2vw]'>
           <h1 className='text-orange-500 text-base font-bold'>Carrers</h1>
-          <span className='cursor-pointer '>Freshers</span>
-          <span className='cursor-pointer '>Experienced Professional</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/freshers")}>Freshers</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/experienced-professional")}>Experienced Professional</span>
         </div>
       </div>
       <div className='flex flex-col md:w-1/4 gap-4 md:gap-[1vw] text-base md:px-[1.2vw]'>
