@@ -14,6 +14,7 @@ class MyDocument extends Document {
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
                     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;800&family=Montez&display=swap" rel="stylesheet" />
+                    <script defer type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
                 </Head>
                 <body>
                     <Main />

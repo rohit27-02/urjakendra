@@ -1,0 +1,11 @@
+Model Information:
+* title:	Nissan Sylphy ev 2018
+* source:	https://sketchfab.com/3d-models/nissan-sylphy-ev-2018-26b14a10024e4a3ca5f27af75b0d6d88
+* author:	Davidson (https://sketchfab.com/a0930582398)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Nissan Sylphy ev 2018" (https://sketchfab.com/3d-models/nissan-sylphy-ev-2018-26b14a10024e4a3ca5f27af75b0d6d88) by Davidson (https://sketchfab.com/a0930582398) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

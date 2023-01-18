@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { Slide } from 'react-reveal'
+import Router from 'next/router'
 const EV = ({ title, pic }) => {
     return (
         <div>
@@ -17,7 +18,7 @@ const EV = ({ title, pic }) => {
                         </h1>
                         <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
                         <div className="flex justify-center">
-                            <button className="inline-flex text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded-full text-lg">Know more</button>
+                            <button onClick={()=>Router.push("/scooty/urja-sxl")} className="inline-flex text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded-full text-lg">Know more</button>
 
                         </div>
                     </div></Slide>
