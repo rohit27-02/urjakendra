@@ -52,12 +52,13 @@ const Scootydetails = () => {
             <img className='' src='https://www.vespaindia.com/images/sxl/brake-safe.jpg' alt='front'/>
         </div>
         <div className='bg-[#53C2D1] flex w-full h-[90vh]'>
-            <img className='w-[40%] self-start h-auto object-contain ' src='/Urja E-life 2.png' alt='front'/>
+            
             <div className='font-semibold text-white w-[30%] mt-20 ml-40 space-y-6 text-lg'>
                 <h1 className='text-6xl text-orange-500'>Ride Smooth</h1>
                 <p className='text-xl text-orange-500'>- Hydraulic Front & Rear suspensions<br></br>- Anti-Dive Character</p>
                 <p>Hydraulic suspensions ensure you have a smooth ride adjusted to your riding style. Now head out for a spin with ease.</p>
             </div>
+            <img className='w-[60%] self-start h-auto object-contain ' src='/Urja E-life 2.png' alt='front'/>
         </div>
         <div className=' flex w-full justify-between h-[90vh]'>
             <div className='font-semibold w-[30%] mt-20 ml-20 space-y-6 text-lg'>
