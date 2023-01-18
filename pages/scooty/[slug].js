@@ -9,7 +9,7 @@ const Scootydetails = () => {
             <div className='absolute text-7xl text-center left-[40vw] font-bold'>
                 <h1><span style={{ fontFamily: "'Montez',cursive" }} className="text-orange-500 ">360°</span><br></br>Urja SXL</h1>
             </div>
-        <model-viewer src="/scene.gltf" alt="VR Headset" auto-rotate camera-controls ar touch-action="pan-y" ios-src="/scene.gltf"></model-viewer>
+        <model-viewer src="/scene.gltf" alt="VR Headset" auto-rotate camera-controls ar disable-zoom touch-action="pan-y" ios-src="/scene.gltf"></model-viewer>
         </div>
         <div className=''>
             <h1 className='w-full text-center text-4xl font-bold text-orange-500 underline-offset-8 underline'>Features</h1>
