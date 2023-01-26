@@ -33,13 +33,13 @@ const contact = () => {
                                 <p className='text-sm font-sans'>487/63, 1st Floor, National Market,Peeragarhi, New Delhi-110087</p>
                             </div>
                         </div>
-                        <div className='flex items-center my-6'>
+                        {/* <div className='flex items-center my-6'>
                             <IoLocationSharp className='w-12  mr-6 border rounded-full border-gray-500 p-1 text-orange-500 h-auto' />
                             <div className='w-4/5'>
                                 <h1 className='font-semibold mb-1'>FACTORY ADDRESS</h1>
                                 <p className='text-sm font-sans'>Plot No.11, Sec.16, HSIIDC, Industrial complex, Bahaurgargh, Distt. Jhajjar, Haryana-124507,India</p>
                             </div>
-                        </div>
+                        </div> */}
                         <h1 className='font-bold pt-4 text-gray-700 text-xl'>Contact Us</h1>
                         <div className='flex items-center my-6'>
                             <MdWifiCalling3 className='w-12  mr-6 border rounded-full border-gray-500 p-1 text-orange-500 h-auto' />

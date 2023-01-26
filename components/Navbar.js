@@ -186,7 +186,7 @@ const Navbar = () => {
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/company-overview")}>Company Overview</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/our-leadership")}>Our Leadership</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/corporate-governance")}>Corporate Governance</li>
-              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300  hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/company-overview")}>Code of Ethics</li>
+              
             </ul>}
           </div>
           <div id='n2' onClick={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer py-4 flex gap-4 font-semibold  md:gap-[0.5vw] items-center  '>Products & Solutions <BsChevronDown /></span>

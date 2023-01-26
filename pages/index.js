@@ -46,7 +46,7 @@ export default function Home() {
         {!sw && <img src="/background.jpg" alt="background image" className="absolute grayscale top-0 opacity-10" />}
         <Fade bottom cascade><div className="flex justify-center md:text-center px-8 md:px-0 md:max-w-[70vw] gap-8 mx-auto flex-col pt-[6vh] md:pt-[6vw] mb-6vh md:mb-[6vw]">
           <h1 className="text-orange-500 font-bold text-3xl md:text-4xl w-fit pb-3 self-center ">WELCOME TO<br></br> URJA GLOBAL<span className="border-orange-500 border-b-4"> LIMITED</span></h1>
-          <p>We at Urja are committed to providing world-class services to rapidly develop rural India focusing on rural electrification especially in hilly areas, forest regions, deserts, islands, far flung villages, unmanned locations and other areas which require reliable and uninterrupted power supply.
+          <p>We at Urja are committed to providing world-class services to rapidly develop India focusing on rural electrification especially in hilly areas, forest regions, deserts, islands, far flung villages, unmanned locations and other areas which require reliable and uninterrupted power supply.
 
             With a strong design and manufacturing back ground UGL has developed themselves as a leading manufacturer of Solar Energy Systems to cater to almost the complete range of customer requirements</p>
           <button onClick={() => Router.push("/company-overview")} className="bg-orange-500 rounded-full border-black border drop-shadow-sm md:self-center w-fit px-6 py-3 text-white">Know More</button>
@@ -104,10 +104,10 @@ export default function Home() {
           </div>
           <p className="w-full text-center font-medium my-[2.5vh] md:my-[2.5vw]">A nation-wide network of around 2000 service professionals with tremendous experience.</p>
           <div className="flex  justify-center flex-col md:flex-row items-center md:items-start gap-[2vh] md:gap-[2vw]">
-            <Zoom><div className="w-[20.5vh] md:w-[20.5vw] h-[14.5vh] md:h-[14.5vw] gap-[1vh] md:gap-[1vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-500 font-normal text-4xl md:text-5xl font-mono">38,624</span><span>Dealer Network</span></div></Zoom>
-            <Zoom><div className="w-[20.5vh] md:w-[20.5vw] h-[14.5vh] md:h-[14.5vw] gap-[1vh] md:gap-[1vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-500 font-normal text-4xl md:text-5xl font-mono">592</span><span>Sales & Service Team</span></div></Zoom>
-            <Zoom><div className="w-[20.5vh] md:w-[20.5vw] h-[14.5vh] md:h-[14.5vw] gap-[1vh] md:gap-[1vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-500 font-normal text-4xl md:text-5xl font-mono">2,240</span><span>Distributor Network</span></div></Zoom>
-            <Zoom><div className="w-[20.5vh] md:w-[20.5vw] h-[14.5vh] md:h-[14.5vw] gap-[1vh] md:gap-[1vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-500 font-normal text-4xl md:text-5xl font-mono">110 Mn</span><span>Happy Customers</span></div></Zoom>
+            <Zoom><div className="w-[20.5vh] md:w-[20.5vw] h-[14.5vh] md:h-[14.5vw] gap-[1vh] md:gap-[1vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-500 font-normal text-4xl md:text-5xl font-mono">38</span><span>Dealer Network</span></div></Zoom>
+            <Zoom><div className="w-[20.5vh] md:w-[20.5vw] h-[14.5vh] md:h-[14.5vw] gap-[1vh] md:gap-[1vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-500 font-normal text-4xl md:text-5xl font-mono">59</span><span>Sales & Service Team</span></div></Zoom>
+            <Zoom><div className="w-[20.5vh] md:w-[20.5vw] h-[14.5vh] md:h-[14.5vw] gap-[1vh] md:gap-[1vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-500 font-normal text-4xl md:text-5xl font-mono">22</span><span>Distributor Network</span></div></Zoom>
+            <Zoom><div className="w-[20.5vh] md:w-[20.5vw] h-[14.5vh] md:h-[14.5vw] gap-[1vh] md:gap-[1vw] flex justify-center items-center flex-col drop-shadow-md bg-white font-semibold text-[#555555]"><span className="text-orange-500 font-normal text-4xl md:text-5xl font-mono">10 Mn</span><span>Happy Customers</span></div></Zoom>
           </div>
         </div>
       </div>

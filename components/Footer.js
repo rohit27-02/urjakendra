@@ -14,7 +14,7 @@ const Footer = () => {
           <span className='cursor-pointer ' onClick={()=>Router.push("/company-overview")}>Company Overview</span>
           <span className='cursor-pointer ' onClick={()=>Router.push("/our-leadership")}>Our Leadership</span>
           <span className='cursor-pointer ' onClick={()=>Router.push("/corporate-governance")}>Corporate Governance</span>
-          <span className='cursor-pointer ' onClick={()=>Router.push("/code-of-etheics")}>Code of Ethics</span>
+     
         </div>
         <div className='flex flex-col my-[1vh] w-1/2 md:my-[1vw] gap-[0.2vh] md:gap-[0.2vw]'>
           <h1 className='text-orange-500 text-base font-bold'>Products & Solutions</h1>
@@ -27,7 +27,7 @@ const Footer = () => {
           <h1 className='text-orange-500 text-base font-bold'>Urja Care</h1>
           <span className='cursor-pointer ' onClick={()=>Router.push("/book-a-complaint")}>Book a complaint</span>
           <span className='cursor-pointer ' onClick={()=>Router.push("/product-registration")}>Product Registration</span>
-          <span className='cursor-pointer ' onClick={()=>Router.push("/")}>Warranty</span>
+
         </div>
         <div className='flex flex-col my-[1vh] w-1/2 md:my-[1vw]  gap-[0.2vh] md:gap-[0.2vw]'>
           <h1 className='text-orange-500 text-base font-bold'>Investors</h1>
