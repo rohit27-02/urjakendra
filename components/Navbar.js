@@ -42,10 +42,10 @@ const Navbar = () => {
   const sub = (e) => {
     sets1(false)
     sets2(false)
-    if(sw)
-    e.currentTarget.id == "s1" ? sets1(!s1) : e.currentTarget.id == "s2" ? sets2(!s2) : "";
+    if (sw)
+      e.currentTarget.id == "s1" ? sets1(!s1) : e.currentTarget.id == "s2" ? sets2(!s2) : "";
     else
-    e.currentTarget.id == "s1" ? sets1(true) : e.currentTarget.id == "s2" ? sets2(true) : "";
+      e.currentTarget.id == "s1" ? sets1(true) : e.currentTarget.id == "s2" ? sets2(true) : "";
   }
 
   const ref = useRef();
@@ -113,7 +113,6 @@ const Navbar = () => {
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/company-overview")}>Company Overview</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/our-leadership")}>Our Leadership</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/corporate-governance")}>Corporate Governance</li>
-              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/company-overview")}>Code of Ethics</li>
             </ul>}
           </div>
           <div id='n2' onMouseEnter={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center  '>Products & Solutions <BsChevronDown /></span>
@@ -151,7 +150,6 @@ const Navbar = () => {
             {n3 && <ul onMouseLeave={() => setn3(false)} className='absolute drop-shadow-xl border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] bg-white w-[15vw]'>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/book-a-complaint")}>Book a complaint</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/product-registration")}>Register your Product</li>
-              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/book a complaint")}>Warranty</li>
             </ul>}
           </div>
           <div id='n4' onMouseEnter={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center  '>Presence <BsChevronDown /></span>
@@ -186,7 +184,7 @@ const Navbar = () => {
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/company-overview")}>Company Overview</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/our-leadership")}>Our Leadership</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/corporate-governance")}>Corporate Governance</li>
-              
+
             </ul>}
           </div>
           <div id='n2' onClick={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer py-4 flex gap-4 font-semibold  md:gap-[0.5vw] items-center  '>Products & Solutions <BsChevronDown /></span>
@@ -224,7 +222,6 @@ const Navbar = () => {
             {n3 && <ul className='  border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] [&>*]:pl-2 bg-white '>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/book-a-complaint")}>Book a complaint</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/product-registration")}>Register your Product</li>
-              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300  hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/book a complaint")}>Warranty</li>
             </ul>}
           </div>
           <div id='n4' onClick={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer py-4 flex gap-4 font-semibold  md:gap-[0.5vw] items-center  '>Presence <BsChevronDown /></span>
