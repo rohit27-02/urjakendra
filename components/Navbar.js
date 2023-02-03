@@ -86,7 +86,7 @@ const Navbar = () => {
           <div><img onClick={() => Router.push("/")} alt='logo' className='h-[6vh] ' src='/logo.png' /> </div>
           <Hamburger toggled={isOpen} toggle={setisOpen} />
 
-        </div> : <div className='flex w-5/6  justify-end gap-[3vw] '>
+        </div> : <div className='flex w-5/6  justify-end gap-[2.5vw] '>
           <div onPointerEnter={() => { ref.current.classList.remove("translate-x-[100%]") }} className='fixed bg-gray-200 text-lg md:text-[1.5vw] text-orange-400 h-[24vh] md:h-[14vw] w-[7vh] md:w-[3vw] top-[60vw] md:top-[40vh] right-0 transition-all z-20 duration-300 overflow-hidden '>
             <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer '><img className='w-[4vh] md:w-[2.4vw]' src="https://img.icons8.com/office/60/null/gender-neutral-user.png" /></div>
             <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer '><img className='w-[4vh] md:w-[2.4vw]' src="https://img.icons8.com/plasticine/100/null/ringer-volume.png" /></div>
@@ -165,6 +165,7 @@ const Navbar = () => {
             </ul>}
           </div>
 
+          <div><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center  ' onClick={() => Router.push("/Events")}>Events</span></div>
           <div><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center  ' onClick={() => Router.push("/contact-us")}>Contact Us</span></div>
 
         </div>}
@@ -172,7 +173,7 @@ const Navbar = () => {
 
 
 
-        {/* sidebar */}
+       
 
 
       </div>
