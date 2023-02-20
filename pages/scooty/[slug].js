@@ -3,12 +3,12 @@ import React,{useState,useEffect} from 'react'
 import Banner from "../../components/Banner"
 import Router from 'next/router';
 const Scootydetails = () => {
-    const [pic, setpic] = useState("");
+    const [pic, setpic] = useState([]);
     useEffect(() => {
        if(Router.asPath=="/scooty/urja-sxl")
-       setpic("/Urja E-life 1.1.png")
+       setpic(["/Urja E-Life 1.png","/Urja E-life 2.png","/Urja E-life 3.png","/Urja E-Zess 4.png","/Urja E-life 5.png"])
        else
-       setpic("/Urja E-Zess 1.png")
+       setpic(["/Urja E-Zess 1.png","/Urja E-Zess 2.png","/Urja E-Zess 3.png","/Urja E-Zess 4.png","/Urja E-Zess 5.png"])
     }, []);
   return (
     <div className='mt-[8vh] md:mt-[7vw]'>
@@ -28,12 +28,12 @@ const Scootydetails = () => {
                     <p className='text-lg text-gray-700'>The design and colours are inspired by the roaring 60s’ and the distinctive rectangular headlamp adds a touch of exclusivity to the iconic Vespa design.</p>
                 </div>
                 <div>
-                    <img className='w-[90%] ml-20 ' src={pic} alt='scooty-image'/>
+                    <img className='w-[90%] ml-20 ' src={pic[0]} alt='scooty-image'/>
                 </div>
             </div>
         </div>
         <div className='bg-[#53C2D1] flex w-full h-[90vh]'>
-            <img className='w-[55%] h-auto object-contain self-start' src='https://www.vespaindia.com/images/sxl/performance.jpg' alt='front'/>
+            <img className='w-[55%] h-auto object-contain self-start' src={pic[1]} alt='front'/>
             <div className='font-semibold text-white w-[30%] mt-20 ml-20 space-y-6 text-lg'>
                 <h1 className='text-6xl text-orange-500'>Top-notch<br></br>performance</h1>
                 <p className='text-xl text-orange-500'>- 150CC & 125CC BSVI Engine<br></br>- 3V tech Fuel Injection</p>
@@ -47,10 +47,10 @@ const Scootydetails = () => {
                 <p className='text-xl text-orange-500'>- Anti-Lock Braking System (ABS) - 150CC<br></br>- Combined Braking System (CBS) - 125CC</p>
                 <p>Our ever-reliable braking systems offer safe braking performance on Indian roads, no matter your riding style.</p>
             </div>
-            <img className='' src='https://www.vespaindia.com/images/sxl/brake-safe.jpg' alt='front'/>
+            <img className='' src={pic[2]} alt='front'/>
         </div>
         <div className='bg-[#53C2D1] flex w-full h-[90vh]'>
-            <img className='w-[55%] self-start h-auto object-contain ' src='https://www.vespaindia.com/images/sxl/ride-smooth-sxl.jpg' alt='front'/>
+            <img className='w-[55%] self-start h-auto object-contain ' src={pic[1]} alt='front'/>
             <div className='font-semibold text-white w-[30%] mt-20 ml-20 space-y-6 text-lg'>
                 <h1 className='text-6xl text-orange-500'>Ride Smooth</h1>
                 <p className='text-xl text-orange-500'>- Hydraulic Front & Rear suspensions<br></br>- Anti-Dive Character</p>
@@ -63,10 +63,10 @@ const Scootydetails = () => {
                 <p className='text-xl text-orange-500'>- Semi Digital Cluster</p>
                 <p>The digital console showcases the fuel level, time, has two trip meters and an odometer. That’s a sweet touch of tech to your ride.</p>
             </div>
-            <img className='p-20' src='https://www.vespaindia.com/images/sxl/SXL_cluster.jpg' alt='front'/>
+            <img className='p-20' src={pic[3]} alt='front'/>
         </div>
         <div className='bg-[#53C2D1] flex w-full h-[90vh]'>
-            <img className='w-[58.5%] self-start h-auto object-contain ' src='https://www.vespaindia.com/images/sxl/cozy-comfortable.jpg' alt='front'/>
+            <img className='w-[58.5%] self-start h-auto object-contain ' src={pic[4]} alt='front'/>
             <div className='font-semibold text-white w-[30%] mt-20 ml-10 space-y-6 text-lg'>
                 <h1 className='text-6xl text-orange-500'>Cozy & <br></br>Comfortable</h1>
                 <p className='text-xl text-orange-500'>- Rider-friendly seats</p>
