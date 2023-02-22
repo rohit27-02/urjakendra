@@ -18,7 +18,7 @@ const Batteries = () => {
             <Slide bottom cascade><div className='flex flex-col md:flex-row justify-center font-semibold'>
                 <div onClick={() => Router.push("/E-rickshaw-battery")} className='scale-90 bg-white hover:shadow-xl transition-all duration-300 ease-in-out cursor-pointer p-4 md:p-[1.5vw] text-center m-4 md:m-[2vw]'>
                     <h1 className='text-lg md:text-xl uppercase font-semibold'>E-Rickshaw Battery</h1>
-                    <img src='https://www.livguard.com/img/product/automotive-batteries/ERiksha/E-shakti-ER-1500.png' alt='battery-image' />
+                    <img src='/battery image.png' alt='battery-image' />
                     <p className='font-semibold text-gray-600 tracking-wider'>
                         <div>Capacity - 100Ah @ C</div>
                         <div>Warranty - 6 Months</div>
@@ -26,7 +26,7 @@ const Batteries = () => {
                 </div>
                 <div onClick={() => Router.push("/Inverter-battery")} className='scale-90 bg-white hover:shadow-xl transition-all duration-300 ease-in-out cursor-pointer p-4 md:p-[1.5vw] text-center m-4 md:m-[2vw]'>
                     <h1 className='text-lg md:text-xl uppercase font-semibold'>Inverter Battery</h1>
-                    <img src='https://www.livguard.com/img/product/automotive-batteries/ERiksha/E-shakti-ER-1500.png' alt='battery-image' />
+                    <img src='/battery image.png' alt='battery-image' />
                     <p className='font-semibold text-gray-600 tracking-wider'>
                         <div>Capacity - 100Ah @ C</div>
                         <div>Warranty - 6 Months</div>
@@ -34,7 +34,7 @@ const Batteries = () => {
                 </div>
                 <div onClick={() => Router.push("/Solar-battery")} className='scale-90 bg-white hover:shadow-xl transition-all duration-300 ease-in-out cursor-pointer p-4 md:p-[1.5vw] text-center m-4 md:m-[2vw]'>
                     <h1 className='text-lg md:text-xl uppercase font-semibold'>Solar Battery</h1>
-                    <img src='https://www.livguard.com/img/product/automotive-batteries/ERiksha/E-shakti-ER-1500.png' alt='battery-image' />
+                    <img src='/battery image.png' alt='battery-image' />
                     <p className='font-semibold text-gray-600 tracking-wider'>
                         <div>Capacity - 100Ah @ C</div>
                         <div>Warranty - 6 Months</div>
@@ -44,7 +44,7 @@ const Batteries = () => {
             </Slide>
             <div className='flex relative overy flex-col px-6 md:px-0  justify-center items-center mt-[5vh] md:mt-[5vw] bg-white py-[2vh] md:py-[2vw] overflow-hidden font-bold space-y-[2vh] md:space-y-[2vw]'>
                 <h1 className='text-3xl md:text-4xl text-orange-500 border-b-2 md:border-b-4 w-fit text-center mx-auto border-orange-500 pb-2'>BATTERY VIDEO GALLERY</h1>
-                <iframe className='container h-auto md:h-[400px] md:w-[711px]' width="711" height="400" src="https://www.youtube.com/embed/_Q3xF6I8eM8" title="ऊर्जा ग्लोबल की ई-स्कूटर असेंबलिंग यूनिट. Urja Global's E-Scooters Assembling Unit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="711" height="400" src="https://www.youtube.com/embed/LgT2y8P0dKQ" title="Urja Product Launching At Power On Battery Expo 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div className='bg-white pb-[2vh] px-6 md:px-0 md:pb-[2vw] relative overflow-hidden'>
                 <img className='absolute grayscale opacity-0 md:opacity-10' src='/background.jpg' alt='' />
