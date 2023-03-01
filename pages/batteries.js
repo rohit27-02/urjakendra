@@ -7,9 +7,7 @@ import { Slide } from 'react-reveal'
 const Batteries = () => {
     return (
         <div className='mt-[8vh] md:mt-[6.9vw] pb-[4vh] md:pb-[4vw] text-sm md:text-base bg-gray-100'>
-            {/* <div className='h-[50vh] overflow-hidden'>
-                <img className='w-full' src='/battery banner.png' alt='banner-image' />
-            </div> */}
+          
             <Banner pic={"/battery banner.png"} />
             <div className='md:text-center px-6 md:px-[8vw] font-semibold my-10 md:my-[4vw] space-y-6 md:space-y-[1.5vw]'>
                 <h1 className='text-3xl md:text-4xl text-orange-500 border-b-4 w-fit mx-auto border-orange-500 pb-2 font-bold'>URJA BATTERIES</h1>
@@ -18,27 +16,18 @@ const Batteries = () => {
             <Slide bottom cascade><div className='flex flex-col md:flex-row justify-center font-semibold'>
                 <div onClick={() => Router.push("/E-rickshaw-battery")} className='scale-90 bg-white hover:shadow-xl transition-all duration-300 ease-in-out cursor-pointer p-4 md:p-[1.5vw] text-center m-4 md:m-[2vw]'>
                     <h1 className='text-lg md:text-xl uppercase font-semibold'>E-Rickshaw Battery</h1>
-                    <img src='/battery image.png' alt='battery-image' />
-                    <p className='font-semibold text-gray-600 tracking-wider'>
-                        <div>Capacity - 100Ah @ C</div>
-                        <div>Warranty - 6 Months</div>
-                    </p>
+                    <img src='/Image Urja E-rickshaw Battery.png' alt='battery-image' />
+                   
                 </div>
                 <div onClick={() => Router.push("/Inverter-battery")} className='scale-90 bg-white hover:shadow-xl transition-all duration-300 ease-in-out cursor-pointer p-4 md:p-[1.5vw] text-center m-4 md:m-[2vw]'>
                     <h1 className='text-lg md:text-xl uppercase font-semibold'>Inverter Battery</h1>
-                    <img src='/battery image.png' alt='battery-image' />
-                    <p className='font-semibold text-gray-600 tracking-wider'>
-                        <div>Capacity - 100Ah @ C</div>
-                        <div>Warranty - 6 Months</div>
-                    </p>
+                    <img src='/Image Urja Inverter Battery.png' alt='battery-image' />
+                   
                 </div>
                 <div onClick={() => Router.push("/Solar-battery")} className='scale-90 bg-white hover:shadow-xl transition-all duration-300 ease-in-out cursor-pointer p-4 md:p-[1.5vw] text-center m-4 md:m-[2vw]'>
                     <h1 className='text-lg md:text-xl uppercase font-semibold'>Solar Battery</h1>
-                    <img src='/battery image.png' alt='battery-image' />
-                    <p className='font-semibold text-gray-600 tracking-wider'>
-                        <div>Capacity - 100Ah @ C</div>
-                        <div>Warranty - 6 Months</div>
-                    </p>
+                    <img src='/Image Urja Solar Battery.png' alt='battery-image' />
+                    
                 </div>
             </div>
             </Slide>

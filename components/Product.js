@@ -4,19 +4,16 @@ import React from 'react'
 import Letushelpyou from '../components/Letushelpyou'
 import { Slide } from 'react-reveal'
 import Banner from "../components/Banner"
-const Product = ({ title }) => {
+const Product = ({ title,details }) => {
   return (
     <div className='mt-[8vh] md:mt-[6.9vw] text-sm md:text-base'>
-      {/* <div className='h-[50vh] overflow-hidden'>
-        <img className='w-full' src='/battery banner.png' alt='banner-image' />
-      </div> */}
       <Banner pic={"/battery banner.png"}/>
       <div className='bg-gray-100 overflow-hidden relative'>
         <img src='/background.jpg' className='absolute grayscale opacity-0 md:opacity-10' alt='background' />
         <h1 className='text-3xl md:text-4xl font-bold text-center uppercase border-b-2 md:border-b-4 pb-3 border-orange-500 w-fit mx-auto text-orange-500 py-[3vh] md:py-[3vw]'>{title}</h1>
         <div className='relative'>
           <Slide bottom>
-            <img className='md:absolute md:left-[12vw] -top-[7vw] md:w-1/3' src='/battery image.png' alt='left-pic' />
+            <img className='md:absolute md:left-[12vw] -top-[7vw] md:w-1/3' src={details[4]} alt='left-pic' />
             <div className='md:absolute bottom-[4vw] space-y-[1vw] left-[18vw]'>
               <h1 className='text-lg md:text-xl mx-[7vh] md:mx-[7vw] border-b-2 md:border-b-4 border-orange-500 font-bold'>SHOP NOW</h1>
               <div className='flex items-center pt-8 gap-[3vh] justify-center md:justify-start md:gap-[3vw]'>
@@ -31,25 +28,25 @@ const Product = ({ title }) => {
             <div className='flex md:w-1/3 my-4 items-center'>
               <div>
                 <h1 className='uppercase text-xl font-bold'>Warranty</h1>
-                <p className='font-medium '>Warranty - 6 Months</p>
+                <p className='font-medium '>Warranty - {details[0]}</p>
               </div>
             </div>
             <div className='flex md:w-1/3 my-4 items-center'>
               <div>
                 <h1 className='uppercase text-xl font-bold'>Capacity</h1>
-                <p className='font-medium '>Capacity – 100 Ah @ C</p>
+                <p className='font-medium '>Capacity – {details[1]}</p>
               </div>
             </div>
             <div className='flex md:w-1/3 my-4 items-center'>
               <div>
                 <h1 className='uppercase text-xl font-bold'>Dimensions</h1>
-                <p className='font-medium '>410 x 175 x 229</p>
+                <p className='font-medium '>{details[2]}</p>
               </div>
             </div>
             <div className='flex md:w-1/3 my-4 items-center'>
               <div>
-                <h1 className='uppercase text-xl font-bold'>Polarity</h1>
-                <p className='font-medium '>L</p>
+                <h1 className='uppercase text-xl font-bold'>Battery Type</h1>
+                <p className='font-medium '>{details[3]}</p>
               </div>
             </div>
           </div></Slide>
