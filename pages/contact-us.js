@@ -106,10 +106,7 @@ const Contact = () => {
                                         <label>Email</label>
                                         <input value={email} onChange={(e) => setemail(e.target.value)} className='bg-gray-100 border border-gray-300 p-1' type="email"></input>
                                     </div>
-                                    <div className='flex flex-col'>
-                                        <label>Mobile No.</label>
-                                        <input value={phone} onChange={(e) => setphone(e.target.value)} className='bg-gray-100 border border-gray-300 p-1' type="number"></input>
-                                    </div>
+                                   
                                     <div className='flex flex-col'>
                                         <label>Message</label>
                                         <textarea value={message} onChange={(e) => setmessage(e.target.value)} className='bg-gray-100 border h-24 border-gray-300 p-1' ></textarea>
@@ -123,7 +120,7 @@ const Contact = () => {
                     <div className='p-5 md:p-12 drop-shadow font-medium   bg-white'>
                         <h1 className='text-xl w-fit mx-auto font-bold'>For Grievances/ Investor Communications</h1>
                         <p className='mx-auto w-fit text-lg'>COMPANY SECRETARY</p>
-                        <div className='flex flex-col md:flex-row gap-10 md:gap-20 mt-6'>
+                        <div className='flex flex-col justify-center md:flex-row gap-10 md:gap-20 mt-6'>
                             <div className='flex items-center'>
                                 <IoMdMail className='w-10 mr-6 border rounded-full border-gray-500 p-1 text-orange-500 h-auto' />
                                 <div>

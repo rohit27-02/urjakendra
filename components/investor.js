@@ -14,11 +14,11 @@ const Investor = ({ pdfs, folder}) => {
           
           {pdfs.map((pdf) => {
             return <div key={pdf} className='flex relative items-center justify-between p-[2vh] md:p-[1vw] w-full  md:w-[30%]  bg-gray-100'>
-              <img className='h-[6vh] md:h-[4vw]' src='/pdf_icon.png' alt='icon' />
-              <h1 className='ml-[1vh] md:ml-[1vw] capitalize mr-[3vh] md:mr-[3vw] w-1/2 overflow-hidden'>{pdf}</h1>
+              <img className='h-4 md:h-7' src='/pdf_icon.png' alt='icon' />
+              <h1 className='ml-[1vh] text-xs md:ml-[1vw] font-semibold capitalize mr-[3vh] md:mr-[3vw] w-[80%] overflow-hidden'>{pdf}</h1>
               <div className=''>
-                <a href={"/" + folder + "/" + pdf}><FaEye className='bg-orange-500 text-white h-[4vh] md:h-[2.5vw] w-auto p-[0.5vw] mb-2 md:mb-[1vw]' /></a>
-                <a href={"/" + folder + "/" + pdf} download><FaFileDownload className='bg-green-500 text-white h-[4vh] md:h-[2.5vw] w-auto p-[0.5vw] mt-2 md:mt-[1vw]' /></a>
+                <a href={"/" + folder + "/" + pdf}><FaEye className='bg-orange-500 text-white h-4 md:h-7 w-auto p-[0.5vw] mb-2 md:mb-[1vw]' /></a>
+                <a href={"/" + folder + "/" + pdf} download><FaFileDownload className='bg-green-500 text-white h-4 md:h-7 w-auto p-[0.5vw] mt-2 md:mt-[1vw]' /></a>
               </div>
             </div>
           })}
