@@ -19,7 +19,6 @@ export async function getServerSideProps() {
     let res=[] ;
     for (const file of fs.readdirSync(path.resolve("\public/share holding pattern"))) {
         res=[...res,file];
-  
     }
   
     return { props: {pdfs:res} }
