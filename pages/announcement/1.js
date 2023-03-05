@@ -29,10 +29,24 @@ export default Announcement
 export async function getServerSideProps() {
 
   let res = [];
-  for (const file of fs.readdirSync(path.resolve(`\public/Announcement/1`))) {
-    res = [...res, file];
+   
 
+  for (const file of  fs.readdirSync(path.resolve("\public/Announcement/1"))) {
+      res = [...res, file]
   }
+  res=res.map(function (fileName) {
+      return {
+          name: fileName,
+          time: fs.statSync(path.resolve("\public/Announcement/1") + '/' + fileName).mtime.getTime()
+      };
+  })
+      .sort(function (a, b) {
+          return b.time - a.time;
+      })
+      .map(function (v) {
+          return v.name;
+      });
+
 
   return { props: { pdfs: res } }
 }
