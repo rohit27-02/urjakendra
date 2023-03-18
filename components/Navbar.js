@@ -147,7 +147,7 @@ const Navbar = () => {
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/contact-information")}>Contact Information</li>
             </ul>}
           </div>
-          <div id='n3' onMouseEnter={(e) => nav(e)} className='under'><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center ' onClick={()=>Router.push("/regulation-46-and-62-of-sebi-[LODR]")}>Regulations 46 and 62 Of SEBI [LODR ] </span>
+          <div className='under'><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center ' onClick={()=>Router.push("/regulation-46-and-62-of-sebi-[LODR]")}>Regulations 46 and 62 Of SEBI [LODR ] </span>
             {/* {n3 && <ul onMouseLeave={() => setn3(false)} className='absolute drop-shadow-xl border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] bg-white w-[15vw]'>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/book-a-complaint")}>Book a complaint</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/product-registration")}>Register your Product</li>
