@@ -50,12 +50,13 @@ const Navbar = () => {
 
   const ref = useRef();
   return (
-    <div>
+    <div className=''>
+    
       <div id='main' onMouseLeave={(e) => nav(e)} style={{ fontFamily: "'Raleway', sans-serif" }} className='bg-orange-500 text-white flex md:h-[7vw] h-[8vh] text-base items-center px-[2vw] drop-shadow-xl fixed top-0 z-50  w-full'>
 
         {/* logo */}
 
-        {!sw && <div className=' w-[22vw]'>
+        {!sw && <div className=' w-[18vw]'>
           <img onClick={() => Router.push("/")} src='/logo.png' className='cursor-pointer' alt='logo' />
         </div>}
 
@@ -72,7 +73,7 @@ const Navbar = () => {
           <div ref={ref} className='fixed translate-x-[100%] bg-gray-200 text-gray-800 font-semibold h-[24vh] md:h-[14vw] w-[30vh] md:w-[17vw] top-[60vw] md:top-[40vh] right-0 transition-all duration-500 ease-out overflow-hidden drop-shadow-md'>
             <div className='hover:text-black hover:font-semibold border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] cursor-pointer'><span>Post a Query</span></div>
             <div className='hover:text-black hover:font-semibold border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] font-sans tracking-widest cursor-pointer'><span>8000500789</span></div>
-            <div className='hover:text-black hover:font-semibold border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] cursor-pointer'><span>Urjacare@urjaglobal.in</span></div>
+            <div className='hover:text-black hover:font-semibold border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] cursor-pointer'><span>customercare@urjaglobal.in</span></div>
             <div className=' h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] text-lg md:text-[1.5vw] cursor-pointer'>
               <span className='flex gap-[0.8vh] md:gap-[0.8vw]'>
                 <AiOutlineTwitter className='hover:text-black hover:font-semibold' />
@@ -86,7 +87,7 @@ const Navbar = () => {
           <div><img onClick={() => Router.push("/")} alt='logo' className='h-[6vh] ' src='/logo.png' /> </div>
           <Hamburger toggled={isOpen} toggle={setisOpen} />
 
-        </div> : <div className='flex w-5/6  justify-end gap-[2.5vw] '>
+        </div> : <div className='flex w-5/6  justify-end gap-[2vw] '>
           <div onPointerEnter={() => { ref.current.classList.remove("translate-x-[100%]") }} className='fixed bg-gray-200 text-lg md:text-[1.5vw] text-orange-400 h-[24vh] md:h-[14vw] w-[7vh] md:w-[3vw] top-[60vw] md:top-[40vh] right-0 transition-all z-20 duration-300 overflow-hidden '>
             <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer '><img className='w-[4vh] md:w-[2.4vw]' src="https://img.icons8.com/office/60/null/gender-neutral-user.png" /></div>
             <div className='border-b h-1/4 border-gray-500 flex items-center justify-center cursor-pointer '><img className='w-[4vh] md:w-[2.4vw]' src="https://img.icons8.com/plasticine/100/null/ringer-volume.png" /></div>
@@ -94,10 +95,10 @@ const Navbar = () => {
             <div className=' h-1/4 border-gray-500 flex items-center justify-center cursor-pointer'><img className='w-[4vh] md:w-[2.4vw]' src="https://img.icons8.com/nolan/64/share-2.png" /></div>
           </div>
 
-          <div ref={ref} onPointerLeave={() => ref.current.classList.add("translate-x-[100%]")} className='fixed translate-x-[100%] bg-gray-200 text-gray-800 font-semibold h-[24vh] md:h-[14vw] w-[30vh] md:w-[17vw] top-[60vw] md:top-[40vh] right-0 transition-all duration-500 ease-out overflow-hidden drop-shadow-md'>
+          <div ref={ref} onPointerLeave={() => ref.current.classList.add("translate-x-[100%]")} className='fixed translate-x-[100%] bg-gray-200 text-gray-800 font-semibold h-[24vh] md:h-[14vw] w-[30vh] md:w-[20vw] top-[60vw] md:top-[40vh] right-0 transition-all duration-500 ease-out overflow-hidden drop-shadow-md'>
             <div className='hover:text-black hover:font-bold border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] cursor-pointer'><span>Post a Query</span></div>
             <div className='hover:text-black hover:font-bold border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] font-sans tracking-widest cursor-pointer'><span>8000500789</span></div>
-            <div className='hover:text-black hover:font-bold border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] cursor-pointer'><span>Urjacare@urjaglobal.in</span></div>
+            <div className='hover:text-black hover:font-bold border-b h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] cursor-pointer'><span>customercare@urjaglobal.in</span></div>
             <div className=' h-1/4 border-gray-500 flex items-center justify-between px-[1vh] md:px-[1vw] text-lg md:text-[1.5vw] cursor-pointer'>
               <span className='flex gap-[0.8vh] md:gap-[0.8vw]'>
                 <AiOutlineTwitter className='hover:text-black hover:font-bold' />
@@ -108,14 +109,14 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div id='n1' onMouseEnter={(e) => nav(e)} className=''><span className=' transition-all duration-300 cursor-pointer  flex gap-[0.5vw] items-center '>About <BsChevronDown /></span>
-            {n1 && <ul onMouseLeave={() => setn1(false)} className='absolute drop-shadow-xl border-t-[0.2vw] border-orange-400 text-[#333333] w-[15vw] top-[7vw] bg-white'>
+          <div id='n1' onMouseEnter={(e) => nav(e)} className='under'><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center'>About </span>
+            {n1 && <ul onMouseLeave={() => setn1(false)} className='absolute drop-shadow-xl border-t-[0.2vw] border-orange-400 text-[#333333] w-[15vw] top-[7vw]  bg-white'>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/company-overview")}>Company Overview</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/our-leadership")}>Our Leadership</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/corporate-governance")}>Corporate Governance</li>
             </ul>}
           </div>
-          <div id='n2' onMouseEnter={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center  '>Products & Solutions <BsChevronDown /></span>
+          <div id='n2' onMouseEnter={(e) => nav(e)} className='under'><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center '>Products & Solutions </span>
             {n2 && <ul onMouseLeave={() => setn2(false)} className='absolute drop-shadow-xl border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] bg-white w-[15vw]'>
               <li id='s1' onMouseLeave={() => sets1(false)} onMouseEnter={(e) => sub(e)} className=' hover:text-orange-400 hover: cursor-pointer relative transition-all duration-300 border-b hover:bg-[#f9f9f9] p-[1vw] hover:pl-[1.5vw]' ><span onClick={() => Router.push("/batteries")} className=" ">Batteries</span>
                 {s1 && <span onMouseLeave={() => sets1(false)} className='flex flex-col absolute top-0 drop-shadow-xl w-[12vw] left-[15.03vw] text-[#333333] bg-white  '>
@@ -133,7 +134,7 @@ const Navbar = () => {
               </li>
             </ul>}
           </div>
-          <div id='n6' onMouseEnter={(e) => nav(e)} className=''><span className=' transition-all duration-300 cursor-pointer  flex gap-[0.5vw] items-center '>Investors <BsChevronDown /></span>
+          <div id='n6' onMouseEnter={(e) => nav(e)} className='under'><span className=' transition-all duration-300 cursor-pointer  flex gap-[0.5vw] items-center'>Investors </span>
             {n6 && <ul onMouseLeave={() => setn1(false)} className='absolute drop-shadow-xl border-t-[0.2vw] border-orange-400 text-[#333333] w-[15vw] top-[7vw] bg-white'>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/announcement/1")}>Announcements</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/company-policy")}>Company Policy</li>
@@ -146,27 +147,27 @@ const Navbar = () => {
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/contact-information")}>Contact Information</li>
             </ul>}
           </div>
-          <div id='n3' onMouseEnter={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center  '>Urja Care <BsChevronDown /></span>
-            {n3 && <ul onMouseLeave={() => setn3(false)} className='absolute drop-shadow-xl border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] bg-white w-[15vw]'>
+          <div id='n3' onMouseEnter={(e) => nav(e)} className='under'><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center ' onClick={()=>Router.push("/regulation-46-and-62-of-sebi-[LODR]")}>Regulations 46 and 62 Of SEBI [LODR ] </span>
+            {/* {n3 && <ul onMouseLeave={() => setn3(false)} className='absolute drop-shadow-xl border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] bg-white w-[15vw]'>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/book-a-complaint")}>Book a complaint</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/product-registration")}>Register your Product</li>
-            </ul>}
+            </ul>} */}
           </div>
-          <div id='n4' onMouseEnter={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center  '>Presence <BsChevronDown /></span>
+          <div id='n4' onMouseEnter={(e) => nav(e)} className='under'><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center '>Presence </span>
             {n4 && <ul onMouseLeave={() => setn3(false)} className='absolute drop-shadow-xl border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] bg-white w-[15vw]'>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/our-network")}>Our Network</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/dealer-zone")}>Dealer Zone</li>
             </ul>}
           </div>
-          <div id='n5' onMouseEnter={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center  '>Carrers <BsChevronDown /></span>
+          <div id='n5' onMouseEnter={(e) => nav(e)} className='under'><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center '>Careers </span>
             {n5 && <ul onMouseLeave={() => setn3(false)} className='absolute drop-shadow-xl border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] bg-white w-[15vw]'>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/freshers")}>Freshers</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/experienced-professional")}>Experienced Professional</li>
             </ul>}
           </div>
 
-          <div><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center  ' onClick={() => Router.push("/Events")}>Events</span></div>
-          <div><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center  ' onClick={() => Router.push("/contact-us")}>Contact Us</span></div>
+          <div className='under'><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center ' onClick={() => Router.push("/Events")}>Events</span></div>
+          <div className='under'><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center ' onClick={() => Router.push("/contact-us")}>Contact Us</span></div>
 
         </div>}
 
@@ -177,10 +178,12 @@ const Navbar = () => {
 
 
       </div>
+
+
       {
         isOpen && <div className='flex w-2/3 flex-col top-[8vh] h-full pt-[3vh] drop-shadow z-50 fixed bg-white px-6 [&>*]:pb-2 [&>*]:border-b-2  md:gap-[3vw] '>
 
-          <div id='n1' onClick={(e) => nav(e)} className=''><span className=' transition-all duration-300 cursor-pointer py-4  flex gap-4 font-semibold  md:gap-[0.5vw] items-center '>About <BsChevronDown /></span>
+          <div id='n1' onClick={(e) => nav(e)} className=''><span className=' transition-all duration-300 cursor-pointer py-4  flex gap-4 font-semibold  md:gap-[0.5vw] items-center'>About <BsChevronDown /></span>
             {n1 && <ul className='  border-t-[0.2vw] border-orange-400 text-[#333333]  top-[7vh] bg [&>*]:pl-2-white'>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/company-overview")}>Company Overview</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/our-leadership")}>Our Leadership</li>
@@ -188,7 +191,7 @@ const Navbar = () => {
 
             </ul>}
           </div>
-          <div id='n2' onClick={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer py-4 flex gap-4 font-semibold  md:gap-[0.5vw] items-center  '>Products & Solutions <BsChevronDown /></span>
+          <div id='n2' onClick={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer py-4 flex gap-4 font-semibold  md:gap-[0.5vw] items-center '>Products & Solutions <BsChevronDown /></span>
             {n2 && <ul className='  border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] [&>*]:pl-2 bg-white '>
               <li id='s1' onClick={(e) => sub(e)} className=' hover:text-orange-400 hover: cursor-pointer relative transition-all duration-300 border-b  p-[1vh] hover:pl-[1.5vw]' ><span onClick={() => Router.push("/batteries")} className=" "><span className='flex items-center gap-4'>Batteries <BsChevronDown /></span></span>
                 {s1 && <span className='flex flex-col  top-0 [&>*]:ml-2  text-[#333333]   '>
@@ -206,7 +209,7 @@ const Navbar = () => {
               </li>
             </ul>}
           </div>
-          <div id='n6' onClick={(e) => nav(e)} className=''><span className=' transition-all duration-300 cursor-pointer py-4  flex gap-4 font-semibold  md:gap-[0.5vw] items-center '>Investors <BsChevronDown /></span>
+          <div id='n6' onClick={(e) => nav(e)} className=''><span className=' transition-all duration-300 cursor-pointer py-4  flex gap-4 font-semibold  md:gap-[0.5vw] items-center'>Investors <BsChevronDown /></span>
             {n6 && <ul className='  border-t-[0.2vw] border-orange-400 text-[#333333]  top-[7vw] bg [&>*]:pl-2-white'>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/announcement/1")}>Announcements</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/company-policy")}>Company Policy</li>
@@ -219,26 +222,26 @@ const Navbar = () => {
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300  hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/contact-information")}>Contact Information</li>
             </ul>}
           </div>
-          <div id='n3' onClick={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer py-4 flex gap-4 font-semibold  md:gap-[0.5vw] items-center  '>Urja Care <BsChevronDown /></span>
+          <div id='n3' onClick={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer py-4 flex gap-4 font-semibold  md:gap-[0.5vw] items-center '>Urja Care <BsChevronDown /></span>
             {n3 && <ul className='  border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] [&>*]:pl-2 bg-white '>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/book-a-complaint")}>Book a complaint</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/product-registration")}>Register your Product</li>
             </ul>}
           </div>
-          <div id='n4' onClick={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer py-4 flex gap-4 font-semibold  md:gap-[0.5vw] items-center  '>Presence <BsChevronDown /></span>
+          <div id='n4' onClick={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer py-4 flex gap-4 font-semibold  md:gap-[0.5vw] items-center '>Presence <BsChevronDown /></span>
             {n4 && <ul className='  border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] [&>*]:pl-2 bg-white '>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/our-network")}>Our Network</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300  hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/dealer-zone")}>Dealer Zone</li>
             </ul>}
           </div>
-          <div id='n5' onClick={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer py-4 flex gap-4 font-semibold  md:gap-[0.5vw] items-center  '>Carrers <BsChevronDown /></span>
+          <div id='n5' onClick={(e) => nav(e)}><span className=' transition-all duration-300 cursor-pointer py-4 flex gap-4 font-semibold  md:gap-[0.5vw] items-center '>Carrers <BsChevronDown /></span>
             {n5 && <ul className='  border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] [&>*]:pl-2 bg-white '>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/freshers")}>Freshers</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300  hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/experienced-professional")}>Experienced Professional</li>
             </ul>}
           </div>
 
-          <div><span className=' transition-all duration-300 cursor-pointer py-4 flex gap-4 font-semibold  md:gap-[0.5vw] items-center  ' onClick={() => Router.push("/contact-us")}>Contact Us</span ></div>
+          <div><span className=' transition-all duration-300 cursor-pointer py-4 flex gap-4 font-semibold  md:gap-[0.5vw] items-center ' onClick={() => Router.push("/contact-us")}>Contact Us</span ></div>
 
         </div>
       }
