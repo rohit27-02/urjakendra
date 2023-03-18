@@ -10,8 +10,8 @@ const Keymanagementpersonal = () => {
     const [pos, setpos] = useState("");
     const [img, setimg] = useState("");
     const directors = [{ id: "0", img: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Placeholder_Person.jpg", name: "Mr. Kamal Kumar Sharma", pos: "Chief Financial Officer", info: "Mr. Kamal Kumar Sharma having an experience of Thirty Years in the field of Accounting & Finance management. His last assignment was with Orient Press Limited Which is listed at National Stock Exchange. Prior to which he had worked with large Public Companies. Further, his broad vision and strategies will help the company to emerge from the challenging situations that the company may come across." },
-    { id: "1", img: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Placeholder_Person.jpg", name: "CS Preeti Kataria", pos: "Company Secretary ", info: "She is a qualified company secretary, passed her professional programme in August 2017 from “The Institute of Company Secretaries of India” and has been awarded a degree in September 2017. She has more than 4.5 years of experience in handling the secretarial and legal compliances. She is also holding a degree of B.com from Delhi University. Her impressive profile, good knowledge and personality, will ensure a company complies with financial and legal requirements, as well as maintaining its high standards of corporate governance." },
-    { id: "2", img: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Placeholder_Person.jpg", name: "Gaurav Aggarwal", pos: "Chief Executive Officer", info: "Mr. Gaurav Aggarwal has over 16 years of experience in Business Management as a profit centre with the Telecom / Broadband / IT / Service industries. He has led the evolution & growth of CA TV & broadband services in North India. An effective leader with distinguished ability of building, leading & motivating large multicultural teams. Have represented organizations at many world forums." },
+    { id: "1", img: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Placeholder_Person.jpg", name: "CS Priyanka shekhawat", pos: "Company Secretary ", info: "She is a qualified company secretary, passed her professional programme in August 2017 from “The Institute of Company Secretaries of India” and has been awarded a degree in September 2017. She has more than 4.5 years of experience in handling the secretarial and legal compliances. She is also holding a degree of B.com from Delhi University. Her impressive profile, good knowledge and personality, will ensure a company complies with financial and legal requirements, as well as maintaining its high standards of corporate governance." },
+
     ]
 
     const showContent = (e) => {
@@ -43,7 +43,7 @@ const Keymanagementpersonal = () => {
                             <div className='p-8 space-y-4'>
                                 <h1 className='font-semibold'>{director.name}</h1>
                                 <div className='text-sm'>{director.pos}</div>
-                                <button className='text-sm  flex items-center gap-2'>More<BsArrowRight className='text-orange-500 group-hover:translate-x-2 transition-all duration-300 text-xl' /></button>
+                                {/* <button className='text-sm  flex items-center gap-2'>More<BsArrowRight className='text-orange-500 group-hover:translate-x-2 transition-all duration-300 text-xl' /></button> */}
                             </div>
                         </div>
                     })}

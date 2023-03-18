@@ -45,7 +45,7 @@ export default function Home() {
       <div className="relative">
         {!sw && <img src="/background.jpg" alt="background image" className="absolute grayscale top-0 opacity-10" />}
         <Fade bottom cascade><div className="flex justify-center md:text-center px-8 md:px-0 md:max-w-[70vw] gap-8 mx-auto flex-col pt-[6vh] md:pt-[6vw] mb-6vh md:mb-[6vw]">
-          <h1 className="text-orange-500 font-bold text-3xl md:text-4xl w-fit pb-3 self-center ">WELCOME TO<br></br> URJA GLOBAL<span className="border-orange-500 border-b-4"> LIMITED</span></h1>
+          <h1 className="text-orange-500 font-bold text-3xl border-orange-500 border-b-4 md:text-4xl w-fit pb-3 self-center ">WELCOME TO<br></br> URJA GLOBAL<span className=""> LIMITED</span></h1>
           <p>We at Urja are committed to providing world-class services to rapidly develop India focusing on rural electrification especially in hilly areas, forest regions, deserts, islands, far flung villages, unmanned locations and other areas which require reliable and uninterrupted power supply.
 
             With a strong design and manufacturing back ground UGL has developed themselves as a leading manufacturer of Solar Energy Systems to cater to almost the complete range of customer requirements</p>

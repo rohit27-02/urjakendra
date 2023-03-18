@@ -40,12 +40,12 @@ const Contact = () => {
     return (
         <div className='mt-[8vh] md:mt-[6.9vw]   bg-gray-100 text-gray-700'>
 
-            <Banner pic="/businessman-touching-virtual-screen.jpg" title="CONTACT US" />
+            <Banner pic="/businessman-touching-virtual-screen.jpg"  />
             <div className='relative mx-6 md:mx-0'>
                 <img className='absolute opacity-0 md:opacity-10 grayscale h-full object-cover' src='/background.jpg' alt='background' />
                 <div className='pt-20 w-fit mx-auto text-center'>
-                    <h1 className='text-3xl md:text-4xl mb-10 text-orange-500 font-bold '>URJA <span className='md:border-b-4 pb-2 border-gray-600 '>GLOBAL</span> LIMITED</h1>
-                    <p className='text-lg md:text-xl font-semibold tracking-wider leading-relaxed'>URJA GLOBAL LIMITED IS IN ONE OF INDIA&apos;S LEADING RENEWABLE ENERGY DEVELOPERS</p>
+                    <h1 className='text-3xl md:text-4xl mb-10 text-orange-500 font-bold '><span className='md:border-b-4 pb-2 border-orange-500 '>CONTACT US</span></h1>
+                    <p className='text-lg md:text-xl font-semibold tracking-wider leading-relaxed uppercase'>AT URJA GLOBAL we care about our customer&apos;s</p>
                 </div>
                 <div className='flex  gap-10 flex-col md:w-[70rem] mt-14  mx-auto'>
                     <div className='flex flex-col md:flex-row gap-10'>
@@ -58,18 +58,18 @@ const Contact = () => {
                                     <p className='text-sm font-sans'>487/63, 1st Floor, National Market,Peeragarhi, New Delhi-110087</p>
                                 </div>
                             </div>
-                            <div className='flex items-center my-6'>
+                            {/* <div className='flex items-center my-6'>
                                 <IoLocationSharp className='w-12  mr-6 border rounded-full border-gray-500 p-1 text-orange-500 h-auto' />
                                 <div className='w-4/5'>
                                     <h1 className='font-semibold mb-1'>URJA INCUBATION/ TRAINING CENTER</h1>
                                     <p className='text-sm font-sans'>487/63, 1st Floor, National Market,Peeragarhi, New Delhi-110087</p>
                                 </div>
-                            </div>
+                            </div> */}
                             <h1 className='font-bold pt-4 text-gray-700 text-xl'>Contact Us</h1>
                             <div className='flex items-center my-6'>
                                 <MdWifiCalling3 className='w-12  mr-6 border rounded-full border-gray-500 p-1 text-orange-500 h-auto' />
                                 <div className='w-4/5'>
-                                    <h1 className='font-semibold mb-1'>GENERAL ENQUIRIES</h1>
+                                    <h1 className='font-semibold mb-1 uppercase'>Official Landline Number</h1>
                                     <p className='text-sm font-sans'>+91-11-25279143 | +91-11-45588274</p>
                                 </div>
                             </div>
@@ -84,12 +84,12 @@ const Contact = () => {
                                 <IoMdMail className='w-12  mr-6 border rounded-full border-gray-500 p-1 text-orange-500 h-auto' />
                                 <div className='w-4/5'>
                                     <h1 className='font-semibold mb-1'>EMAIL ADRESS FOR ONLINE SUPPORT</h1>
-                                    <p className='text-sm font-sans'>info@urjaglobal.in</p>
+                                    <p className='text-sm font-sans'>customercare@urjaglobal.in</p>
                                 </div>
                             </div>
                         </div>
                         <div className='p-5 md:p-12 md:w-[55%] bg-white font-medium drop-shadow'>
-                            <h1 className=' font-bold text-xl'>Enquiry Now !</h1>
+                            <h1 className=' font-bold text-xl'>Get In Touch !</h1>
                             {submitted ?
                                 <div className='flex justify-center items-center w-full h-full mx-auto'><ClipLoader
                                     color="orange"
@@ -128,13 +128,13 @@ const Contact = () => {
                                     <p className='text-sm font-sans'>cs@urjaglobal.in</p>
                                 </div>
                             </div>
-                            <div className='flex items-center '>
+                            {/* <div className='flex items-center '>
                                 <IoMdMail className='w-10 mr-6 border rounded-full border-gray-500 p-1 text-orange-500 h-auto' />
                                 <div>
                                     <h1 className='font-semibold mb-1'>EMAIL ID FOR CAREERS</h1>
                                     <p className='text-sm font-sans'>hr@urjaglobal.int</p>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

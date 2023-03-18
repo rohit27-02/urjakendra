@@ -135,17 +135,17 @@ const Network = () => {
 
                         <div className="flex lg:w-5/6 w-full sm:flex-row flex-col  px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end">
                             <div className="relative flex-grow w-full">
-                                <label for="pincode" className="leading-7 text-sm text-gray-800">Your Location/Pincode</label>
+                                <label for="pincode" className="leading-7 text-sm text-gray-800">Your Pincode</label>
                                 <input type="text" id="pincode" name="pincode" className="w-full bg-white shadow-inner bg-opacity-50 rounded border border-gray-400 focus:border-orange-500 focus:bg-transparent focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                             </div>
                             <div className="relative flex-grow w-full">
                                 <label for="radius" className="leading-7 text-sm text-gray-800">Search Radius</label>
                                 <input type="text" id="radius" name="radius" className="w-full bg-white shadow-inner bg-opacity-50 rounded border border-gray-400 focus:border-orange-500 focus:bg-transparent focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                             </div>
-                            <div className="relative flex-grow w-full">
+                            {/* <div className="relative flex-grow w-full">
                                 <label for="result" className="leading-7 text-sm text-gray-800">Result</label>
                                 <input type="result" id="result" name="result" className="w-full bg-white shadow-inner bg-opacity-50 rounded border border-gray-400 focus:border-orange-500 focus:bg-transparent focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-                            </div>
+                            </div> */}
                             <button className="text-white text-sm  max-[600px]:self-start bg-orange-500 border-0 md:py-2 px-6 py-2 md:px-8 focus:outline-none hover:bg-orange-600 rounded md:text-lg">Submit</button>
                         </div>
                     </div>
@@ -157,7 +157,7 @@ const Network = () => {
                                 return <div className='font-semibold bg-gray-100 m-2 md:m-[1vw] p-2 md:p-[1vw] ' key={store.title}>
                                     <h1 className='text-lg md:text-xl text-orange-500'>{store.name}</h1>
                                     <p className='text-sm md:text-base mt-[0.5vw] mb-[1vw]'>{store.address}</p>
-                                    <button className='font-sans'>{store.phone}</button>
+                                    {/* <button className='font-sans'>{store.phone}</button> */}
                                 </div>
                             })
                         }

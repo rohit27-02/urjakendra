@@ -55,4 +55,14 @@ a {
   display: none;
 }
 
-
+div.under:after{
+  content: "";
+  background: white;
+  display: block;
+  width: 0px;
+  height: 2px;
+  transition: width .3s;
+}
+div.under:hover::after{
+  width: 100%;
+}
