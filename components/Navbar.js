@@ -56,7 +56,7 @@ const Navbar = () => {
 
         {/* logo */}
 
-        {!sw && <div className=' w-[18vw]'>
+        {!sw && <div className=' w-[22vw]'>
           <img onClick={() => Router.push("/")} src='/logo.png' className='cursor-pointer' alt='logo' />
         </div>}
 
@@ -136,6 +136,7 @@ const Navbar = () => {
           </div>
           <div id='n6' onMouseEnter={(e) => nav(e)} className='under'><span className=' transition-all duration-300 cursor-pointer  flex gap-[0.5vw] items-center'>Investors </span>
             {n6 && <ul onMouseLeave={() => setn1(false)} className='absolute drop-shadow-xl border-t-[0.2vw] border-orange-400 text-[#333333] w-[15vw] top-[7vw] bg-white'>
+              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/regulation-46-and-62-of-sebi-[LODR]")}>Regulations 46 and 62 Of SEBI [LODR ]</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/announcement/1")}>Announcements</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/company-policy")}>Company Policy</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/right-issue")}>Right Issue</li>
@@ -147,12 +148,7 @@ const Navbar = () => {
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/contact-information")}>Contact Information</li>
             </ul>}
           </div>
-          <div className='under'><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center ' onClick={()=>Router.push("/regulation-46-and-62-of-sebi-[LODR]")}>Regulations 46 and 62 Of SEBI [LODR ] </span>
-            {/* {n3 && <ul onMouseLeave={() => setn3(false)} className='absolute drop-shadow-xl border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] bg-white w-[15vw]'>
-              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/book-a-complaint")}>Book a complaint</li>
-              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/product-registration")}>Register your Product</li>
-            </ul>} */}
-          </div>
+        
           <div id='n4' onMouseEnter={(e) => nav(e)} className='under'><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center '>Presence </span>
             {n4 && <ul onMouseLeave={() => setn3(false)} className='absolute drop-shadow-xl border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] bg-white w-[15vw]'>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/our-network")}>Our Network</li>
@@ -161,8 +157,8 @@ const Navbar = () => {
           </div>
           <div id='n5' onMouseEnter={(e) => nav(e)} className='under'><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center '>Careers </span>
             {n5 && <ul onMouseLeave={() => setn3(false)} className='absolute drop-shadow-xl border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] bg-white w-[15vw]'>
-              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/freshers")}>Freshers</li>
-              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/experienced-professional")}>Experienced Professional</li>
+              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/apply-for-jobs")}>Aplly For Jobs</li>
+              
             </ul>}
           </div>
 
