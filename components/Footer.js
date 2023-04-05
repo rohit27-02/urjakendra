@@ -23,14 +23,10 @@ const Footer = () => {
         </div>
       </div>
       <div className='flex md:flex-col  md:w-1/4 px-[1.2vw]'>
-        <div className='flex flex-col my-[1vh] w-1/2 md:my-[1vw]  gap-[0.2vh] md:gap-[0.2vw]'>
-          <h1 className='text-orange-500 text-base font-bold'>Urja Care</h1>
-          <span className='cursor-pointer ' onClick={()=>Router.push("/book-a-complaint")}>Book a complaint</span>
-          <span className='cursor-pointer ' onClick={()=>Router.push("/product-registration")}>Product Registration</span>
-
-        </div>
-        <div className='flex flex-col my-[1vh] w-1/2 md:my-[1vw]  gap-[0.2vh] md:gap-[0.2vw]'>
+        
+        <div className='flex flex-col my-[1vh] w-2/3 md:my-[1vw]  gap-[0.2vh] md:gap-[0.5vw] '>
           <h1 className='text-orange-500 text-base font-bold'>Investors</h1>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/regulation-46-and-62-of-sebi-[LODR]")}>regulation-46-and-62-of-sebi-[LODR]</span>
           <span className='cursor-pointer ' onClick={()=>Router.push("/announcement/1")}>Announcements</span>
           <span className='cursor-pointer ' onClick={()=>Router.push("/company-policy")}>Company Policy</span>
           <span className='cursor-pointer ' onClick={()=>Router.push("/right-issue")}>Right Issue</span>

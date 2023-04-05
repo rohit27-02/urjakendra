@@ -157,7 +157,15 @@ const Navbar = () => {
           </div>
           <div id='n5' onMouseEnter={(e) => nav(e)} className='under'><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center '>Careers </span>
             {n5 && <ul onMouseLeave={() => setn3(false)} className='absolute drop-shadow-xl border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] bg-white w-[15vw]'>
-              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/apply-for-jobs")}>Aplly For Jobs</li>
+              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/apply-for-jobs")}>Apply For Jobs</li>
+              
+            </ul>}
+          </div>
+          <div id='n3' onMouseEnter={(e) => nav(e)} className='under'><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center '>Catalogue </span>
+            {n3 && <ul onMouseLeave={() => setn3(false)} className='absolute drop-shadow-xl border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] bg-white w-[15vw]'>
+              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/company-overview")}>Company Profile</li>
+              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/apply-for-jobs")}>Scooty Brochure</li>
+              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/apply-for-jobs")}>Solar Brochure</li>
               
             </ul>}
           </div>

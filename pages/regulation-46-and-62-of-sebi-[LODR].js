@@ -39,7 +39,7 @@ const data=[{name:"Details of Company’s business",link:"/company-overview"},
 const regulation = () => {
   return (
     <div className='mt-[8vh] md:mt-[7vw] '>
-        <div className='h-[8vh] md:h-[8vw] overflow-hidden'><img src='/1.png' alt='top-banner' /></div>
+        <div className=' w-full h-[8vh] md:h-[8vw] overflow-hidden'><img src='/1.png' className='object-cover w-full' alt='top-banner' /></div>
         <div className='my-[2vw]'>
             <div className='flex md:w-[85%]  mx-auto'>
                 <div className='w-[10%] font-semibold text-white bg-sky-600 border p-[1vw] text-center'>Sr. No</div>

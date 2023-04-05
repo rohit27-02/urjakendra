@@ -24,7 +24,7 @@ const Events = () => {
             <img src='/events banner.jpg' className='hover:scale-110  transition-all  duration-200 ease-linear' />
             <div className='bg-white text-center drop-shadow-sm w-[90%] cursor-pointer h-[200px] -my-10 mx-auto'>
               <h1 className='text-sm pt-10 font-light text-orange-500'>UPCOMING &emsp; EVENTS</h1>
-              <h1 className='text-2xl pt-5 font-bold uppercase'>International Trade Expo </h1>
+              <h1 className='text-2xl pt-5 font-bold uppercase'>EV Expo </h1>
             </div>
           </div>
         </div>
