@@ -46,8 +46,7 @@ const Footer = () => {
         </div>
         <div className='flex flex-col my-[1vh] w-1/2 md:my-[1vw]  gap-[0.2vh] md:gap-[0.2vw]'>
           <h1 className='text-orange-500 text-base font-bold'>Carrers</h1>
-          <span className='cursor-pointer ' onClick={()=>Router.push("/freshers")}>Freshers</span>
-          <span className='cursor-pointer ' onClick={()=>Router.push("/experienced-professional")}>Experienced Professional</span>
+          <span className='cursor-pointer ' onClick={()=>Router.push("/apply-for-jobs")}>Apply For Jobs</span>
         </div>
       </div>
       <div className='flex flex-col md:w-1/4 gap-4 md:gap-[1vw] text-base md:px-[1.2vw]'>
