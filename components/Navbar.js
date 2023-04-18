@@ -26,6 +26,12 @@ const Navbar = () => {
   const [n6, setn6] = useState(false);
   const [s1, sets1] = useState(false);
   const [s2, sets2] = useState(false);
+  const [s3, sets3] = useState(false);
+  const [s4, sets4] = useState(false);
+  const [s5, sets5] = useState(false);
+  const [s6, sets6] = useState(false);
+  const [s7, sets7] = useState(false);
+  const [s8, sets8] = useState(false);
 
   const nav = (e) => {
     setn1(false)
@@ -42,16 +48,74 @@ const Navbar = () => {
   const sub = (e) => {
     sets1(false)
     sets2(false)
-    if (sw)
-      e.currentTarget.id == "s1" ? sets1(!s1) : e.currentTarget.id == "s2" ? sets2(!s2) : "";
+    sets3(false)
+    sets4(false)
+    sets5(false)
+    sets6(false)
+    sets7(false)
+    sets8(false)
+    if (sw) {
+      switch (e.currentTarget.id) {
+        case "s1":
+          sets1(!s1);
+          break;
+        case "s2":
+          sets2(!s2);
+          break;
+        case "s3":
+          sets3(!s3);
+          break;
+        case "s4":
+          sets4(!s4);
+          break;
+        case "s5":
+          sets5(!s5);
+          break;
+        case "s6":
+          sets6(!s6);
+          break;
+        case "s7":
+          sets7(!s7);
+          break;
+        case "s8":
+          sets8(!s8);
+          break;
+      }
+    }
+
     else
-      e.currentTarget.id == "s1" ? sets1(true) : e.currentTarget.id == "s2" ? sets2(true) : "";
+    switch (e.currentTarget.id) {
+      case "s1":
+        sets1(true);
+        break;
+      case "s2":
+        sets2(true);
+        break;
+      case "s3":
+        sets3(true);
+        break;
+      case "s4":
+        sets4(true);
+        break;
+      case "s5":
+        sets5(true);
+        break;
+      case "s6":
+        sets6(true);
+        break;
+      case "s7":
+        sets7(true);
+        break;
+      case "s8":
+        sets8(true);
+        break;
+    }
   }
 
   const ref = useRef();
   return (
     <div className=''>
-    
+
       <div id='main' onMouseLeave={(e) => nav(e)} style={{ fontFamily: "'Raleway', sans-serif" }} className='bg-orange-500 text-white flex md:h-[7vw] h-[8vh] text-base items-center px-[2vw] drop-shadow-xl fixed top-0 z-50  w-full'>
 
         {/* logo */}
@@ -136,19 +200,45 @@ const Navbar = () => {
           </div>
           <div id='n6' onMouseEnter={(e) => nav(e)} className='under'><span className=' transition-all duration-300 cursor-pointer  flex gap-[0.5vw] items-center'>Investors </span>
             {n6 && <ul onMouseLeave={() => setn1(false)} className='absolute drop-shadow-xl border-t-[0.2vw] border-orange-400 text-[#333333] w-[15vw] top-[7vw] bg-white'>
-              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/regulation-46-and-62-of-sebi-[LODR]")}>Regulations 46 and 62 Of SEBI [LODR ]</li>
-              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/announcement/1")}>Announcements</li>
-              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/company-policy")}>Company Policy</li>
-              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/right-issue")}>Right Issue</li>
-              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/notice-of-record-date-&-BM")}>Notices of Records Date & BM</li>
-              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/financials")}>Financials</li>
-              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/share-holding-pattern")}>Share Holding Pattern</li>
-              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/corporate-governance-report/1")}>Corporate Governance</li>
-              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/Annual-report/1")}>Annual Report</li>
-              <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/contact-information")}>Contact Information</li>
+              <li id='s3' onMouseLeave={() => sets3(false)} onMouseEnter={(e)=>sub(e)} className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/regulation-46-and-62-of-sebi-[LODR]")}>Corporate Information
+               {s3 && <span onMouseLeave={() => sets3(false)} className='flex flex-col absolute top-0 drop-shadow-xl  w-[12vw] left-[15.03vw] text-[#333333] bg-white  '>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/scooty")}>MOA & AOA</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/e-rickshaw")}>CSR</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/loader")}>IPR Intangibles</span>
+                </span>}</li>
+              <li id='s4' onMouseLeave={() => sets4(false)} onMouseEnter={(e)=>sub(e)} className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/financials")}>Financials
+               {s4 && <span onMouseLeave={() => sets4(false)} className='flex flex-col absolute top-0 drop-shadow-xl  w-[12vw] left-[15.03vw] text-[#333333] bg-white  '>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/scooty")}>Annual Reports</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/e-rickshaw")}>Financial Statements</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/loader")}>Quarterly Results</span>
+                </span>}</li>
+              <li id='s5' onMouseLeave={() => sets5(false)} onMouseEnter={(e)=>sub(e)} className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/corporate-governance-report/1")}>Corporate Governance
+               {s5 && <span onMouseLeave={() => sets5(false)} className='flex flex-col absolute top-0 drop-shadow-xl  w-[12vw] left-[15.03vw] text-[#333333] bg-white  '>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/scooty")}>Code of Conduct</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/e-rickshaw")}>Whistle Blower Policy</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/loader")}>Policy against Sexual Harassment</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/loader")}>Others</span>
+                </span>}</li>
+              <li id='s6' onMouseLeave={() => sets6(false)} onMouseEnter={(e)=>sub(e)} className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/company-policy")}>Intimation
+               {s6 && <span onMouseLeave={() => sets6(false)} className='flex flex-col absolute top-0 drop-shadow-xl  w-[12vw] left-[15.03vw] text-[#333333] bg-white  '>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/scooty")}>Board Meeting</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/e-rickshaw")}>AGM/EGM/Postal Ballot</span>
+                </span>}</li>
+              <li  className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/right-issue")}>Quaterly/Half Yearly Filings</li>
+              <li id='s7' onMouseLeave={() => sets7(false)} onMouseEnter={(e)=>sub(e)} className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/notice-of-record-date-&-BM")}>Invetor Services
+               {s7 && <span onMouseLeave={() => sets7(false)} className='flex flex-col absolute top-0 drop-shadow-xl  w-[12vw] left-[15.03vw] text-[#333333] bg-white  '>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/scooty")}>Invetor Zone</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/e-rickshaw")}>Investor Contacts</span>
+                </span>}</li>
+              <li id='s8' onMouseLeave={() => sets8(false)} onMouseEnter={(e)=>sub(e)} className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/announcement/1")}>News & Events
+               {s8 && <span onMouseLeave={() => sets8(false)} className='flex flex-col absolute top-0 drop-shadow-xl  w-[12vw] left-[15.03vw] text-[#333333] bg-white  '>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/scooty")}>Press Release</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/e-rickshaw")}>Media Coverage</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/loader")}>Leaders Speak</span>
+                </span>}</li>
             </ul>}
           </div>
-        
+
           <div id='n4' onMouseEnter={(e) => nav(e)} className='under'><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center '>Presence </span>
             {n4 && <ul onMouseLeave={() => setn3(false)} className='absolute drop-shadow-xl border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] bg-white w-[15vw]'>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/our-network")}>Our Network</li>
@@ -158,7 +248,7 @@ const Navbar = () => {
           <div id='n5' onMouseEnter={(e) => nav(e)} className='under'><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center '>Careers </span>
             {n5 && <ul onMouseLeave={() => setn3(false)} className='absolute drop-shadow-xl border-t-[0.2vw] text-[#333333] border-orange-400 top-[7vw] bg-white w-[15vw]'>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/apply-for-jobs")}>Apply For Jobs</li>
-              
+
             </ul>}
           </div>
           <div id='n3' onMouseEnter={(e) => nav(e)} className='under'><span className=' transition-all duration-300 cursor-pointer flex gap-[0.5vw] items-center '>Catalogue </span>
@@ -166,7 +256,7 @@ const Navbar = () => {
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/company-overview")}>Company Profile</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/apply-for-jobs")}>Scooty Brochure</li>
               <li className='p-[1vw] hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9]  hover:pl-[1.5vw]' onClick={() => Router.push("/apply-for-jobs")}>Solar Brochure</li>
-              
+
             </ul>}
           </div>
 
@@ -178,7 +268,7 @@ const Navbar = () => {
 
 
 
-       
+
 
 
       </div>
