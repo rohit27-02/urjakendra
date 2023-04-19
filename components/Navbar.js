@@ -200,11 +200,12 @@ const Navbar = () => {
           </div>
           <div id='n6' onMouseEnter={(e) => nav(e)} className='under'><span className=' transition-all duration-300 cursor-pointer  flex gap-[0.5vw] items-center'>Investors </span>
             {n6 && <ul onMouseLeave={() => setn1(false)} className='absolute drop-shadow-xl border-t-[0.2vw] border-orange-400 text-[#333333] w-[15vw] top-[7vw] bg-white'>
-              <li id='s3' onMouseLeave={() => sets3(false)} onMouseEnter={(e)=>sub(e)} className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/regulation-46-and-62-of-sebi-[LODR]")}>Corporate Information
+            <li className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/regulation-46-and-62-of-sebi-[LODR]")}>Regulation 46 and 62 of sebi-[LODR]</li>
+              <li id='s3' onMouseLeave={() => sets3(false)} onMouseEnter={(e)=>sub(e)} className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]'>Corporate Information
                {s3 && <span onMouseLeave={() => sets3(false)} className='flex flex-col absolute top-0 drop-shadow-xl  w-[12vw] left-[15.03vw] text-[#333333] bg-white  '>
-                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/scooty")}>MOA & AOA</span>
-                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/e-rickshaw")}>CSR</span>
-                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/loader")}>IPR Intangibles</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/MOA&AOA")}>MOA & AOA</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/csr")}>CSR</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/ipr-&-intangibles")}>IPR Intangibles</span>
                 </span>}</li>
               <li id='s4' onMouseLeave={() => sets4(false)} onMouseEnter={(e)=>sub(e)} className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/financials")}>Financials
                {s4 && <span onMouseLeave={() => sets4(false)} className='flex flex-col absolute top-0 drop-shadow-xl  w-[12vw] left-[15.03vw] text-[#333333] bg-white  '>
@@ -214,10 +215,10 @@ const Navbar = () => {
                 </span>}</li>
               <li id='s5' onMouseLeave={() => sets5(false)} onMouseEnter={(e)=>sub(e)} className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/corporate-governance-report/1")}>Corporate Governance
                {s5 && <span onMouseLeave={() => sets5(false)} className='flex flex-col absolute top-0 drop-shadow-xl  w-[12vw] left-[15.03vw] text-[#333333] bg-white  '>
-                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/scooty")}>Code of Conduct</span>
-                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/e-rickshaw")}>Whistle Blower Policy</span>
-                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/loader")}>Policy against Sexual Harassment</span>
-                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/loader")}>Others</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/coporate-governance-pdf")}>Code of Conduct</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/coporate-governance-pdf")}>Whistle Blower Policy</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/coporate-governance-pdf")}>Policy against Sexual Harassment</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/coporate-governance-pdf")}>Others</span>
                 </span>}</li>
               <li id='s6' onMouseLeave={() => sets6(false)} onMouseEnter={(e)=>sub(e)} className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/company-policy")}>Intimation
                {s6 && <span onMouseLeave={() => sets6(false)} className='flex flex-col absolute top-0 drop-shadow-xl  w-[12vw] left-[15.03vw] text-[#333333] bg-white  '>
