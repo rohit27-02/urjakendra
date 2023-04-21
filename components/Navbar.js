@@ -207,10 +207,10 @@ const Navbar = () => {
                   <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/csr")}>CSR</span>
                   <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/ipr-&-intangibles")}>IPR Intangibles</span>
                 </span>}</li>
-              <li id='s4' onMouseLeave={() => sets4(false)} onMouseEnter={(e)=>sub(e)} className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/financials")}>Financials
+              <li id='s4' onMouseLeave={() => sets4(false)} onMouseEnter={(e)=>sub(e)} className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]'>Financials
                {s4 && <span onMouseLeave={() => sets4(false)} className='flex flex-col absolute top-0 drop-shadow-xl  w-[14vw] left-[16vw] text-[#333333] bg-white  '>
-                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/scooty")}>Annual Reports</span>
-                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/e-rickshaw")}>Financial Statements</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/annual-report")}>Annual Reports</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/financials")}>Financial Statements</span>
                   <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/loader")}>Quarterly Results</span>
                 </span>}</li>
               <li id='s5' onMouseLeave={() => sets5(false)} onMouseEnter={(e)=>sub(e)} className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' >Corporate Governance
@@ -220,10 +220,10 @@ const Navbar = () => {
                   <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/coporate-governance-pdf#Policy-against-Sexual-Harrasment")}>Policy against Sexual Harassment</span>
                   <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/coporate-governance-pdf")}>Others</span>
                 </span>}</li>
-              <li id='s6' onMouseLeave={() => sets6(false)} onMouseEnter={(e)=>sub(e)} className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/company-policy")}>Intimation
+              <li id='s6' onMouseLeave={() => sets6(false)} onMouseEnter={(e)=>sub(e)} className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]'>Intimation
                {s6 && <span onMouseLeave={() => sets6(false)} className='flex flex-col absolute top-0 drop-shadow-xl  w-[14vw] left-[16vw] text-[#333333] bg-white  '>
-                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/scooty")}>Board Meeting</span>
-                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/e-rickshaw")}>AGM/EGM/Postal Ballot</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/latest-updates")}>Board Meeting</span>
+                  <span className='hover:text-orange-400 hover:cursor-pointer transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw] p-[1vw]' onClick={() => Router.push("/agm-egm")}>AGM/EGM/Postal Ballot</span>
                 </span>}</li>
               <li  className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' onClick={() => Router.push("/quarterly-reports")}>Quaterly/Half Yearly Filings</li>
               <li id='s7' onMouseLeave={() => sets7(false)} onMouseEnter={(e)=>sub(e)} className='p-[1vw] relative hover:text-orange-400 hover: cursor-pointer  transition-all duration-300 border-b hover:bg-[#f9f9f9] hover:pl-[1.5vw]' >Investor Services
