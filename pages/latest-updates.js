@@ -1,11 +1,13 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
+import fs from 'fs'
+import path from 'path';
 
-const latestupdates = () => {
+const latestupdates = ({ pdfs }) => {
     return (
         <div className='bg-gray-100 text-gray-800 drop-shadow-sm font-sans w-[1200px] mx-auto drop-shadow-sm mt-[7vw] py-6 px-5  mb-28'>
-            <h1 className='border-b-2 py-1 border-gray-800 text-2xl text-orange-500 font-semibold border-dotted'>Chairman&apos;s Message</h1>
+            {/* <h1 className='border-b-2 py-1 border-gray-800 text-2xl text-orange-500 font-semibold border-dotted'>Chairman&apos;s Message</h1>
 
             <div className='flex items-start gap-40 my-4'>
                 <img height={"100"} width={"100"} src='https://ternary.co.za/wp-content/uploads/2013/08/Individuals.png' alt='chairman' s photo />
@@ -21,15 +23,43 @@ const latestupdates = () => {
                 </div>
             </div>
 
-            <h1 className='border-b-2 py-1 mt-10 border-gray-800 text-2xl text-orange-500 font-semibold border-dotted'>Chairman Speaks - December 2020</h1>
+            <h1 className='border-b-2 py-1 mt-10 border-gray-800 text-2xl text-orange-500 font-semibold border-dotted'>Chairman Speaks - December 2020</h1> */}
+
+
             <h1 className='border-b-2 py-1 mt-10 border-gray-800 text-2xl text-orange-500 font-semibold border-dotted'>Latest Updates</h1>
             <h2 className='text-lg my-2'>Announcements</h2>
-            <div className='mx-20 my-4'>
-                <p>Certificate u/r 74(5) of SEBI(DP) Regulations, 2018 - Q4/FY 2022-23</p>
-                <a href='/' className='text-sm text-gray-400 hover:underline underline-offset-4 hover:text-gray-800'>Download PDF</a>
-            </div>
+
+            {pdfs.map((pdf) => {
+                return <div key={pdf} className='mx-20 my-4'>
+                    <p>{pdf}</p>
+                    <a href={"/" + "notice of record date & BM" + "/" + pdf} className='text-sm text-gray-400 hover:underline underline-offset-4 hover:text-gray-800'>Download PDF</a>
+                </div>
+            })}
         </div>
     )
 }
 
 export default latestupdates
+export async function getServerSideProps() {
+    // Fetch data from external API
+    let res = [];
+
+
+    for (const file of fs.readdirSync(path.resolve("\public/notice of record date & BM"))) {
+        res = [...res, file]
+    }
+    res = res.map(function (fileName) {
+        return {
+            name: fileName,
+            time: fs.statSync(path.resolve("\public/notice of record date & BM") + '/' + fileName).mtime.getTime()
+        };
+    })
+        .sort(function (a, b) {
+            return b.time - a.time;
+        })
+        .map(function (v) {
+            return v.name;
+        });
+
+    return { props: { pdfs: res } }
+}
